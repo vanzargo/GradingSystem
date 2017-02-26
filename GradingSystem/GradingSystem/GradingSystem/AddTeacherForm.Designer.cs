@@ -163,6 +163,7 @@
             this.button6.TabIndex = 22;
             this.button6.Text = "Cancel";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnSave
             // 
@@ -172,6 +173,7 @@
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -597,6 +599,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Edit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -608,6 +611,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -619,6 +623,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Cancel";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panelView
             // 
@@ -626,7 +631,7 @@
             this.panelView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelView.Controls.Add(this.tableLayoutPanel3);
             this.panelView.Controls.Add(this.panel20);
-            this.panelView.Location = new System.Drawing.Point(9, 9);
+            this.panelView.Location = new System.Drawing.Point(10, 5);
             this.panelView.Name = "panelView";
             this.panelView.Size = new System.Drawing.Size(328, 259);
             this.panelView.TabIndex = 6;
@@ -674,6 +679,7 @@
             this.v_Position.Size = new System.Drawing.Size(52, 16);
             this.v_Position.TabIndex = 4;
             this.v_Position.Text = "label21";
+            this.v_Position.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel29
             // 
@@ -691,6 +697,7 @@
             this.v_Sex.Size = new System.Drawing.Size(52, 16);
             this.v_Sex.TabIndex = 3;
             this.v_Sex.Text = "label20";
+            this.v_Sex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel28
             // 
@@ -708,6 +715,7 @@
             this.v_LName.Size = new System.Drawing.Size(52, 16);
             this.v_LName.TabIndex = 2;
             this.v_LName.Text = "label19";
+            this.v_LName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel27
             // 
@@ -725,9 +733,11 @@
             this.v_FName.Size = new System.Drawing.Size(52, 16);
             this.v_FName.TabIndex = 1;
             this.v_FName.Text = "label18";
+            this.v_FName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel26
             // 
+            this.panel26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel26.Controls.Add(this.v_IDno);
             this.panel26.Location = new System.Drawing.Point(114, 3);
             this.panel26.Name = "panel26";
@@ -737,11 +747,12 @@
             // v_IDno
             // 
             this.v_IDno.AutoSize = true;
-            this.v_IDno.Location = new System.Drawing.Point(49, 9);
+            this.v_IDno.Location = new System.Drawing.Point(49, 11);
             this.v_IDno.Name = "v_IDno";
             this.v_IDno.Size = new System.Drawing.Size(52, 16);
             this.v_IDno.TabIndex = 0;
             this.v_IDno.Text = "label17";
+            this.v_IDno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel25
             // 
@@ -833,7 +844,7 @@
             // 
             this.panel20.BackColor = System.Drawing.Color.Black;
             this.panel20.Controls.Add(this.label11);
-            this.panel20.Location = new System.Drawing.Point(0, 0);
+            this.panel20.Location = new System.Drawing.Point(0, 1);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(328, 31);
             this.panel20.TabIndex = 0;
