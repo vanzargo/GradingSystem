@@ -432,7 +432,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(-9, 27);
+            this.panel1.Location = new System.Drawing.Point(-9, 29);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(810, 116);
             this.panel1.TabIndex = 3;

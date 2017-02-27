@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -79,10 +81,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -121,6 +121,24 @@
             this.panel1.Size = new System.Drawing.Size(484, 613);
             this.panel1.TabIndex = 0;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(374, 572);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 30);
+            this.btnCancel.TabIndex = 9;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(282, 572);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 30);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
             // comboBox16
             // 
             this.comboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -138,7 +156,7 @@
             "Grade 10"});
             this.comboBox16.Location = new System.Drawing.Point(146, 151);
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(121, 21);
+            this.comboBox16.Size = new System.Drawing.Size(101, 21);
             this.comboBox16.TabIndex = 7;
             // 
             // comboBox15
@@ -146,7 +164,7 @@
             this.comboBox15.FormattingEnabled = true;
             this.comboBox15.Location = new System.Drawing.Point(146, 120);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(121, 21);
+            this.comboBox15.Size = new System.Drawing.Size(167, 21);
             this.comboBox15.TabIndex = 6;
             // 
             // tableLayoutPanel1
@@ -241,9 +259,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox7.Location = new System.Drawing.Point(6, 267);
+            this.comboBox7.Location = new System.Drawing.Point(18, 267);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 24);
+            this.comboBox7.Size = new System.Drawing.Size(100, 24);
             this.comboBox7.TabIndex = 10;
             // 
             // comboBox6
@@ -258,9 +276,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox6.Location = new System.Drawing.Point(6, 240);
+            this.comboBox6.Location = new System.Drawing.Point(18, 239);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 24);
+            this.comboBox6.Size = new System.Drawing.Size(100, 24);
             this.comboBox6.TabIndex = 9;
             // 
             // comboBox5
@@ -275,9 +293,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox5.Location = new System.Drawing.Point(6, 213);
+            this.comboBox5.Location = new System.Drawing.Point(18, 211);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.Size = new System.Drawing.Size(100, 24);
             this.comboBox5.TabIndex = 8;
             // 
             // comboBox4
@@ -292,9 +310,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox4.Location = new System.Drawing.Point(6, 157);
+            this.comboBox4.Location = new System.Drawing.Point(19, 157);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.Size = new System.Drawing.Size(100, 24);
             this.comboBox4.TabIndex = 7;
             // 
             // comboBox3
@@ -309,9 +327,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox3.Location = new System.Drawing.Point(6, 129);
+            this.comboBox3.Location = new System.Drawing.Point(18, 129);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.Size = new System.Drawing.Size(100, 24);
             this.comboBox3.TabIndex = 6;
             // 
             // comboBox2
@@ -326,9 +344,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox2.Location = new System.Drawing.Point(6, 73);
+            this.comboBox2.Location = new System.Drawing.Point(18, 73);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Size = new System.Drawing.Size(100, 24);
             this.comboBox2.TabIndex = 5;
             // 
             // comboBox1
@@ -343,9 +361,9 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 44);
+            this.comboBox1.Location = new System.Drawing.Point(18, 44);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(100, 24);
             this.comboBox1.TabIndex = 4;
             // 
             // label23
@@ -415,9 +433,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox14.Location = new System.Drawing.Point(8, 267);
+            this.comboBox14.Location = new System.Drawing.Point(18, 267);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(121, 24);
+            this.comboBox14.Size = new System.Drawing.Size(100, 24);
             this.comboBox14.TabIndex = 6;
             // 
             // comboBox13
@@ -435,9 +453,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox13.Location = new System.Drawing.Point(8, 240);
+            this.comboBox13.Location = new System.Drawing.Point(18, 239);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(121, 24);
+            this.comboBox13.Size = new System.Drawing.Size(100, 24);
             this.comboBox13.TabIndex = 5;
             // 
             // comboBox12
@@ -455,9 +473,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox12.Location = new System.Drawing.Point(8, 213);
+            this.comboBox12.Location = new System.Drawing.Point(18, 211);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(121, 24);
+            this.comboBox12.Size = new System.Drawing.Size(100, 24);
             this.comboBox12.TabIndex = 4;
             // 
             // comboBox11
@@ -475,9 +493,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox11.Location = new System.Drawing.Point(8, 157);
+            this.comboBox11.Location = new System.Drawing.Point(18, 157);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(121, 24);
+            this.comboBox11.Size = new System.Drawing.Size(100, 24);
             this.comboBox11.TabIndex = 3;
             // 
             // comboBox10
@@ -495,9 +513,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox10.Location = new System.Drawing.Point(8, 129);
+            this.comboBox10.Location = new System.Drawing.Point(18, 129);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 24);
+            this.comboBox10.Size = new System.Drawing.Size(100, 24);
             this.comboBox10.TabIndex = 2;
             // 
             // comboBox9
@@ -515,9 +533,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox9.Location = new System.Drawing.Point(8, 73);
+            this.comboBox9.Location = new System.Drawing.Point(18, 73);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 24);
+            this.comboBox9.Size = new System.Drawing.Size(100, 24);
             this.comboBox9.TabIndex = 1;
             // 
             // comboBox8
@@ -535,9 +553,9 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox8.Location = new System.Drawing.Point(8, 44);
+            this.comboBox8.Location = new System.Drawing.Point(18, 44);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 24);
+            this.comboBox8.Size = new System.Drawing.Size(100, 24);
             this.comboBox8.TabIndex = 0;
             // 
             // panel7
@@ -744,16 +762,16 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(537, 402);
+            this.dataGridView1.Size = new System.Drawing.Size(537, 524);
             this.dataGridView1.TabIndex = 1;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.dataGridView1);
-            this.panel9.Location = new System.Drawing.Point(519, 134);
+            this.panel9.Location = new System.Drawing.Point(519, 12);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(537, 437);
+            this.panel9.Size = new System.Drawing.Size(537, 559);
             this.panel9.TabIndex = 2;
             // 
             // panel10
@@ -766,14 +784,6 @@
             this.panel10.Size = new System.Drawing.Size(537, 35);
             this.panel10.TabIndex = 2;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(82, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 22);
-            this.textBox1.TabIndex = 0;
-            // 
             // btnSearch
             // 
             this.btnSearch.Location = new System.Drawing.Point(278, 7);
@@ -783,23 +793,13 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // btnSave
+            // textBox1
             // 
-            this.btnSave.Location = new System.Drawing.Point(282, 572);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 30);
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(374, 572);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 30);
-            this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(82, 7);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(180, 22);
+            this.textBox1.TabIndex = 0;
             // 
             // btnCreate
             // 
@@ -849,6 +849,7 @@
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TeacherLoading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherLoading";

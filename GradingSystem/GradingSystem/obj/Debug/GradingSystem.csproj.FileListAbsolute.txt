@@ -17,3 +17,17 @@ C:\Users\Zyrus\Documents\Visual Studio 2015\Projects\GradingSystem\GradingSystem
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe.config
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.pdb
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.pdb
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddTeacherForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ClassSched.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradingSheet.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.LoginForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.MainForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.Properties.Resources.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherLoading.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherMainForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.GenerateResource.Cache

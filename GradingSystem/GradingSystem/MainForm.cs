@@ -60,7 +60,7 @@ namespace GradingSystem
 
         private void addTimeSchedule_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            ClassSched form = new ClassSched();
             form.Show();
         }
 
