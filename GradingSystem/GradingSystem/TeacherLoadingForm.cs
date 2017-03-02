@@ -10,15 +10,12 @@ using System.Windows.Forms;
 
 namespace GradingSystem
 {
-    public partial class ClassSched : Form
+    public partial class TeacherLoadingForm : Form
     {
-        public ClassSched()
+        public TeacherLoadingForm()
         {
             InitializeComponent();
         }
 
-
-        
-  
     }
 }

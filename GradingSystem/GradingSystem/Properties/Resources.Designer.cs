@@ -73,6 +73,16 @@ namespace GradingSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Class {
+            get {
+                object obj = ResourceManager.GetObject("Class", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enroll_icon {
             get {
                 object obj = ResourceManager.GetObject("enroll_icon", resourceCulture);
@@ -136,6 +146,16 @@ namespace GradingSystem.Properties {
         internal static System.Drawing.Bitmap schedule_icon {
             get {
                 object obj = ResourceManager.GetObject("schedule_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SClass {
+            get {
+                object obj = ResourceManager.GetObject("SClass", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

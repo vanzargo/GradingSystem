@@ -35,7 +35,7 @@ namespace GradingSystem
 
         private void addGradelvl_Click(object sender, EventArgs e)
         {
-            GradingSheet sheet = new GradingSheet();
+            GradingSheetForm sheet = new GradingSheetForm();
             sheet.Show();
         }
 
@@ -43,7 +43,7 @@ namespace GradingSystem
 
         private void addSchoolyear_Click(object sender, EventArgs e)
         {
-            GradingSheet add = new GradingSheet();
+            GradingSheetForm add = new GradingSheetForm();
             add.Show();
         }
 
@@ -60,7 +60,7 @@ namespace GradingSystem
 
         private void addTimeSchedule_Click(object sender, EventArgs e)
         {
-            ClassSched form = new ClassSched();
+            ClassSchedForm form = new ClassSchedForm();
             form.Show();
         }
 
@@ -68,8 +68,10 @@ namespace GradingSystem
 
         private void btnFacultyLoad_Click(object sender, EventArgs e)
         {
-            TeacherLoading teach = new TeacherLoading();
+            TeacherLoadingForm teach = new TeacherLoadingForm();
             teach.Show();
         }
+
+
     }
 }

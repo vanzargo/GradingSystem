@@ -59,17 +59,23 @@
     <Compile Include="AddTeacherForm.Designer.cs">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassSched.cs">
+    <Compile Include="ClassSchedForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassSched.Designer.cs">
-      <DependentUpon>ClassSched.cs</DependentUpon>
+    <Compile Include="ClassSchedForm.Designer.cs">
+      <DependentUpon>ClassSchedForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GradingSheet.cs">
+    <Compile Include="GradesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GradingSheet.Designer.cs">
-      <DependentUpon>GradingSheet.cs</DependentUpon>
+    <Compile Include="GradesForm.Designer.cs">
+      <DependentUpon>GradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradingSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradingSheetForm.Designer.cs">
+      <DependentUpon>GradingSheetForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -85,17 +91,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeacherLoading.cs">
+    <Compile Include="TeacherLoadingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherLoading.designer.cs">
-      <DependentUpon>TeacherLoading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherMainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TeacherMainForm.Designer.cs">
-      <DependentUpon>TeacherMainForm.cs</DependentUpon>
+    <Compile Include="TeacherLoadingForm.designer.cs">
+      <DependentUpon>TeacherLoadingForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddForm.resx">
       <DependentUpon>AddForm.cs</DependentUpon>
@@ -103,11 +103,11 @@
     <EmbeddedResource Include="AddTeacherForm.resx">
       <DependentUpon>AddTeacherForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassSched.resx">
-      <DependentUpon>ClassSched.cs</DependentUpon>
+    <EmbeddedResource Include="ClassSchedForm.resx">
+      <DependentUpon>ClassSchedForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GradingSheet.resx">
-      <DependentUpon>GradingSheet.cs</DependentUpon>
+    <EmbeddedResource Include="GradingSheetForm.resx">
+      <DependentUpon>GradingSheetForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -125,11 +125,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TeacherLoading.resx">
-      <DependentUpon>TeacherLoading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TeacherMainForm.resx">
-      <DependentUpon>TeacherMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="TeacherLoadingForm.resx">
+      <DependentUpon>TeacherLoadingForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -185,6 +182,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\enroll_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SClass.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

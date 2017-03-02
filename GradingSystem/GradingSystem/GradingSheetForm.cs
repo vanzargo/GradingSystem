@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace GradingSystem
 {
-    public partial class GradingSheet : Form
+    public partial class GradingSheetForm : Form
     {
-        public GradingSheet()
+        public GradingSheetForm()
         {
             InitializeComponent();
         }
