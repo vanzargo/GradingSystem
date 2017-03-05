@@ -59,7 +59,7 @@ namespace GradingSystem
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = GetSchedules(textBox1.Text);
         }
         
         private void db_connection()
@@ -201,7 +201,7 @@ namespace GradingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = GetSchedules();
         }
     }
 }
