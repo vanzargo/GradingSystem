@@ -8,6 +8,7 @@ namespace GradingSystem
 {
     static class Program
     {
+        static public String position = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

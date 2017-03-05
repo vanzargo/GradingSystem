@@ -69,17 +69,18 @@ namespace GradingSystem
                 if (reader.HasRows)
                 {
                     
-MainForm admin = new MainForm();
+                    MainForm admin = new MainForm(txtPosition.Text);
                     admin.Show();
                         this.Hide();
                     if (txtPosition.Text == "Admin")
                     {
+
                     }
                     else if(txtPosition.Text == "Teacher")
                     {
-                        TeacherMainForm teacher = new TeacherMainForm();
+                        /*TeacherMainForm teacher = new TeacherMainForm();
                         teacher.Show();
-                        this.Hide();
+                        this.Hide();*/
                     }
                     else
                     {

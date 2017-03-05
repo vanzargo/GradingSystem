@@ -74,10 +74,10 @@
             this.t_btnStudent = new System.Windows.Forms.ToolStripButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelSClass = new System.Windows.Forms.Panel();
+            this.psc_btnClose = new System.Windows.Forms.Button();
+            this.psd_btnView = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView_SClass = new System.Windows.Forms.DataGridView();
-            this.psd_btnView = new System.Windows.Forms.Button();
-            this.psc_btnClose = new System.Windows.Forms.Button();
             this.panelAClass = new System.Windows.Forms.Panel();
             this.pac_btnClose = new System.Windows.Forms.Button();
             this.pac_btnView = new System.Windows.Forms.Button();
@@ -147,6 +147,7 @@
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -605,6 +606,26 @@
             this.panelSClass.Size = new System.Drawing.Size(887, 298);
             this.panelSClass.TabIndex = 6;
             // 
+            // psc_btnClose
+            // 
+            this.psc_btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psc_btnClose.Location = new System.Drawing.Point(793, 260);
+            this.psc_btnClose.Name = "psc_btnClose";
+            this.psc_btnClose.Size = new System.Drawing.Size(87, 32);
+            this.psc_btnClose.TabIndex = 2;
+            this.psc_btnClose.Text = "Close";
+            this.psc_btnClose.UseVisualStyleBackColor = true;
+            // 
+            // psd_btnView
+            // 
+            this.psd_btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psd_btnView.Location = new System.Drawing.Point(688, 260);
+            this.psd_btnView.Name = "psd_btnView";
+            this.psd_btnView.Size = new System.Drawing.Size(87, 32);
+            this.psd_btnView.TabIndex = 1;
+            this.psd_btnView.Text = "View";
+            this.psd_btnView.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -622,26 +643,6 @@
             this.dataGridView_SClass.Name = "dataGridView_SClass";
             this.dataGridView_SClass.Size = new System.Drawing.Size(886, 254);
             this.dataGridView_SClass.TabIndex = 0;
-            // 
-            // psd_btnView
-            // 
-            this.psd_btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.psd_btnView.Location = new System.Drawing.Point(688, 260);
-            this.psd_btnView.Name = "psd_btnView";
-            this.psd_btnView.Size = new System.Drawing.Size(87, 32);
-            this.psd_btnView.TabIndex = 1;
-            this.psd_btnView.Text = "View";
-            this.psd_btnView.UseVisualStyleBackColor = true;
-            // 
-            // psc_btnClose
-            // 
-            this.psc_btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.psc_btnClose.Location = new System.Drawing.Point(793, 260);
-            this.psc_btnClose.Name = "psc_btnClose";
-            this.psc_btnClose.Size = new System.Drawing.Size(87, 32);
-            this.psc_btnClose.TabIndex = 2;
-            this.psc_btnClose.Text = "Close";
-            this.psc_btnClose.UseVisualStyleBackColor = true;
             // 
             // panelAClass
             // 
@@ -697,12 +698,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
             this.ClientSize = new System.Drawing.Size(911, 658);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelAClass);
             this.Controls.Add(this.panelSClass);
             this.Controls.Add(this.panelTeacher);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panelAdmin);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;

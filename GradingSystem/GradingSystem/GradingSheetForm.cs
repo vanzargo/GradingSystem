@@ -13,6 +13,8 @@ namespace GradingSystem
 {
     public partial class GradingSheetForm : Form
     {
+        String Grade = "all";//or 1 to 10
+
         public GradingSheetForm()
         {
             InitializeComponent();

@@ -12,11 +12,44 @@ namespace GradingSystem
 {
     public partial class MainForm : Form
     {
+
         public MainForm()
         {
+            if (Program.position=="") {
+                Program.position = "";
+            }
             InitializeComponent();
+            if (Program.position == "Admin")
+            {
+                panelAdmin.Show();
+                panelTeacher.Hide();
+            }
+            else
+            {
+                panelAdmin.Hide();
+                panelTeacher.Show();
+            }
         }
- 
+
+        public MainForm(String Position)
+        {
+            if (Program.position == "")
+            {
+                Program.position = Position;
+            }
+            InitializeComponent();
+            if (Program.position == "Admin")
+            {
+                panelAdmin.Show();
+                panelTeacher.Hide();
+            }
+            else
+            {
+                panelAdmin.Hide();
+                panelTeacher.Show();
+            }
+        }
+
         private void addStudent_Click(object sender, EventArgs e)
         {
             AddForm add = new AddForm();
@@ -72,6 +105,10 @@ namespace GradingSystem
             teach.Show();
         }
 
-
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.position = "";
+            Close();
+        }
     }
 }
