@@ -46,3 +46,4 @@ C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\De
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradingSheetForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherLoadingForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradesForm.resources
+D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradesForm.resources

@@ -151,22 +151,22 @@ namespace GradingSystem
             con = new MySqlConnection(Program.connectionString);
             con.Open();
             String sql = "SELECT `teacher_schedule_id` as `Schedule id`, CONCAT(`Teacher_FirstName`,' ',`Teacher_LastName`) as `Name`, `7_subject`, `7_GradeLevel`, `8_subject`, `8_GradeLevel`, `9_subject`, `9_GradeLevel`, `10_subject`, `10_GradeLevel`, `12_subject`, `12_GradeLevel`, `1_subject`, `1_GradeLevel`, `2_subject`, `2_GradeLevel`, `advisory_class` FROM `teacher` LEFT JOIN `teacher_schedule` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE "+
-                "`7_subject`='"+ search
-                + "' OR `7_GradeLevel`='" + search
-                + "' OR `8_subject`='" + search
-                + "' OR `8_GradeLevel`='" + search
-                + "' OR `9_subject`='" + search
-                + "' OR `9_GradeLevel`='" + search
-                + "' OR `10_subject`='" + search
-                + "' OR `10_GradeLevel`='" + search
-                + "' OR `12_subject`='" + search
-                + "' OR `12_GradeLevel`='" + search
-                + "' OR `1_subject`='" + search
-                + "' OR `1_GradeLevel`='" + search
-                + "' OR `2_subject`='" + search
-                + "' OR `2_GradeLevel`='" + search
-                + "' OR `advisory_class`='" + search
-                + "' OR  `Name` ='" + search;
+                "`7_subject`='%"+ search
+                + "%' OR `7_GradeLevel%`='%" + search
+                + "%' OR `8_subject`='%" + search
+                + "%' OR `8_GradeLevel`='%" + search
+                + "%' OR `9_subject`='%" + search
+                + "%' OR `9_GradeLevel`='%" + search
+                + "%' OR `10_subject`='%" + search
+                + "%' OR `10_GradeLevel`='%" + search
+                + "%' OR `12_subject`='%" + search
+                + "%' OR `12_GradeLevel`='%" + search
+                + "%' OR `1_subject`='%" + search
+                + "%' OR `1_GradeLevel`='%" + search
+                + "%' OR `2_subject`='%" + search
+                + "%' OR `2_GradeLevel`='%" + search
+                + "%' OR `advisory_class`='%" + search
+                + "%' OR  `Name` ='%" + search+"%'";
 
             using (MySqlCommand cmd = new MySqlCommand(sql, con))
             {
