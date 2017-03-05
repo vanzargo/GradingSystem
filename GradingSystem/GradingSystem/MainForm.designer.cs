@@ -66,16 +66,16 @@
             this.t_btnStudent = new System.Windows.Forms.ToolStripButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelSClass = new System.Windows.Forms.Panel();
-            this.psd_btnView = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView_SClass = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView_AClass = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView_AClass = new System.Windows.Forms.DataGridView();
+            this.psd_btnView = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView_SClass = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabControlAdmin.SuspendLayout();
             this.tabTrans.SuspendLayout();
@@ -94,12 +94,12 @@
             this.tabPage2.SuspendLayout();
             this.toolStrip6.SuspendLayout();
             this.panelSClass.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AClass)).BeginInit();
-            this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AClass)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -144,6 +144,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(172, 26);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // tabControlAdmin
             // 
@@ -480,6 +481,7 @@
             this.t_btnStudent.Size = new System.Drawing.Size(74, 91);
             this.t_btnStudent.Text = "Student";
             this.t_btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.t_btnStudent.Click += new System.EventHandler(this.t_btnStudent_Click);
             // 
             // panel5
             // 
@@ -500,54 +502,25 @@
             this.panelSClass.Size = new System.Drawing.Size(887, 375);
             this.panelSClass.TabIndex = 6;
             // 
-            // psd_btnView
+            // button1
             // 
-            this.psd_btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.psd_btnView.Location = new System.Drawing.Point(787, 338);
-            this.psd_btnView.Name = "psd_btnView";
-            this.psd_btnView.Size = new System.Drawing.Size(87, 32);
-            this.psd_btnView.TabIndex = 1;
-            this.psd_btnView.Text = "View";
-            this.psd_btnView.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(787, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 32);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "View";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // panel7
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.dataGridView_SClass);
-            this.panel2.Location = new System.Drawing.Point(0, 142);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(887, 192);
-            this.panel2.TabIndex = 0;
-            // 
-            // dataGridView_SClass
-            // 
-            this.dataGridView_SClass.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView_SClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView_SClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_SClass.Location = new System.Drawing.Point(0, 29);
-            this.dataGridView_SClass.Name = "dataGridView_SClass";
-            this.dataGridView_SClass.Size = new System.Drawing.Size(886, 161);
-            this.dataGridView_SClass.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(-2, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(887, 29);
-            this.panel4.TabIndex = 1;
-            // 
-            // dataGridView_AClass
-            // 
-            this.dataGridView_AClass.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView_AClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView_AClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_AClass.Location = new System.Drawing.Point(0, 29);
-            this.dataGridView_AClass.Name = "dataGridView_AClass";
-            this.dataGridView_AClass.Size = new System.Drawing.Size(886, 84);
-            this.dataGridView_AClass.TabIndex = 2;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel7.Controls.Add(this.panel6);
+            this.panel7.Controls.Add(this.dataGridView_AClass);
+            this.panel7.Location = new System.Drawing.Point(1, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(886, 100);
+            this.panel7.TabIndex = 3;
             // 
             // panel6
             // 
@@ -569,6 +542,46 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Advisory Class";
             // 
+            // dataGridView_AClass
+            // 
+            this.dataGridView_AClass.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_AClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView_AClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_AClass.Location = new System.Drawing.Point(0, 29);
+            this.dataGridView_AClass.Name = "dataGridView_AClass";
+            this.dataGridView_AClass.Size = new System.Drawing.Size(886, 84);
+            this.dataGridView_AClass.TabIndex = 2;
+            this.dataGridView_AClass.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_AClass_CellContentClick);
+            // 
+            // psd_btnView
+            // 
+            this.psd_btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.psd_btnView.Location = new System.Drawing.Point(787, 338);
+            this.psd_btnView.Name = "psd_btnView";
+            this.psd_btnView.Size = new System.Drawing.Size(87, 32);
+            this.psd_btnView.TabIndex = 1;
+            this.psd_btnView.Text = "View";
+            this.psd_btnView.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.dataGridView_SClass);
+            this.panel2.Location = new System.Drawing.Point(0, 142);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(887, 192);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(-2, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(887, 29);
+            this.panel4.TabIndex = 1;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -580,25 +593,15 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Subject Class";
             // 
-            // panel7
+            // dataGridView_SClass
             // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel7.Controls.Add(this.panel6);
-            this.panel7.Controls.Add(this.dataGridView_AClass);
-            this.panel7.Location = new System.Drawing.Point(1, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(886, 100);
-            this.panel7.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(787, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "View";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dataGridView_SClass.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_SClass.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView_SClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_SClass.Location = new System.Drawing.Point(0, 29);
+            this.dataGridView_SClass.Name = "dataGridView_SClass";
+            this.dataGridView_SClass.Size = new System.Drawing.Size(886, 161);
+            this.dataGridView_SClass.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -649,14 +652,14 @@
             this.toolStrip6.ResumeLayout(false);
             this.toolStrip6.PerformLayout();
             this.panelSClass.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AClass)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_AClass)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

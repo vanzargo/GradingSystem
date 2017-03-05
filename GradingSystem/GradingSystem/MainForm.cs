@@ -30,6 +30,7 @@ namespace GradingSystem
                 panelAdmin.Hide();
                 panelTeacher.Show();
             }
+            ini();
         }
 
         public MainForm(String Position)
@@ -49,6 +50,13 @@ namespace GradingSystem
                 panelAdmin.Hide();
                 panelTeacher.Show();
             }
+            ini();
+        }
+
+        private void ini()
+        {
+            dataGridView_AClass.DataSource = GetAdvisoryClass();
+            dataGridView_SClass.DataSource = GetSubjectClass();
         }
 
         private void addStudent_Click(object sender, EventArgs e)
@@ -88,6 +96,8 @@ namespace GradingSystem
 
         private void AdminMainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Program.position = "";
+            Program.user_id = "";
             LoginForm login = new LoginForm();
             login.Show();
         }
@@ -136,6 +146,50 @@ namespace GradingSystem
 
 
             return dt;
+        }
+
+        DataTable GetSubjectClass()
+        {
+            DataTable dt = new DataTable();
+            MySqlConnection con;
+            con = new MySqlConnection(Program.connectionString);
+            con.Open();
+            String sql;
+            if (Program.position == "Admin")
+            {
+                sql = "SELECT `advisory_class` FROM `teacher_schedule`";
+            }
+            else
+            {
+                sql = "SELECT `advisory_class` FROM `teacher_schedule` WHERE `User_ID` = " + Program.user_id;
+            }
+            using (MySqlCommand cmd = new MySqlCommand(sql, con))
+            {
+
+                MySqlDataAdapter adpt = new MySqlDataAdapter(cmd);
+                adpt.Fill(dt);
+            }
+
+
+            return dt;
+        }
+        
+
+        private void dataGridView_AClass_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void t_btnStudent_Click(object sender, EventArgs e)
+        {
+            AddForm add = new AddForm();
+            add.Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

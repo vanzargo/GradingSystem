@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.comboBox15 = new System.Windows.Forms.ComboBox();
@@ -39,25 +38,25 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.s2to3 = new System.Windows.Forms.ComboBox();
+            this.s1to2 = new System.Windows.Forms.ComboBox();
+            this.s12to1 = new System.Windows.Forms.ComboBox();
+            this.s10to11 = new System.Windows.Forms.ComboBox();
+            this.s9to10 = new System.Windows.Forms.ComboBox();
+            this.s8to9 = new System.Windows.Forms.ComboBox();
+            this.s7to8 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.gl2to3 = new System.Windows.Forms.ComboBox();
+            this.gl1to2 = new System.Windows.Forms.ComboBox();
+            this.gl12to1 = new System.Windows.Forms.ComboBox();
+            this.gl10to11 = new System.Windows.Forms.ComboBox();
+            this.gl9to10 = new System.Windows.Forms.ComboBox();
+            this.gl8to9 = new System.Windows.Forms.ComboBox();
+            this.gl7to8 = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -83,10 +82,9 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -105,7 +103,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.comboBox16);
             this.panel1.Controls.Add(this.comboBox15);
@@ -121,23 +118,15 @@
             this.panel1.Size = new System.Drawing.Size(484, 613);
             this.panel1.TabIndex = 0;
             // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(374, 572);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 30);
-            this.btnCancel.TabIndex = 9;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(282, 572);
+            this.btnSave.Location = new System.Drawing.Point(371, 572);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 30);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // comboBox16
             // 
@@ -230,13 +219,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.comboBox7);
-            this.panel5.Controls.Add(this.comboBox6);
-            this.panel5.Controls.Add(this.comboBox5);
-            this.panel5.Controls.Add(this.comboBox4);
-            this.panel5.Controls.Add(this.comboBox3);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.s2to3);
+            this.panel5.Controls.Add(this.s1to2);
+            this.panel5.Controls.Add(this.s12to1);
+            this.panel5.Controls.Add(this.s10to11);
+            this.panel5.Controls.Add(this.s9to10);
+            this.panel5.Controls.Add(this.s8to9);
+            this.panel5.Controls.Add(this.s7to8);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.label22);
             this.panel5.Controls.Add(this.label21);
@@ -247,11 +236,11 @@
             this.panel5.Size = new System.Drawing.Size(137, 336);
             this.panel5.TabIndex = 2;
             // 
-            // comboBox7
+            // s2to3
             // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.s2to3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s2to3.FormattingEnabled = true;
+            this.s2to3.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -259,16 +248,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox7.Location = new System.Drawing.Point(18, 267);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(100, 24);
-            this.comboBox7.TabIndex = 10;
+            this.s2to3.Location = new System.Drawing.Point(18, 267);
+            this.s2to3.Name = "s2to3";
+            this.s2to3.Size = new System.Drawing.Size(100, 24);
+            this.s2to3.TabIndex = 10;
             // 
-            // comboBox6
+            // s1to2
             // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.s1to2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s1to2.FormattingEnabled = true;
+            this.s1to2.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -276,16 +265,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox6.Location = new System.Drawing.Point(18, 239);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(100, 24);
-            this.comboBox6.TabIndex = 9;
+            this.s1to2.Location = new System.Drawing.Point(18, 239);
+            this.s1to2.Name = "s1to2";
+            this.s1to2.Size = new System.Drawing.Size(100, 24);
+            this.s1to2.TabIndex = 9;
             // 
-            // comboBox5
+            // s12to1
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.s12to1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s12to1.FormattingEnabled = true;
+            this.s12to1.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -293,16 +282,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox5.Location = new System.Drawing.Point(18, 211);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(100, 24);
-            this.comboBox5.TabIndex = 8;
+            this.s12to1.Location = new System.Drawing.Point(18, 211);
+            this.s12to1.Name = "s12to1";
+            this.s12to1.Size = new System.Drawing.Size(100, 24);
+            this.s12to1.TabIndex = 8;
             // 
-            // comboBox4
+            // s10to11
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.s10to11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s10to11.FormattingEnabled = true;
+            this.s10to11.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -310,16 +299,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox4.Location = new System.Drawing.Point(19, 157);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(100, 24);
-            this.comboBox4.TabIndex = 7;
+            this.s10to11.Location = new System.Drawing.Point(19, 157);
+            this.s10to11.Name = "s10to11";
+            this.s10to11.Size = new System.Drawing.Size(100, 24);
+            this.s10to11.TabIndex = 7;
             // 
-            // comboBox3
+            // s9to10
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.s9to10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s9to10.FormattingEnabled = true;
+            this.s9to10.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -327,16 +316,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox3.Location = new System.Drawing.Point(18, 129);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 24);
-            this.comboBox3.TabIndex = 6;
+            this.s9to10.Location = new System.Drawing.Point(18, 129);
+            this.s9to10.Name = "s9to10";
+            this.s9to10.Size = new System.Drawing.Size(100, 24);
+            this.s9to10.TabIndex = 6;
             // 
-            // comboBox2
+            // s8to9
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.s8to9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s8to9.FormattingEnabled = true;
+            this.s8to9.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -344,16 +333,16 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox2.Location = new System.Drawing.Point(18, 73);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 24);
-            this.comboBox2.TabIndex = 5;
+            this.s8to9.Location = new System.Drawing.Point(18, 73);
+            this.s8to9.Name = "s8to9";
+            this.s8to9.Size = new System.Drawing.Size(100, 24);
+            this.s8to9.TabIndex = 5;
             // 
-            // comboBox1
+            // s7to8
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.s7to8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.s7to8.FormattingEnabled = true;
+            this.s7to8.Items.AddRange(new object[] {
             "Math",
             "English",
             "Science",
@@ -361,10 +350,10 @@
             "S.S.",
             "M.A.P.E.H",
             "T.L.E"});
-            this.comboBox1.Location = new System.Drawing.Point(18, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 24);
-            this.comboBox1.TabIndex = 4;
+            this.s7to8.Location = new System.Drawing.Point(18, 44);
+            this.s7to8.Name = "s7to8";
+            this.s7to8.Size = new System.Drawing.Size(100, 24);
+            this.s7to8.TabIndex = 4;
             // 
             // label23
             // 
@@ -405,24 +394,24 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.comboBox14);
-            this.panel6.Controls.Add(this.comboBox13);
-            this.panel6.Controls.Add(this.comboBox12);
-            this.panel6.Controls.Add(this.comboBox11);
-            this.panel6.Controls.Add(this.comboBox10);
-            this.panel6.Controls.Add(this.comboBox9);
-            this.panel6.Controls.Add(this.comboBox8);
+            this.panel6.Controls.Add(this.gl2to3);
+            this.panel6.Controls.Add(this.gl1to2);
+            this.panel6.Controls.Add(this.gl12to1);
+            this.panel6.Controls.Add(this.gl10to11);
+            this.panel6.Controls.Add(this.gl9to10);
+            this.panel6.Controls.Add(this.gl8to9);
+            this.panel6.Controls.Add(this.gl7to8);
             this.panel6.Location = new System.Drawing.Point(282, 40);
             this.panel6.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(137, 336);
             this.panel6.TabIndex = 3;
             // 
-            // comboBox14
+            // gl2to3
             // 
-            this.comboBox14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.gl2to3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl2to3.FormattingEnabled = true;
+            this.gl2to3.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -433,16 +422,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox14.Location = new System.Drawing.Point(18, 267);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(100, 24);
-            this.comboBox14.TabIndex = 6;
+            this.gl2to3.Location = new System.Drawing.Point(18, 267);
+            this.gl2to3.Name = "gl2to3";
+            this.gl2to3.Size = new System.Drawing.Size(100, 24);
+            this.gl2to3.TabIndex = 6;
             // 
-            // comboBox13
+            // gl1to2
             // 
-            this.comboBox13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.gl1to2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl1to2.FormattingEnabled = true;
+            this.gl1to2.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -453,16 +442,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox13.Location = new System.Drawing.Point(18, 239);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(100, 24);
-            this.comboBox13.TabIndex = 5;
+            this.gl1to2.Location = new System.Drawing.Point(18, 239);
+            this.gl1to2.Name = "gl1to2";
+            this.gl1to2.Size = new System.Drawing.Size(100, 24);
+            this.gl1to2.TabIndex = 5;
             // 
-            // comboBox12
+            // gl12to1
             // 
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.gl12to1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl12to1.FormattingEnabled = true;
+            this.gl12to1.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -473,16 +462,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox12.Location = new System.Drawing.Point(18, 211);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(100, 24);
-            this.comboBox12.TabIndex = 4;
+            this.gl12to1.Location = new System.Drawing.Point(18, 211);
+            this.gl12to1.Name = "gl12to1";
+            this.gl12to1.Size = new System.Drawing.Size(100, 24);
+            this.gl12to1.TabIndex = 4;
             // 
-            // comboBox11
+            // gl10to11
             // 
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.gl10to11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl10to11.FormattingEnabled = true;
+            this.gl10to11.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -493,16 +482,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox11.Location = new System.Drawing.Point(18, 157);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(100, 24);
-            this.comboBox11.TabIndex = 3;
+            this.gl10to11.Location = new System.Drawing.Point(18, 157);
+            this.gl10to11.Name = "gl10to11";
+            this.gl10to11.Size = new System.Drawing.Size(100, 24);
+            this.gl10to11.TabIndex = 3;
             // 
-            // comboBox10
+            // gl9to10
             // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.gl9to10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl9to10.FormattingEnabled = true;
+            this.gl9to10.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -513,16 +502,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox10.Location = new System.Drawing.Point(18, 129);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(100, 24);
-            this.comboBox10.TabIndex = 2;
+            this.gl9to10.Location = new System.Drawing.Point(18, 129);
+            this.gl9to10.Name = "gl9to10";
+            this.gl9to10.Size = new System.Drawing.Size(100, 24);
+            this.gl9to10.TabIndex = 2;
             // 
-            // comboBox9
+            // gl8to9
             // 
-            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.gl8to9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl8to9.FormattingEnabled = true;
+            this.gl8to9.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -533,16 +522,16 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox9.Location = new System.Drawing.Point(18, 73);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(100, 24);
-            this.comboBox9.TabIndex = 1;
+            this.gl8to9.Location = new System.Drawing.Point(18, 73);
+            this.gl8to9.Name = "gl8to9";
+            this.gl8to9.Size = new System.Drawing.Size(100, 24);
+            this.gl8to9.TabIndex = 1;
             // 
-            // comboBox8
+            // gl7to8
             // 
-            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.gl7to8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gl7to8.FormattingEnabled = true;
+            this.gl7to8.Items.AddRange(new object[] {
             "Grade 1",
             "Grade 2",
             "Grade 3",
@@ -553,10 +542,10 @@
             "Grade 8",
             "Grade 9",
             "Grade 10"});
-            this.comboBox8.Location = new System.Drawing.Point(18, 44);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(100, 24);
-            this.comboBox8.TabIndex = 0;
+            this.gl7to8.Location = new System.Drawing.Point(17, 44);
+            this.gl7to8.Name = "gl7to8";
+            this.gl7to8.Size = new System.Drawing.Size(100, 24);
+            this.gl7to8.TabIndex = 0;
             // 
             // panel7
             // 
@@ -778,6 +767,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Black;
+            this.panel10.Controls.Add(this.button1);
             this.panel10.Controls.Add(this.btnSearch);
             this.panel10.Controls.Add(this.textBox1);
             this.panel10.Location = new System.Drawing.Point(0, 0);
@@ -793,6 +783,7 @@
             this.btnSearch.TabIndex = 1;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // textBox1
             // 
@@ -802,24 +793,6 @@
             this.textBox1.Size = new System.Drawing.Size(180, 22);
             this.textBox1.TabIndex = 0;
             // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(738, 586);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 38);
-            this.btnCreate.TabIndex = 9;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(819, 586);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 38);
-            this.btnEdit.TabIndex = 10;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(981, 586);
@@ -828,6 +801,7 @@
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDelete
             // 
@@ -837,8 +811,19 @@
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // TeacherLoading
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(391, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // TeacherLoadingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -846,12 +831,10 @@
             this.ClientSize = new System.Drawing.Size(1068, 636);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "TeacherLoading";
+            this.Name = "TeacherLoadingForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TeacherLoading";
             this.panel1.ResumeLayout(false);
@@ -912,20 +895,20 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox s2to3;
+        private System.Windows.Forms.ComboBox s1to2;
+        private System.Windows.Forms.ComboBox s12to1;
+        private System.Windows.Forms.ComboBox s10to11;
+        private System.Windows.Forms.ComboBox s9to10;
+        private System.Windows.Forms.ComboBox s8to9;
+        private System.Windows.Forms.ComboBox s7to8;
+        private System.Windows.Forms.ComboBox gl7to8;
+        private System.Windows.Forms.ComboBox gl2to3;
+        private System.Windows.Forms.ComboBox gl1to2;
+        private System.Windows.Forms.ComboBox gl12to1;
+        private System.Windows.Forms.ComboBox gl10to11;
+        private System.Windows.Forms.ComboBox gl9to10;
+        private System.Windows.Forms.ComboBox gl8to9;
         private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.ComboBox comboBox15;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -933,11 +916,9 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button button1;
     }
 }

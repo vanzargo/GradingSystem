@@ -46,17 +46,17 @@ namespace GradingSystem
             {
                 MessageBox.Show("Can not open connection ! ");
             }
-
+            string query="";
             try
             {
-                LoginForm login = new LoginForm();
-                MainForm main = new MainForm();
                 username = txtUser.Text;
                 password = txtPass.Text;
-                
+                //LoginForm login = new LoginForm();
+                //MainForm main = new MainForm();
+
                 cm.Connection = cn;
                 
-                string query = "select User_Username, User_Password, Teacher_FirstName, Teacher_Position from user, teacher where user.User_ID = teacher.User_ID and User_Username = '" + txtUser.Text + "' and User_Password = '" + txtPass.Text + "'";
+                query = "SELECT `user`.`User_ID`,`User_Username`, `User_Password`, `Teacher_FirstName`, `Teacher_Position` from `user`, `teacher` where `user`.`User_ID` = `teacher`.`User_ID` and `User_Username` like '" + txtUser.Text + "' and `User_Password` like '" + txtPass.Text + "'";
                 cm = new MySqlCommand(query, cn);
                 MySqlDataReader reader = cm.ExecuteReader();
                 if (reader.Read())
@@ -100,7 +100,7 @@ namespace GradingSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(ex.Message+"\n"+ username+"\nrawr"+password, "Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
