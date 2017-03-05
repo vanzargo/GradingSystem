@@ -23,13 +23,9 @@ C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\bin\De
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csprojResolveAssemblyReference.cache
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddTeacherForm.resources
-C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ClassSched.resources
-C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradingSheet.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.LoginForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.MainForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.Properties.Resources.resources
-C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherLoading.resources
-C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherMainForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.GenerateResource.Cache
 D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe.config
 D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
@@ -46,3 +42,6 @@ D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\Gradi
 D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.GenerateResource.Cache
 D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe
 D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\bin\Debug\GradingSystem.pdb
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ClassSchedForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradingSheetForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherLoadingForm.resources
