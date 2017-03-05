@@ -68,13 +68,13 @@ namespace GradingSystem
 
                 if (reader.HasRows)
                 {
-                    
-                    MainForm admin = new MainForm(txtPosition.Text);
+                    Program.user_id = reader.GetString(reader.GetOrdinal("User_ID"));
+                    Program.position = txtPosition.Text;
+                    MainForm admin = new MainForm();
                     admin.Show();
                         this.Hide();
                     if (txtPosition.Text == "Admin")
                     {
-
                     }
                     else if(txtPosition.Text == "Teacher")
                     {

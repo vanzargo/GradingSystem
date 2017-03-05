@@ -9,6 +9,8 @@ namespace GradingSystem
     static class Program
     {
         static public String position = "";
+        static public String user_id = "";
+        static public string connectionString = "server=localhost;database=gradingsystem;uid=root;pwd=;";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

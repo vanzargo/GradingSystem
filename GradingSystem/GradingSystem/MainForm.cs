@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -108,7 +109,33 @@ namespace GradingSystem
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.position = "";
+            Program.user_id = "";
             Close();
+        }
+
+        DataTable GetAdvisoryClass()
+        {
+            DataTable dt = new DataTable();
+            MySqlConnection con;
+            con = new MySqlConnection(Program.connectionString);
+            con.Open();
+            String sql;
+            if (Program.position=="Admin")
+            {
+                sql = "SELECT `advisory_class` FROM `teacher_schedule`";
+            } else
+            {
+                sql = "SELECT `advisory_class` FROM `teacher_schedule` WHERE `User_ID` = " + Program.user_id;
+            }
+            using (MySqlCommand cmd = new MySqlCommand(sql, con))
+            {
+
+                MySqlDataAdapter adpt = new MySqlDataAdapter(cmd);
+                adpt.Fill(dt);
+            }
+
+
+            return dt;
         }
     }
 }
