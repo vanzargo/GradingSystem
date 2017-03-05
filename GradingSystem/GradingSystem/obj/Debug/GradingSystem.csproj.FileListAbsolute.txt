@@ -45,3 +45,4 @@ D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\bin\Debug\Gradi
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ClassSchedForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradingSheetForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherLoadingForm.resources
+C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.GradesForm.resources

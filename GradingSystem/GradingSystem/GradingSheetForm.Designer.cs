@@ -29,8 +29,16 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblSubject = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -41,6 +49,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.MajorLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
@@ -68,8 +78,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -94,6 +102,10 @@
             this.label34 = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
             this.MinorLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.txtQAS = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -149,43 +161,38 @@
             this.panel23 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.dataGridView24 = new System.Windows.Forms.DataGridView();
+            this.dataGridView22 = new System.Windows.Forms.DataGridView();
+            this.dataGridView21 = new System.Windows.Forms.DataGridView();
+            this.dataGridView20 = new System.Windows.Forms.DataGridView();
+            this.dataGridView19 = new System.Windows.Forms.DataGridView();
+            this.dataGridView18 = new System.Windows.Forms.DataGridView();
+            this.dataGridView17 = new System.Windows.Forms.DataGridView();
+            this.dataGridView16 = new System.Windows.Forms.DataGridView();
+            this.dataGridView15 = new System.Windows.Forms.DataGridView();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dataGridView14 = new System.Windows.Forms.DataGridView();
+            this.dataGridView13 = new System.Windows.Forms.DataGridView();
+            this.dataGridView12 = new System.Windows.Forms.DataGridView();
+            this.dataGridView11 = new System.Windows.Forms.DataGridView();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.dataGridView9 = new System.Windows.Forms.DataGridView();
             this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.dataGridView11 = new System.Windows.Forms.DataGridView();
-            this.dataGridView12 = new System.Windows.Forms.DataGridView();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
-            this.dataGridView16 = new System.Windows.Forms.DataGridView();
-            this.dataGridView17 = new System.Windows.Forms.DataGridView();
-            this.dataGridView18 = new System.Windows.Forms.DataGridView();
-            this.dataGridView19 = new System.Windows.Forms.DataGridView();
-            this.dataGridView20 = new System.Windows.Forms.DataGridView();
-            this.dataGridView21 = new System.Windows.Forms.DataGridView();
-            this.dataGridView22 = new System.Windows.Forms.DataGridView();
             this.dataGridView23 = new System.Windows.Forms.DataGridView();
-            this.dataGridView24 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel44.SuspendLayout();
+            this.panel42.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -193,6 +200,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.panel17.SuspendLayout();
             this.MajorLayoutPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
@@ -206,10 +214,11 @@
             this.panel34.SuspendLayout();
             this.panel35.SuspendLayout();
             this.panel36.SuspendLayout();
-            this.panel37.SuspendLayout();
             this.panel38.SuspendLayout();
             this.panel39.SuspendLayout();
             this.panel40.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel53.SuspendLayout();
             this.MinorLayoutPanel.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -229,34 +238,31 @@
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
+            this.panel41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tableLayoutPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
-            this.panel53.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -264,18 +270,47 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.ForestGreen;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.panel43, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel7, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.88731F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.134094F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1354, 701);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel43
+            // 
+            this.panel43.Controls.Add(this.button3);
+            this.panel43.Controls.Add(this.button1);
+            this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel43.Location = new System.Drawing.Point(3, 660);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(1348, 38);
+            this.panel43.TabIndex = 3;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1245, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 31);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Print";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1153, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -292,57 +327,112 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel3.ColumnCount = 5;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.tableLayoutPanel3.Controls.Add(this.panel44, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.panel42, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel5, 4, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 67);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 63);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1348, 32);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1348, 36);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // panel44
+            // 
+            this.panel44.Controls.Add(this.comboBox1);
+            this.panel44.Controls.Add(this.button2);
+            this.panel44.Location = new System.Drawing.Point(724, 3);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(377, 30);
+            this.panel44.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1st Grading",
+            "2nd Grading",
+            "3rd Grading",
+            "4th Grading"});
+            this.comboBox1.Location = new System.Drawing.Point(30, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(216, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 26);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Final Rating";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel42
+            // 
+            this.panel42.Controls.Add(this.label38);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel42.Location = new System.Drawing.Point(3, 3);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(94, 30);
+            this.panel42.TabIndex = 2;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(16, 4);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(62, 18);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "Gradelvl";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.lblSubject);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(627, 3);
+            this.panel4.Location = new System.Drawing.Point(633, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(94, 26);
+            this.panel4.Size = new System.Drawing.Size(85, 30);
             this.panel4.TabIndex = 1;
             // 
             // lblSubject
             // 
             this.lblSubject.AutoSize = true;
             this.lblSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubject.Location = new System.Drawing.Point(24, 4);
+            this.lblSubject.Location = new System.Drawing.Point(15, 6);
             this.lblSubject.Name = "lblSubject";
-            this.lblSubject.Size = new System.Drawing.Size(46, 18);
+            this.lblSubject.Size = new System.Drawing.Size(57, 18);
             this.lblSubject.TabIndex = 0;
-            this.lblSubject.Text = "label2";
+            this.lblSubject.Text = "Subject";
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblGradelvl);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(1251, 3);
+            this.panel5.Location = new System.Drawing.Point(1107, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(94, 26);
+            this.panel5.Size = new System.Drawing.Size(238, 30);
             this.panel5.TabIndex = 2;
             // 
             // lblGradelvl
             // 
             this.lblGradelvl.AutoSize = true;
             this.lblGradelvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGradelvl.Location = new System.Drawing.Point(18, 4);
+            this.lblGradelvl.Location = new System.Drawing.Point(2, 6);
             this.lblGradelvl.Name = "lblGradelvl";
-            this.lblGradelvl.Size = new System.Drawing.Size(46, 18);
+            this.lblGradelvl.Size = new System.Drawing.Size(102, 18);
             this.lblGradelvl.TabIndex = 0;
-            this.lblGradelvl.Text = "label2";
+            this.lblGradelvl.Text = "TeacherName";
             // 
             // tableLayoutPanel4
             // 
@@ -376,7 +466,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 0);
+            this.label1.Location = new System.Drawing.Point(11, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 24);
             this.label1.TabIndex = 0;
@@ -392,7 +482,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1348, 554);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1348, 546);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // panel17
@@ -405,7 +495,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(3, 3);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1342, 548);
+            this.panel17.Size = new System.Drawing.Size(1342, 540);
             this.panel17.TabIndex = 4;
             // 
             // MajorLayoutPanel
@@ -493,6 +583,30 @@
             this.MajorLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.MajorLayoutPanel.Size = new System.Drawing.Size(2000, 123);
             this.MajorLayoutPanel.TabIndex = 35;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.ForeColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(3, 93);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(295, 24);
+            this.panel3.TabIndex = 35;
+            // 
+            // label36
+            // 
+            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(74, 1);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(44, 20);
+            this.label36.TabIndex = 0;
+            this.label36.Text = "Boys";
             // 
             // textBox1
             // 
@@ -766,31 +880,6 @@
             this.label31.TabIndex = 3;
             this.label31.Text = "WS";
             // 
-            // panel37
-            // 
-            this.panel37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel37.Controls.Add(this.label32);
-            this.panel37.ForeColor = System.Drawing.Color.Black;
-            this.panel37.Location = new System.Drawing.Point(3, 153);
-            this.panel37.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
-            this.panel37.Name = "panel37";
-            this.MajorLayoutPanel.SetRowSpan(this.panel37, 4);
-            this.panel37.Size = new System.Drawing.Size(295, 84);
-            this.panel37.TabIndex = 0;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(74, 31);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(148, 20);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "STUDENT\'S NAME";
-            // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1013,6 +1102,56 @@
             this.label35.Size = new System.Drawing.Size(44, 16);
             this.label35.TabIndex = 4;
             this.label35.Text = "Score";
+            // 
+            // panel37
+            // 
+            this.panel37.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel37.BackColor = System.Drawing.Color.White;
+            this.panel37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel37.Controls.Add(this.label32);
+            this.panel37.ForeColor = System.Drawing.Color.Black;
+            this.panel37.Location = new System.Drawing.Point(3, 153);
+            this.panel37.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.panel37.Name = "panel37";
+            this.MajorLayoutPanel.SetRowSpan(this.panel37, 4);
+            this.panel37.Size = new System.Drawing.Size(295, 84);
+            this.panel37.TabIndex = 0;
+            // 
+            // label32
+            // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(74, 31);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(148, 20);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "STUDENT\'S NAME";
+            // 
+            // panel53
+            // 
+            this.panel53.BackColor = System.Drawing.Color.White;
+            this.panel53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel53.Controls.Add(this.label49);
+            this.panel53.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel53.ForeColor = System.Drawing.Color.Black;
+            this.panel53.Location = new System.Drawing.Point(3, 3);
+            this.panel53.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.panel53.Name = "panel53";
+            this.MajorLayoutPanel.SetRowSpan(this.panel53, 3);
+            this.panel53.Size = new System.Drawing.Size(295, 84);
+            this.panel53.TabIndex = 0;
+            // 
+            // label49
+            // 
+            this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(74, 31);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(148, 20);
+            this.label49.TabIndex = 0;
+            this.label49.Text = "STUDENT\'S NAME";
             // 
             // MinorLayoutPanel
             // 
@@ -1617,7 +1756,7 @@
             // 
             // tableLayoutPanel6
             // 
-            this.tableLayoutPanel6.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.Black;
             this.tableLayoutPanel6.ColumnCount = 12;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 465F));
@@ -1664,6 +1803,236 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel6.Size = new System.Drawing.Size(2000, 434);
             this.tableLayoutPanel6.TabIndex = 6;
+            // 
+            // dataGridView24
+            // 
+            this.dataGridView24.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView24.ColumnHeadersVisible = false;
+            this.dataGridView24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView24.Location = new System.Drawing.Point(1785, 232);
+            this.dataGridView24.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView24.Name = "dataGridView24";
+            this.dataGridView24.RowHeadersVisible = false;
+            this.dataGridView24.Size = new System.Drawing.Size(218, 202);
+            this.dataGridView24.TabIndex = 46;
+            // 
+            // dataGridView22
+            // 
+            this.dataGridView22.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView22.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView22.ColumnHeadersVisible = false;
+            this.dataGridView22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView22.Location = new System.Drawing.Point(1620, 232);
+            this.dataGridView22.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView22.Name = "dataGridView22";
+            this.dataGridView22.RowHeadersVisible = false;
+            this.dataGridView22.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView22.TabIndex = 44;
+            // 
+            // dataGridView21
+            // 
+            this.dataGridView21.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView21.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView21.ColumnHeadersVisible = false;
+            this.dataGridView21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView21.Location = new System.Drawing.Point(1555, 232);
+            this.dataGridView21.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView21.Name = "dataGridView21";
+            this.dataGridView21.RowHeadersVisible = false;
+            this.dataGridView21.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView21.TabIndex = 43;
+            // 
+            // dataGridView20
+            // 
+            this.dataGridView20.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView20.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView20.ColumnHeadersVisible = false;
+            this.dataGridView20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView20.Location = new System.Drawing.Point(1490, 232);
+            this.dataGridView20.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView20.Name = "dataGridView20";
+            this.dataGridView20.RowHeadersVisible = false;
+            this.dataGridView20.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView20.TabIndex = 42;
+            // 
+            // dataGridView19
+            // 
+            this.dataGridView19.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView19.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView19.ColumnHeadersVisible = false;
+            this.dataGridView19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView19.Location = new System.Drawing.Point(1425, 232);
+            this.dataGridView19.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView19.Name = "dataGridView19";
+            this.dataGridView19.RowHeadersVisible = false;
+            this.dataGridView19.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView19.TabIndex = 41;
+            // 
+            // dataGridView18
+            // 
+            this.dataGridView18.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView18.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView18.ColumnHeadersVisible = false;
+            this.dataGridView18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView18.Location = new System.Drawing.Point(1360, 232);
+            this.dataGridView18.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView18.Name = "dataGridView18";
+            this.dataGridView18.RowHeadersVisible = false;
+            this.dataGridView18.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView18.TabIndex = 40;
+            // 
+            // dataGridView17
+            // 
+            this.dataGridView17.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView17.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView17.ColumnHeadersVisible = false;
+            this.dataGridView17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView17.Location = new System.Drawing.Point(895, 232);
+            this.dataGridView17.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView17.Name = "dataGridView17";
+            this.dataGridView17.RowHeadersVisible = false;
+            this.dataGridView17.Size = new System.Drawing.Size(465, 202);
+            this.dataGridView17.TabIndex = 39;
+            // 
+            // dataGridView16
+            // 
+            this.dataGridView16.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView16.ColumnHeadersVisible = false;
+            this.dataGridView16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView16.Location = new System.Drawing.Point(830, 232);
+            this.dataGridView16.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView16.Name = "dataGridView16";
+            this.dataGridView16.RowHeadersVisible = false;
+            this.dataGridView16.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView16.TabIndex = 38;
+            // 
+            // dataGridView15
+            // 
+            this.dataGridView15.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView15.ColumnHeadersVisible = false;
+            this.dataGridView15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView15.Location = new System.Drawing.Point(765, 232);
+            this.dataGridView15.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView15.Name = "dataGridView15";
+            this.dataGridView15.RowHeadersVisible = false;
+            this.dataGridView15.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView15.TabIndex = 37;
+            // 
+            // panel41
+            // 
+            this.panel41.BackColor = System.Drawing.Color.White;
+            this.panel41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel41.Controls.Add(this.label37);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel41.ForeColor = System.Drawing.Color.Black;
+            this.panel41.Location = new System.Drawing.Point(3, 205);
+            this.panel41.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(295, 24);
+            this.panel41.TabIndex = 36;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(74, 1);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(41, 20);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Girls";
+            // 
+            // dataGridView14
+            // 
+            this.dataGridView14.AllowUserToAddRows = false;
+            this.dataGridView14.AllowUserToResizeColumns = false;
+            this.dataGridView14.AllowUserToResizeRows = false;
+            this.dataGridView14.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView14.ColumnHeadersVisible = false;
+            this.dataGridView14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView14.Location = new System.Drawing.Point(1785, 0);
+            this.dataGridView14.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView14.Name = "dataGridView14";
+            this.dataGridView14.RowHeadersVisible = false;
+            this.dataGridView14.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView14.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView14.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView14.Size = new System.Drawing.Size(218, 202);
+            this.dataGridView14.TabIndex = 16;
+            // 
+            // dataGridView13
+            // 
+            this.dataGridView13.AllowUserToAddRows = false;
+            this.dataGridView13.AllowUserToResizeColumns = false;
+            this.dataGridView13.AllowUserToResizeRows = false;
+            this.dataGridView13.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView13.ColumnHeadersVisible = false;
+            this.dataGridView13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView13.Location = new System.Drawing.Point(1685, 0);
+            this.dataGridView13.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView13.Name = "dataGridView13";
+            this.dataGridView13.RowHeadersVisible = false;
+            this.dataGridView13.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView13.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView13.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView13.Size = new System.Drawing.Size(100, 202);
+            this.dataGridView13.TabIndex = 15;
+            // 
+            // dataGridView12
+            // 
+            this.dataGridView12.AllowUserToAddRows = false;
+            this.dataGridView12.AllowUserToResizeColumns = false;
+            this.dataGridView12.AllowUserToResizeRows = false;
+            this.dataGridView12.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView12.ColumnHeadersVisible = false;
+            this.dataGridView12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView12.Location = new System.Drawing.Point(1620, 0);
+            this.dataGridView12.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView12.Name = "dataGridView12";
+            this.dataGridView12.RowHeadersVisible = false;
+            this.dataGridView12.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView12.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView12.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView12.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView12.TabIndex = 14;
+            // 
+            // dataGridView11
+            // 
+            this.dataGridView11.AllowUserToAddRows = false;
+            this.dataGridView11.AllowUserToResizeColumns = false;
+            this.dataGridView11.AllowUserToResizeRows = false;
+            this.dataGridView11.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView11.ColumnHeadersVisible = false;
+            this.dataGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView11.Location = new System.Drawing.Point(1555, 0);
+            this.dataGridView11.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView11.Name = "dataGridView11";
+            this.dataGridView11.RowHeadersVisible = false;
+            this.dataGridView11.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView11.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView11.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView11.Size = new System.Drawing.Size(65, 202);
+            this.dataGridView11.TabIndex = 13;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.ColumnHeadersVisible = false;
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(0, 232);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersVisible = false;
+            this.dataGridView5.Size = new System.Drawing.Size(300, 202);
+            this.dataGridView5.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -1716,53 +2085,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(465, 202);
             this.dataGridView2.TabIndex = 3;
             // 
-            // tableLayoutPanel7
-            // 
-            this.tableLayoutPanel7.ColumnCount = 6;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel7.Controls.Add(this.button1, 5, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button2, 4, 0);
-            this.tableLayoutPanel7.Controls.Add(this.button3, 3, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 668);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1348, 30);
-            this.tableLayoutPanel7.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1123, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(899, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(675, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // dataGridView3
             // 
             this.dataGridView3.AllowUserToAddRows = false;
@@ -1783,19 +2105,6 @@
             this.dataGridView3.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dataGridView3.Size = new System.Drawing.Size(65, 202);
             this.dataGridView3.TabIndex = 6;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.ColumnHeadersVisible = false;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(0, 232);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.Size = new System.Drawing.Size(300, 202);
-            this.dataGridView5.TabIndex = 7;
             // 
             // dataGridView6
             // 
@@ -1894,259 +2203,6 @@
             this.dataGridView10.Size = new System.Drawing.Size(65, 202);
             this.dataGridView10.TabIndex = 12;
             // 
-            // dataGridView11
-            // 
-            this.dataGridView11.AllowUserToAddRows = false;
-            this.dataGridView11.AllowUserToResizeColumns = false;
-            this.dataGridView11.AllowUserToResizeRows = false;
-            this.dataGridView11.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.ColumnHeadersVisible = false;
-            this.dataGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView11.Location = new System.Drawing.Point(1555, 0);
-            this.dataGridView11.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView11.Name = "dataGridView11";
-            this.dataGridView11.RowHeadersVisible = false;
-            this.dataGridView11.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView11.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView11.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView11.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView11.TabIndex = 13;
-            // 
-            // dataGridView12
-            // 
-            this.dataGridView12.AllowUserToAddRows = false;
-            this.dataGridView12.AllowUserToResizeColumns = false;
-            this.dataGridView12.AllowUserToResizeRows = false;
-            this.dataGridView12.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView12.ColumnHeadersVisible = false;
-            this.dataGridView12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView12.Location = new System.Drawing.Point(1620, 0);
-            this.dataGridView12.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView12.Name = "dataGridView12";
-            this.dataGridView12.RowHeadersVisible = false;
-            this.dataGridView12.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView12.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView12.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView12.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView12.TabIndex = 14;
-            // 
-            // dataGridView13
-            // 
-            this.dataGridView13.AllowUserToAddRows = false;
-            this.dataGridView13.AllowUserToResizeColumns = false;
-            this.dataGridView13.AllowUserToResizeRows = false;
-            this.dataGridView13.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.ColumnHeadersVisible = false;
-            this.dataGridView13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView13.Location = new System.Drawing.Point(1685, 0);
-            this.dataGridView13.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.RowHeadersVisible = false;
-            this.dataGridView13.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView13.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView13.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView13.Size = new System.Drawing.Size(100, 202);
-            this.dataGridView13.TabIndex = 15;
-            // 
-            // dataGridView14
-            // 
-            this.dataGridView14.AllowUserToAddRows = false;
-            this.dataGridView14.AllowUserToResizeColumns = false;
-            this.dataGridView14.AllowUserToResizeRows = false;
-            this.dataGridView14.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.ColumnHeadersVisible = false;
-            this.dataGridView14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView14.Location = new System.Drawing.Point(1785, 0);
-            this.dataGridView14.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.RowHeadersVisible = false;
-            this.dataGridView14.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView14.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView14.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView14.Size = new System.Drawing.Size(218, 202);
-            this.dataGridView14.TabIndex = 16;
-            // 
-            // panel53
-            // 
-            this.panel53.BackColor = System.Drawing.Color.White;
-            this.panel53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel53.Controls.Add(this.label49);
-            this.panel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel53.ForeColor = System.Drawing.Color.Black;
-            this.panel53.Location = new System.Drawing.Point(3, 3);
-            this.panel53.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
-            this.panel53.Name = "panel53";
-            this.MajorLayoutPanel.SetRowSpan(this.panel53, 3);
-            this.panel53.Size = new System.Drawing.Size(295, 84);
-            this.panel53.TabIndex = 0;
-            // 
-            // label49
-            // 
-            this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(74, 31);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(148, 20);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "STUDENT\'S NAME";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Controls.Add(this.label36);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.ForeColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(3, 93);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(295, 24);
-            this.panel3.TabIndex = 35;
-            // 
-            // label36
-            // 
-            this.label36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(74, 1);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(44, 20);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Boys";
-            // 
-            // panel41
-            // 
-            this.panel41.BackColor = System.Drawing.Color.White;
-            this.panel41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel41.Controls.Add(this.label37);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel41.ForeColor = System.Drawing.Color.Black;
-            this.panel41.Location = new System.Drawing.Point(3, 205);
-            this.panel41.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(295, 24);
-            this.panel41.TabIndex = 36;
-            // 
-            // label37
-            // 
-            this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(74, 1);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(41, 20);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Girls";
-            // 
-            // dataGridView15
-            // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.ColumnHeadersVisible = false;
-            this.dataGridView15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView15.Location = new System.Drawing.Point(765, 232);
-            this.dataGridView15.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.RowHeadersVisible = false;
-            this.dataGridView15.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView15.TabIndex = 37;
-            // 
-            // dataGridView16
-            // 
-            this.dataGridView16.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView16.ColumnHeadersVisible = false;
-            this.dataGridView16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView16.Location = new System.Drawing.Point(830, 232);
-            this.dataGridView16.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView16.Name = "dataGridView16";
-            this.dataGridView16.RowHeadersVisible = false;
-            this.dataGridView16.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView16.TabIndex = 38;
-            // 
-            // dataGridView17
-            // 
-            this.dataGridView17.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView17.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView17.ColumnHeadersVisible = false;
-            this.dataGridView17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView17.Location = new System.Drawing.Point(895, 232);
-            this.dataGridView17.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView17.Name = "dataGridView17";
-            this.dataGridView17.RowHeadersVisible = false;
-            this.dataGridView17.Size = new System.Drawing.Size(465, 202);
-            this.dataGridView17.TabIndex = 39;
-            // 
-            // dataGridView18
-            // 
-            this.dataGridView18.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView18.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView18.ColumnHeadersVisible = false;
-            this.dataGridView18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView18.Location = new System.Drawing.Point(1360, 232);
-            this.dataGridView18.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView18.Name = "dataGridView18";
-            this.dataGridView18.RowHeadersVisible = false;
-            this.dataGridView18.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView18.TabIndex = 40;
-            // 
-            // dataGridView19
-            // 
-            this.dataGridView19.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView19.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView19.ColumnHeadersVisible = false;
-            this.dataGridView19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView19.Location = new System.Drawing.Point(1425, 232);
-            this.dataGridView19.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView19.Name = "dataGridView19";
-            this.dataGridView19.RowHeadersVisible = false;
-            this.dataGridView19.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView19.TabIndex = 41;
-            // 
-            // dataGridView20
-            // 
-            this.dataGridView20.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView20.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView20.ColumnHeadersVisible = false;
-            this.dataGridView20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView20.Location = new System.Drawing.Point(1490, 232);
-            this.dataGridView20.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView20.Name = "dataGridView20";
-            this.dataGridView20.RowHeadersVisible = false;
-            this.dataGridView20.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView20.TabIndex = 42;
-            // 
-            // dataGridView21
-            // 
-            this.dataGridView21.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView21.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView21.ColumnHeadersVisible = false;
-            this.dataGridView21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView21.Location = new System.Drawing.Point(1555, 232);
-            this.dataGridView21.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView21.Name = "dataGridView21";
-            this.dataGridView21.RowHeadersVisible = false;
-            this.dataGridView21.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView21.TabIndex = 43;
-            // 
-            // dataGridView22
-            // 
-            this.dataGridView22.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView22.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView22.ColumnHeadersVisible = false;
-            this.dataGridView22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView22.Location = new System.Drawing.Point(1620, 232);
-            this.dataGridView22.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView22.Name = "dataGridView22";
-            this.dataGridView22.RowHeadersVisible = false;
-            this.dataGridView22.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView22.TabIndex = 44;
-            // 
             // dataGridView23
             // 
             this.dataGridView23.BackgroundColor = System.Drawing.Color.White;
@@ -2158,19 +2214,6 @@
             this.dataGridView23.RowHeadersVisible = false;
             this.dataGridView23.Size = new System.Drawing.Size(100, 202);
             this.dataGridView23.TabIndex = 45;
-            // 
-            // dataGridView24
-            // 
-            this.dataGridView24.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView24.ColumnHeadersVisible = false;
-            this.dataGridView24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView24.Location = new System.Drawing.Point(1785, 232);
-            this.dataGridView24.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView24.Name = "dataGridView24";
-            this.dataGridView24.RowHeadersVisible = false;
-            this.dataGridView24.Size = new System.Drawing.Size(218, 202);
-            this.dataGridView24.TabIndex = 46;
             // 
             // GradingSheetForm
             // 
@@ -2184,8 +2227,12 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.GradingSheet_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel43.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel44.ResumeLayout(false);
+            this.panel42.ResumeLayout(false);
+            this.panel42.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -2197,6 +2244,8 @@
             this.panel17.ResumeLayout(false);
             this.MajorLayoutPanel.ResumeLayout(false);
             this.MajorLayoutPanel.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel24.ResumeLayout(false);
             this.panel24.PerformLayout();
             this.panel25.ResumeLayout(false);
@@ -2223,14 +2272,16 @@
             this.panel35.PerformLayout();
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
             this.panel39.ResumeLayout(false);
             this.panel39.PerformLayout();
             this.panel40.ResumeLayout(false);
             this.panel40.PerformLayout();
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel53.ResumeLayout(false);
+            this.panel53.PerformLayout();
             this.MinorLayoutPanel.ResumeLayout(false);
             this.MinorLayoutPanel.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -2268,37 +2319,32 @@
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tableLayoutPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
-            this.panel53.ResumeLayout(false);
-            this.panel53.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel41.ResumeLayout(false);
-            this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2375,7 +2421,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel MajorLayoutPanel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel24;
@@ -2432,7 +2477,6 @@
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel53;
@@ -2460,5 +2504,11 @@
         private System.Windows.Forms.DataGridView dataGridView16;
         private System.Windows.Forms.DataGridView dataGridView15;
         private System.Windows.Forms.DataGridView dataGridView23;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel44;
     }
 }

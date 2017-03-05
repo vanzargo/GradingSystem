@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace GradingSystem
 {
-    public partial class GradesForm : Form
+    public partial class FinalRatingForm : Form
     {
-        public GradesForm()
+        public FinalRatingForm()
         {
             InitializeComponent();
         }
 
-
+   
     }
 }
