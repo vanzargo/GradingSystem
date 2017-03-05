@@ -65,6 +65,12 @@
     <Compile Include="ClassSchedForm.Designer.cs">
       <DependentUpon>ClassSchedForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FinalRatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalRatingForm.Designer.cs">
+      <DependentUpon>FinalRatingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GradesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClassSchedForm.resx">
       <DependentUpon>ClassSchedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalRatingForm.resx">
+      <DependentUpon>FinalRatingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GradesForm.resx">
       <DependentUpon>GradesForm.cs</DependentUpon>
