@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2017 at 08:30 PM
+-- Generation Time: Mar 05, 2017 at 09:18 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -65,7 +65,6 @@ CREATE TABLE IF NOT EXISTS `student_perf` (
   `PTS6` int(11) NOT NULL,
   `PTS7` int(11) NOT NULL,
   `PTS8` int(11) NOT NULL,
-  `subject` varchar(255) NOT NULL,
   `quarter_ID` int(11) NOT NULL,
   PRIMARY KEY (`perf_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -85,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `student_profile` (
   `student_Level` varchar(45) NOT NULL,
   PRIMARY KEY (`student_ID`),
   UNIQUE KEY `Student_ID_UNIQUE` (`student_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `student_profile`
@@ -105,7 +104,6 @@ CREATE TABLE IF NOT EXISTS `student_qa` (
   `student_ID` int(11) NOT NULL,
   `quarterly_score` int(11) NOT NULL,
   `quarter_ID` int(11) NOT NULL,
-  `subject` varchar(255) NOT NULL,
   PRIMARY KEY (`quarterly_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -121,22 +119,9 @@ CREATE TABLE IF NOT EXISTS `student_subjgrade` (
   `word_ID` int(11) NOT NULL,
   `task_ID` int(11) NOT NULL,
   `assess_ID` int(11) NOT NULL,
-  `initial_grade` float NOT NULL,
-  `quarterly_grade` float NOT NULL,
-  `quarter_ID` int(11) NOT NULL,
-  `subject` varchar(255) NOT NULL,
-  PRIMARY KEY (`subjgrade_ID`)
+  `initial_grade` int(11) NOT NULL,
+  `quarterly_grade` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `student_subjgrade`
---
-
-INSERT INTO `student_subjgrade` (`subjgrade_ID`, `student_ID`, `word_ID`, `task_ID`, `assess_ID`, `initial_grade`, `quarterly_grade`, `quarter_ID`, `subject`) VALUES
-(1, 1, 1, 1, 1, 84.27, 90, 1, 'Math'),
-(2, 1, 1, 1, 1, 84.27, 90, 2, 'Math'),
-(3, 1, 1, 1, 1, 84.27, 90, 3, 'Math'),
-(4, 1, 1, 1, 1, 84.27, 90, 4, 'Math');
 
 -- --------------------------------------------------------
 
@@ -155,17 +140,16 @@ CREATE TABLE IF NOT EXISTS `student_ww` (
   `WWS6` int(11) DEFAULT NULL,
   `WWS7` int(11) DEFAULT NULL,
   `WWS8` int(11) DEFAULT NULL,
-  `subject` varchar(255) NOT NULL,
   `quarter_ID` int(11) NOT NULL,
   PRIMARY KEY (`written_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `student_ww`
 --
 
-INSERT INTO `student_ww` (`written_ID`, `student_ID`, `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, `subject`, `quarter_ID`) VALUES
-(1, 1, 20, 15, 15, 10, 15, 20, 15, 25, 'Math', 1);
+INSERT INTO `student_ww` (`written_ID`, `student_ID`, `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, `quarter_ID`) VALUES
+(1, 1, 20, 15, 15, 10, 15, 20, 15, 25, 0);
 
 -- --------------------------------------------------------
 
@@ -221,7 +205,7 @@ CREATE TABLE IF NOT EXISTS `teacher_schedule` (
 --
 
 INSERT INTO `teacher_schedule` (`teacher_schedule_id`, `User_ID`, `7_subject`, `7_GradeLevel`, `8_subject`, `8_GradeLevel`, `9_subject`, `9_GradeLevel`, `10_subject`, `10_GradeLevel`, `12_subject`, `12_GradeLevel`, `1_subject`, `1_GradeLevel`, `2_subject`, `2_GradeLevel`, `advisory_class`) VALUES
-(3, 1, 'M.A.P.E.H', 'Grade 1', 'T.L.E', 'Grade 2', 'S.S.', 'Grade 6', 'Filipino', 'Grade 5', 'Science', 'Grade 4', 'English', 'Grade 3', 'Math', 'Grade 8', 'Grade 8');
+(3, 1, 'Math', 'Grade 1', 'English', 'Grade 2', 'Science', 'Grade 3', 'Filipino', 'Grade 4', 'S.S.', 'Grade 5', 'M.A.P.E.H', 'Grade 6', 'T.L.E', 'Grade 6', 'Grade 2');
 
 -- --------------------------------------------------------
 
