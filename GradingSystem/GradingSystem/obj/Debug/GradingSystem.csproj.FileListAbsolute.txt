@@ -53,3 +53,7 @@ C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\De
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.FinalRatingForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ListForm.resources
 C:\Documents and Settings\Zyrus\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentListForm.resources
+D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AuditTrailForm.resources
+D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.FacultyListForm.resources
+D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.ListForm.resources
+D:\Librarian\Documents\GradingSystem\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentListForm.resources

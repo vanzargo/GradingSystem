@@ -240,6 +240,11 @@ namespace GradingSystem
             Close();
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ini();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string gradeLevel = dataGridView_AClass.SelectedRows[0].Cells[1].Value.ToString().Substring(6);
@@ -249,9 +254,27 @@ namespace GradingSystem
             gsf.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            ini();
+            string gradeLevel = dataGridView_SClass.SelectedRows[0].Cells[1].Value.ToString().Substring(6);
+            string subject = dataGridView_SClass.SelectedRows[0].Cells[0].Value.ToString();
+            string teacher = dataGridView_SClass.SelectedRows[0].Cells[2].Value.ToString();
+            GradingSheetForm gsf = new GradingSheetForm(gradeLevel, "1", subject, teacher);
+            gsf.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string gradeLevel = dataGridView_AClass.SelectedRows[0].Cells[1].Value.ToString().Substring(6);
+            GradesForm gsf = new GradesForm(gradeLevel);
+            gsf.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string gradeLevel = dataGridView_SClass.SelectedRows[0].Cells[1].Value.ToString().Substring(6);
+            GradesForm gsf = new GradesForm(gradeLevel);
+            gsf.Show();
         }
     }
 }

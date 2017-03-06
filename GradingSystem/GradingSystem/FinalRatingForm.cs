@@ -50,118 +50,30 @@ namespace GradingSystem
         private void loadBoys()
         {
             
-            dgvBSN.DataSource = Program.GetDataFromQuery("SELECT `student_FirstName`, `student_MI`, `student_LastName` FROM `student_profile` "+
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` "+
-            "WHERE `student_profile`.`student_Level` = 'Grade "+Grade+ "' " +
-            "AND `student_sex` = 'Male'"+
-            "AND `subject` = '" + Subject + "' AND `quarter_ID` = 1");
-            dgvBG.DataSource = Program.GetDataFromQuery("SELECT "+
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
+            dgvBSN.DataSource = Program.GetDataFromQuery("SELECT `student_FirstName`, `student_MI`, `student_LastName` FROM `student_profile` " +
+            "LEFT JOIN `student_finalgrade` ON `student_finalgrade`.`student_ID` = `student_profile`.`student_ID` " +
             "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 1) as `1st Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 2) as `2nd Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 3) as `3rd Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile` "+
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 4) as `4rth Grading`, " +
-            "(((SELECT `quarterly_grade` FROM `student_profile` "+
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 1) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 2) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 3) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Male'" +
-            "AND `quarter_ID` = 4))/ 4) as `Final Grade` ");
+            "AND `student_sex` = 'Male' " +
+            "AND `subject` = '" + Subject + "'");
+            dgvBG.DataSource = Program.GetDataFromQuery("SELECT `1st_Grading`, `2nd_Grading`, `3rd_Grading`, `4th_Grading`, ((`1st_Grading`+`2nd_Grading`+`3rd_Grading`+`4th_Grading`)/4) as `FINAL` FROM `student_profile` "+
+            "LEFT JOIN `student_finalgrade` ON `student_profile`.`student_ID` = `student_finalgrade`.`student_ID` "+
+            "WHERE `student_Level` = 'Grade " + Grade + "' " +
+            "AND `student_Sex` = 'Male' " +
+            "AND `subject` = '" + Subject + "'");
         }
 
         private void loadGirls()
         {
             dgvGSN.DataSource = Program.GetDataFromQuery("SELECT `student_FirstName`, `student_MI`, `student_LastName` FROM `student_profile` " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
+            "LEFT JOIN `student_finalgrade` ON `student_finalgrade`.`student_ID` = `student_profile`.`student_ID` " +
             "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `subject` = '" + Subject + "' AND `quarter_ID` = 1");
-            dgvGG.DataSource = Program.GetDataFromQuery("SELECT "+
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 1) as `1st Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 2) as `2nd Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 3) as `3rd Grading`, " +
-            "(SELECT `quarterly_grade` FROM `student_profile` " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 4) as `4rth Grading`, " +
-            "(((SELECT `quarterly_grade` FROM `student_profile` " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 1) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 2) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 3) + " +
-            "(SELECT `quarterly_grade` FROM `student_profile`  " +
-            "LEFT JOIN `student_subjgrade` ON `student_subjgrade`.`student_ID` = `student_profile`.`student_ID` " +
-            "WHERE `student_profile`.`student_Level` = 'Grade " + Grade + "' " +
-            "AND `subject` = '" + Subject + "' " +
-            "AND `student_sex` = 'Female'" +
-            "AND `quarter_ID` = 4))/ 4) as `Final Grade` ");
+            "AND `student_sex` = 'Female' " +
+            "AND `subject` = '" + Subject + "'");
+            dgvGG.DataSource = Program.GetDataFromQuery("SELECT `1st_Grading`, `2nd_Grading`, `3rd_Grading`, `4th_Grading`, ((`1st_Grading`+`2nd_Grading`+`3rd_Grading`+`4th_Grading`)/4) as `FINAL` FROM `student_profile` " +
+            "LEFT JOIN `student_finalgrade` ON `student_profile`.`student_ID` = `student_finalgrade`.`student_ID` " +
+            "WHERE `student_Level` = 'Grade " + Grade + "' " +
+            "AND `student_Sex` = 'Female' " +
+            "AND `subject` = '" + Subject + "'");
         }
 
         private void resizeDGV(DataGridView v, int defSize = 50, int lastSize = 100)

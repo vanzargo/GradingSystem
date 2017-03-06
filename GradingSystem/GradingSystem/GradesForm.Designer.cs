@@ -32,7 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -56,10 +59,12 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.dgvGSN = new System.Windows.Forms.DataGridView();
+            this.dgvGSG = new System.Windows.Forms.DataGridView();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.dgvBSN = new System.Windows.Forms.DataGridView();
+            this.dgvBSG = new System.Windows.Forms.DataGridView();
             this.panel14 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -69,11 +74,12 @@
             this.label15 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -86,15 +92,17 @@
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSG)).BeginInit();
             this.panel16.SuspendLayout();
-            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSG)).BeginInit();
             this.panel14.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel18.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -174,6 +182,15 @@
             this.panel2.Size = new System.Drawing.Size(321, 94);
             this.panel2.TabIndex = 0;
             // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.Controls.Add(this.label1);
+            this.panel20.Location = new System.Drawing.Point(0, -3);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(322, 65);
+            this.panel20.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -183,6 +200,24 @@
             this.label1.Size = new System.Drawing.Size(148, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "STUDENT\'S NAME";
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.White;
+            this.panel15.Controls.Add(this.label13);
+            this.panel15.Location = new System.Drawing.Point(0, 68);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(322, 24);
+            this.panel15.TabIndex = 0;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(135, 3);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(49, 18);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "BOYS";
             // 
             // panel3
             // 
@@ -404,7 +439,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.560977F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.560977F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.560977F));
+            this.tableLayoutPanel2.Controls.Add(this.dgvGSN, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.dgvGSG, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.panel16, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dgvBSN, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.dgvBSG, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 96);
@@ -415,6 +454,41 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1344, 406);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // dgvGSN
+            // 
+            this.dgvGSN.AllowUserToAddRows = false;
+            this.dgvGSN.AllowUserToDeleteRows = false;
+            this.dgvGSN.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvGSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGSN.ColumnHeadersVisible = false;
+            this.dgvGSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGSN.Location = new System.Drawing.Point(3, 223);
+            this.dgvGSN.MultiSelect = false;
+            this.dgvGSN.Name = "dgvGSN";
+            this.dgvGSN.ReadOnly = true;
+            this.dgvGSN.RowHeadersVisible = false;
+            this.dgvGSN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvGSN.Size = new System.Drawing.Size(321, 180);
+            this.dgvGSN.TabIndex = 5;
+            // 
+            // dgvGSG
+            // 
+            this.dgvGSG.AllowUserToAddRows = false;
+            this.dgvGSG.AllowUserToDeleteRows = false;
+            this.dgvGSG.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvGSG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGSG.ColumnHeadersVisible = false;
+            this.tableLayoutPanel2.SetColumnSpan(this.dgvGSG, 10);
+            this.dgvGSG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGSG.Location = new System.Drawing.Point(330, 223);
+            this.dgvGSG.MultiSelect = false;
+            this.dgvGSG.Name = "dgvGSG";
+            this.dgvGSG.ReadOnly = true;
+            this.dgvGSG.RowHeadersVisible = false;
+            this.dgvGSG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvGSG.Size = new System.Drawing.Size(1011, 180);
+            this.dgvGSG.TabIndex = 4;
             // 
             // panel16
             // 
@@ -434,23 +508,40 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "GIRLS";
             // 
-            // panel15
+            // dgvBSN
             // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Controls.Add(this.label13);
-            this.panel15.Location = new System.Drawing.Point(0, 68);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(322, 24);
-            this.panel15.TabIndex = 0;
+            this.dgvBSN.AllowUserToAddRows = false;
+            this.dgvBSN.AllowUserToDeleteRows = false;
+            this.dgvBSN.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvBSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBSN.ColumnHeadersVisible = false;
+            this.dgvBSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBSN.Location = new System.Drawing.Point(3, 3);
+            this.dgvBSN.MultiSelect = false;
+            this.dgvBSN.Name = "dgvBSN";
+            this.dgvBSN.ReadOnly = true;
+            this.dgvBSN.RowHeadersVisible = false;
+            this.dgvBSN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvBSN.Size = new System.Drawing.Size(321, 179);
+            this.dgvBSN.TabIndex = 2;
             // 
-            // label13
+            // dgvBSG
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(135, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 18);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "BOYS";
+            this.dgvBSG.AllowUserToAddRows = false;
+            this.dgvBSG.AllowUserToDeleteRows = false;
+            this.dgvBSG.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvBSG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBSG.ColumnHeadersVisible = false;
+            this.tableLayoutPanel2.SetColumnSpan(this.dgvBSG, 10);
+            this.dgvBSG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBSG.Location = new System.Drawing.Point(330, 3);
+            this.dgvBSG.MultiSelect = false;
+            this.dgvBSG.Name = "dgvBSG";
+            this.dgvBSG.ReadOnly = true;
+            this.dgvBSG.RowHeadersVisible = false;
+            this.dgvBSG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvBSG.Size = new System.Drawing.Size(1011, 179);
+            this.dgvBSG.TabIndex = 3;
             // 
             // panel14
             // 
@@ -551,15 +642,6 @@
             this.button1.Text = "Print";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.Controls.Add(this.label1);
-            this.panel20.Location = new System.Drawing.Point(0, -3);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(322, 65);
-            this.panel20.TabIndex = 1;
-            // 
             // GradesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -573,6 +655,10 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -596,10 +682,12 @@
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSG)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSG)).EndInit();
             this.panel14.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
@@ -608,8 +696,6 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -658,5 +744,9 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.DataGridView dgvGSN;
+        private System.Windows.Forms.DataGridView dgvGSG;
+        private System.Windows.Forms.DataGridView dgvBSN;
+        private System.Windows.Forms.DataGridView dgvBSG;
     }
 }
