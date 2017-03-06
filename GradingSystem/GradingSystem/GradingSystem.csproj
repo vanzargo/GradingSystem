@@ -62,7 +62,7 @@
     <Compile Include="AuditTrailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuditTrailForm.Designer.cs">
+    <Compile Include="AuditTrailForm.designer.cs">
       <DependentUpon>AuditTrailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassSchedForm.cs">
@@ -74,7 +74,7 @@
     <Compile Include="FacultyListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FacultyListForm.Designer.cs">
+    <Compile Include="FacultyListForm.designer.cs">
       <DependentUpon>FacultyListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FinalRatingForm.cs">
@@ -98,7 +98,7 @@
     <Compile Include="ListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListForm.Designer.cs">
+    <Compile Include="ListForm.designer.cs">
       <DependentUpon>ListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
@@ -118,7 +118,7 @@
     <Compile Include="StudentListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentListForm.Designer.cs">
+    <Compile Include="StudentListForm.designer.cs">
       <DependentUpon>StudentListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherLoadingForm.cs">

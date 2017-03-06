@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GradingSystem
 {
-    public partial class EnrolleesForm : Form
+    public partial class TeacherMainForm : Form
     {
-        public EnrolleesForm()
+        public TeacherMainForm()
         {
             InitializeComponent();
         }
