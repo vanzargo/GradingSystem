@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 06, 2017 at 09:43 PM
+-- Generation Time: Mar 06, 2017 at 08:30 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -51,59 +51,6 @@ CREATE TABLE IF NOT EXISTS `quar_assess` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `student_all_subject_grade`
---
-
-CREATE TABLE IF NOT EXISTS `student_all_subject_grade` (
-  `student_all_subject_grade_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `FILIPINO` int(11) NOT NULL,
-  `ENGLISH` int(11) NOT NULL,
-  `MATH` int(11) NOT NULL,
-  `SCIENCE` int(11) NOT NULL,
-  `AP` int(11) NOT NULL,
-  `VALUES` int(11) NOT NULL,
-  `MAPEH` int(11) NOT NULL,
-  `TLE` int(11) NOT NULL,
-  `student_id` int(11) NOT NULL,
-  PRIMARY KEY (`student_all_subject_grade_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `student_all_subject_grade`
---
-
-INSERT INTO `student_all_subject_grade` (`student_all_subject_grade_ID`, `FILIPINO`, `ENGLISH`, `MATH`, `SCIENCE`, `AP`, `VALUES`, `MAPEH`, `TLE`, `student_id`) VALUES
-(1, 80, 85, 90, 89, 88, 87, 86, 85, 1),
-(2, 89, 88, 85, 87, 86, 85, 84, 83, 2);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `student_finalgrade`
---
-
-CREATE TABLE IF NOT EXISTS `student_finalgrade` (
-  `student_FinalGrade_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `1st_Grading` int(11) NOT NULL,
-  `2nd_Grading` int(11) NOT NULL,
-  `3rd_Grading` int(11) NOT NULL,
-  `4th_Grading` int(11) NOT NULL,
-  `student_ID` int(11) NOT NULL,
-  `subject` varchar(255) NOT NULL,
-  PRIMARY KEY (`student_FinalGrade_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `student_finalgrade`
---
-
-INSERT INTO `student_finalgrade` (`student_FinalGrade_ID`, `1st_Grading`, `2nd_Grading`, `3rd_Grading`, `4th_Grading`, `student_ID`, `subject`) VALUES
-(1, 90, 90, 90, 90, 1, 'MATH'),
-(2, 90, 90, 80, 80, 2, 'MATH');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `student_perf`
 --
 
@@ -138,15 +85,14 @@ CREATE TABLE IF NOT EXISTS `student_profile` (
   `student_Level` varchar(45) NOT NULL,
   PRIMARY KEY (`student_ID`),
   UNIQUE KEY `Student_ID_UNIQUE` (`student_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `student_profile`
 --
 
 INSERT INTO `student_profile` (`student_ID`, `student_FirstName`, `student_MI`, `student_LastName`, `student_Sex`, `student_Level`) VALUES
-(1, 'Zy', 'S.', 'Gozar', 'Male', 'Grade 8'),
-(2, 'student', 'm', 'none', 'Female', 'Grade 8');
+(1, 'Zy', 'S.', 'Gozar', 'Male', 'Grade 8');
 
 -- --------------------------------------------------------
 
@@ -170,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `student_qa` (
 --
 
 CREATE TABLE IF NOT EXISTS `student_subjgrade` (
-  `subjgrade_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `subjgrade_ID` int(11) NOT NULL,
   `student_ID` int(11) NOT NULL,
   `word_ID` int(11) NOT NULL,
   `task_ID` int(11) NOT NULL,
@@ -180,7 +126,7 @@ CREATE TABLE IF NOT EXISTS `student_subjgrade` (
   `quarter_ID` int(11) NOT NULL,
   `subject` varchar(255) NOT NULL,
   PRIMARY KEY (`subjgrade_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `student_subjgrade`
@@ -190,11 +136,7 @@ INSERT INTO `student_subjgrade` (`subjgrade_ID`, `student_ID`, `word_ID`, `task_
 (1, 1, 1, 1, 1, 84.27, 90, 1, 'Math'),
 (2, 1, 1, 1, 1, 84.27, 90, 2, 'Math'),
 (3, 1, 1, 1, 1, 84.27, 90, 3, 'Math'),
-(4, 1, 1, 1, 1, 84.27, 90, 4, 'Math'),
-(5, 2, 1, 1, 1, 84.27, 90, 1, 'Math'),
-(6, 2, 1, 1, 1, 84.27, 90, 2, 'Math'),
-(7, 2, 1, 1, 1, 84.27, 80, 3, 'Math'),
-(8, 2, 1, 1, 1, 84.27, 80, 4, 'Math');
+(4, 1, 1, 1, 1, 84.27, 90, 4, 'Math');
 
 -- --------------------------------------------------------
 
@@ -216,15 +158,14 @@ CREATE TABLE IF NOT EXISTS `student_ww` (
   `subject` varchar(255) NOT NULL,
   `quarter_ID` int(11) NOT NULL,
   PRIMARY KEY (`written_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `student_ww`
 --
 
 INSERT INTO `student_ww` (`written_ID`, `student_ID`, `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, `subject`, `quarter_ID`) VALUES
-(1, 1, 20, 15, 15, 10, 15, 20, 15, 25, 'Math', 1),
-(2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0);
+(1, 1, 20, 15, 15, 10, 15, 20, 15, 25, 'Math', 1);
 
 -- --------------------------------------------------------
 
@@ -316,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `written_work` (
   `written_total_items` int(11) DEFAULT NULL,
   `subject_ID` int(11) DEFAULT NULL,
   PRIMARY KEY (`work_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `written_work`
@@ -325,8 +266,7 @@ CREATE TABLE IF NOT EXISTS `written_work` (
 INSERT INTO `written_work` (`work_ID`, `written_ID`, `written_total_items`, `subject_ID`) VALUES
 (1, 1, 135, 1),
 (2, 3, NULL, NULL),
-(3, 4, NULL, NULL),
-(4, 2, NULL, NULL);
+(3, 4, NULL, NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
