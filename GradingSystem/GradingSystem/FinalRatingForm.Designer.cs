@@ -31,6 +31,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,13 +49,6 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -61,9 +56,21 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.lblGradelvl = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_grade_lvl = new System.Windows.Forms.Label();
+            this.lbl_subject = new System.Windows.Forms.Label();
+            this.dgvBSN = new System.Windows.Forms.DataGridView();
+            this.dgvGSN = new System.Windows.Forms.DataGridView();
+            this.dgvBG = new System.Windows.Forms.DataGridView();
+            this.dgvGG = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -73,14 +80,17 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel42.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGG)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -121,7 +131,11 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.70588F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.70588F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.70588F));
+            this.tableLayoutPanel7.Controls.Add(this.dgvBG, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.panel12, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.dgvBSN, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.dgvGSN, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.dgvGG, 1, 2);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel7.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 91);
@@ -130,8 +144,28 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(1344, 431);
             this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.label10);
+            this.panel12.Location = new System.Drawing.Point(3, 201);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(349, 29);
+            this.panel12.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(157, 7);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(47, 16);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "GIRLS";
             // 
             // tableLayoutPanel4
             // 
@@ -308,79 +342,6 @@
             this.panel2.Size = new System.Drawing.Size(1348, 120);
             this.panel2.TabIndex = 1;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.panel10, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1348, 36);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(452, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(443, 30);
-            this.panel10.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(170, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 24);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Final Rating";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(3, 201);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(349, 29);
-            this.panel12.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(157, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 16);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "GIRLS";
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.button1);
-            this.panel13.Location = new System.Drawing.Point(3, 661);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1348, 37);
-            this.panel13.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1251, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Print";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
@@ -389,7 +350,9 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.tableLayoutPanel5.Controls.Add(this.lbl_subject, 3, 0);
+            this.tableLayoutPanel5.Controls.Add(this.lbl_grade_lvl, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.panel42, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.panel14, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.panel15, 4, 0);
@@ -443,9 +406,9 @@
             // 
             this.panel15.Controls.Add(this.lblGradelvl);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(1108, 3);
+            this.panel15.Location = new System.Drawing.Point(1107, 3);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(237, 30);
+            this.panel15.Size = new System.Drawing.Size(238, 30);
             this.panel15.TabIndex = 2;
             // 
             // lblGradelvl
@@ -457,6 +420,152 @@
             this.lblGradelvl.Size = new System.Drawing.Size(102, 18);
             this.lblGradelvl.TabIndex = 0;
             this.lblGradelvl.Text = "TeacherName";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel2.Controls.Add(this.panel10, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1348, 36);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label8);
+            this.panel10.Location = new System.Drawing.Point(452, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(443, 30);
+            this.panel10.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(170, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 24);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Final Rating";
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.button1);
+            this.panel13.Location = new System.Drawing.Point(3, 661);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(1348, 37);
+            this.panel13.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1251, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Print";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // lbl_grade_lvl
+            // 
+            this.lbl_grade_lvl.AutoSize = true;
+            this.lbl_grade_lvl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_grade_lvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_grade_lvl.Location = new System.Drawing.Point(103, 0);
+            this.lbl_grade_lvl.Name = "lbl_grade_lvl";
+            this.lbl_grade_lvl.Size = new System.Drawing.Size(524, 36);
+            this.lbl_grade_lvl.TabIndex = 3;
+            this.lbl_grade_lvl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_subject
+            // 
+            this.lbl_subject.AutoSize = true;
+            this.lbl_subject.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_subject.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_subject.Location = new System.Drawing.Point(724, 0);
+            this.lbl_subject.Name = "lbl_subject";
+            this.lbl_subject.Size = new System.Drawing.Size(377, 36);
+            this.lbl_subject.TabIndex = 4;
+            this.lbl_subject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // dgvBSN
+            // 
+            this.dgvBSN.AllowUserToAddRows = false;
+            this.dgvBSN.AllowUserToDeleteRows = false;
+            this.dgvBSN.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvBSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBSN.ColumnHeadersVisible = false;
+            this.dgvBSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBSN.Location = new System.Drawing.Point(3, 3);
+            this.dgvBSN.MultiSelect = false;
+            this.dgvBSN.Name = "dgvBSN";
+            this.dgvBSN.ReadOnly = true;
+            this.dgvBSN.RowHeadersVisible = false;
+            this.dgvBSN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvBSN.Size = new System.Drawing.Size(349, 192);
+            this.dgvBSN.TabIndex = 1;
+            // 
+            // dgvGSN
+            // 
+            this.dgvGSN.AllowUserToAddRows = false;
+            this.dgvGSN.AllowUserToDeleteRows = false;
+            this.dgvGSN.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvGSN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGSN.ColumnHeadersVisible = false;
+            this.dgvGSN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGSN.Location = new System.Drawing.Point(3, 236);
+            this.dgvGSN.MultiSelect = false;
+            this.dgvGSN.Name = "dgvGSN";
+            this.dgvGSN.ReadOnly = true;
+            this.dgvGSN.RowHeadersVisible = false;
+            this.dgvGSN.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvGSN.Size = new System.Drawing.Size(349, 192);
+            this.dgvGSN.TabIndex = 2;
+            // 
+            // dgvBG
+            // 
+            this.dgvBG.AllowUserToAddRows = false;
+            this.dgvBG.AllowUserToDeleteRows = false;
+            this.dgvBG.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvBG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBG.ColumnHeadersVisible = false;
+            this.tableLayoutPanel7.SetColumnSpan(this.dgvBG, 5);
+            this.dgvBG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBG.Location = new System.Drawing.Point(358, 3);
+            this.dgvBG.MultiSelect = false;
+            this.dgvBG.Name = "dgvBG";
+            this.dgvBG.ReadOnly = true;
+            this.dgvBG.RowHeadersVisible = false;
+            this.dgvBG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvBG.Size = new System.Drawing.Size(983, 192);
+            this.dgvBG.TabIndex = 3;
+            // 
+            // dgvGG
+            // 
+            this.dgvGG.AllowUserToAddRows = false;
+            this.dgvGG.AllowUserToDeleteRows = false;
+            this.dgvGG.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvGG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGG.ColumnHeadersVisible = false;
+            this.tableLayoutPanel7.SetColumnSpan(this.dgvGG, 5);
+            this.dgvGG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGG.Location = new System.Drawing.Point(358, 236);
+            this.dgvGG.MultiSelect = false;
+            this.dgvGG.Name = "dgvGG";
+            this.dgvGG.ReadOnly = true;
+            this.dgvGG.RowHeadersVisible = false;
+            this.dgvGG.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvGG.Size = new System.Drawing.Size(983, 192);
+            this.dgvGG.TabIndex = 4;
             // 
             // FinalRatingForm
             // 
@@ -470,6 +579,8 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -486,19 +597,22 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.panel42.ResumeLayout(false);
             this.panel42.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBSN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGSN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGG)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -538,5 +652,11 @@
         private System.Windows.Forms.Label lblSubject;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label lblGradelvl;
+        private System.Windows.Forms.Label lbl_subject;
+        private System.Windows.Forms.Label lbl_grade_lvl;
+        private System.Windows.Forms.DataGridView dgvBSN;
+        private System.Windows.Forms.DataGridView dgvGSN;
+        private System.Windows.Forms.DataGridView dgvBG;
+        private System.Windows.Forms.DataGridView dgvGG;
     }
 }

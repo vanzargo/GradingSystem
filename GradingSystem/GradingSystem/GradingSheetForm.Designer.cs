@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_print = new System.Windows.Forms.Button();
+            this.btn_save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.subjectCmBx = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -43,6 +43,7 @@
             this.lblSubject = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblGradelvl = new System.Windows.Forms.Label();
+            this.lbl_grade = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,15 +52,15 @@
             this.MajorLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtbx_qT = new System.Windows.Forms.TextBox();
             this.panel24 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lbl_written_work = new System.Windows.Forms.Label();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.lbl_performance_task = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lbl_quarter = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -78,24 +79,24 @@
             this.label30 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtbx_w1 = new System.Windows.Forms.TextBox();
+            this.txtbx_w2 = new System.Windows.Forms.TextBox();
+            this.txtbx_w3 = new System.Windows.Forms.TextBox();
+            this.txtbx_w4 = new System.Windows.Forms.TextBox();
+            this.txtbx_w5 = new System.Windows.Forms.TextBox();
+            this.txtbx_w6 = new System.Windows.Forms.TextBox();
+            this.txtbx_w7 = new System.Windows.Forms.TextBox();
+            this.txtbx_w8 = new System.Windows.Forms.TextBox();
+            this.txtbx_wT = new System.Windows.Forms.TextBox();
+            this.txtbx_p1 = new System.Windows.Forms.TextBox();
+            this.txtbx_p2 = new System.Windows.Forms.TextBox();
+            this.txtbx_p3 = new System.Windows.Forms.TextBox();
+            this.txtbx_p4 = new System.Windows.Forms.TextBox();
+            this.txtbx_p5 = new System.Windows.Forms.TextBox();
+            this.txtbx_p6 = new System.Windows.Forms.TextBox();
+            this.txtbx_p7 = new System.Windows.Forms.TextBox();
+            this.txtbx_p8 = new System.Windows.Forms.TextBox();
+            this.txtbx_pT = new System.Windows.Forms.TextBox();
             this.panel38 = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.panel39 = new System.Windows.Forms.Panel();
@@ -161,32 +162,32 @@
             this.panel23 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView24 = new System.Windows.Forms.DataGridView();
-            this.dataGridView22 = new System.Windows.Forms.DataGridView();
-            this.dataGridView21 = new System.Windows.Forms.DataGridView();
-            this.dataGridView20 = new System.Windows.Forms.DataGridView();
-            this.dataGridView19 = new System.Windows.Forms.DataGridView();
-            this.dataGridView18 = new System.Windows.Forms.DataGridView();
-            this.dataGridView17 = new System.Windows.Forms.DataGridView();
-            this.dataGridView16 = new System.Windows.Forms.DataGridView();
-            this.dataGridView15 = new System.Windows.Forms.DataGridView();
+            this.dgvGQG = new System.Windows.Forms.DataGridView();
+            this.dgvGQAWS = new System.Windows.Forms.DataGridView();
+            this.dgvGQAPS = new System.Windows.Forms.DataGridView();
+            this.dgvGQA = new System.Windows.Forms.DataGridView();
+            this.dgvGPTWS = new System.Windows.Forms.DataGridView();
+            this.dgvGPTPS = new System.Windows.Forms.DataGridView();
+            this.dgvGPT = new System.Windows.Forms.DataGridView();
+            this.dgvGWWWS = new System.Windows.Forms.DataGridView();
+            this.dgvGWWPS = new System.Windows.Forms.DataGridView();
             this.panel41 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
-            this.dataGridView14 = new System.Windows.Forms.DataGridView();
-            this.dataGridView13 = new System.Windows.Forms.DataGridView();
-            this.dataGridView12 = new System.Windows.Forms.DataGridView();
-            this.dataGridView11 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
-            this.dataGridView9 = new System.Windows.Forms.DataGridView();
-            this.dataGridView10 = new System.Windows.Forms.DataGridView();
-            this.dataGridView23 = new System.Windows.Forms.DataGridView();
+            this.dgvBQG = new System.Windows.Forms.DataGridView();
+            this.dgvBIG = new System.Windows.Forms.DataGridView();
+            this.dgvBQAWS = new System.Windows.Forms.DataGridView();
+            this.dgvBQAPS = new System.Windows.Forms.DataGridView();
+            this.dgvGName = new System.Windows.Forms.DataGridView();
+            this.dgvBName = new System.Windows.Forms.DataGridView();
+            this.dgvGWW = new System.Windows.Forms.DataGridView();
+            this.dgvBWW = new System.Windows.Forms.DataGridView();
+            this.dgvBWWPS = new System.Windows.Forms.DataGridView();
+            this.dgvBWWWS = new System.Windows.Forms.DataGridView();
+            this.dgvBPT = new System.Windows.Forms.DataGridView();
+            this.dgvBPTPS = new System.Windows.Forms.DataGridView();
+            this.dgvBPTWS = new System.Windows.Forms.DataGridView();
+            this.dgvBQA = new System.Windows.Forms.DataGridView();
+            this.dgvGIG = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -238,31 +239,31 @@
             this.panel22.SuspendLayout();
             this.panel23.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQAWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQAPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPTWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPTPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWWWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWWPS)).BeginInit();
             this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBIG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQAWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQAPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWWPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWWWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPTPS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPTWS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGIG)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -285,8 +286,8 @@
             // 
             // panel43
             // 
-            this.panel43.Controls.Add(this.button3);
-            this.panel43.Controls.Add(this.button1);
+            this.panel43.Controls.Add(this.btn_print);
+            this.panel43.Controls.Add(this.btn_save);
             this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel43.Location = new System.Drawing.Point(3, 660);
@@ -294,23 +295,23 @@
             this.panel43.Size = new System.Drawing.Size(1348, 38);
             this.panel43.TabIndex = 3;
             // 
-            // button3
+            // btn_print
             // 
-            this.button3.Location = new System.Drawing.Point(1245, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Print";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_print.Location = new System.Drawing.Point(1245, 4);
+            this.btn_print.Name = "btn_print";
+            this.btn_print.Size = new System.Drawing.Size(75, 31);
+            this.btn_print.TabIndex = 3;
+            this.btn_print.Text = "Print";
+            this.btn_print.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_save
             // 
-            this.button1.Location = new System.Drawing.Point(1153, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_save.Location = new System.Drawing.Point(1153, 4);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(75, 31);
+            this.btn_save.TabIndex = 0;
+            this.btn_save.Text = "Save";
+            this.btn_save.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -330,11 +331,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
             this.tableLayoutPanel3.Controls.Add(this.panel44, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel42, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel5, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.lbl_grade, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 63);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -345,27 +347,28 @@
             // 
             // panel44
             // 
-            this.panel44.Controls.Add(this.comboBox1);
+            this.panel44.Controls.Add(this.subjectCmBx);
             this.panel44.Controls.Add(this.button2);
-            this.panel44.Location = new System.Drawing.Point(724, 3);
+            this.panel44.Location = new System.Drawing.Point(722, 3);
             this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(377, 30);
+            this.panel44.Size = new System.Drawing.Size(376, 30);
             this.panel44.TabIndex = 2;
             // 
-            // comboBox1
+            // subjectCmBx
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.subjectCmBx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.subjectCmBx.Enabled = false;
+            this.subjectCmBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjectCmBx.FormattingEnabled = true;
+            this.subjectCmBx.Items.AddRange(new object[] {
             "1st Grading",
             "2nd Grading",
             "3rd Grading",
             "4th Grading"});
-            this.comboBox1.Location = new System.Drawing.Point(30, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 2;
+            this.subjectCmBx.Location = new System.Drawing.Point(30, 3);
+            this.subjectCmBx.Name = "subjectCmBx";
+            this.subjectCmBx.Size = new System.Drawing.Size(121, 24);
+            this.subjectCmBx.TabIndex = 2;
             // 
             // button2
             // 
@@ -376,6 +379,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Final Rating";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel42
             // 
@@ -400,7 +404,7 @@
             // 
             this.panel4.Controls.Add(this.lblSubject);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(633, 3);
+            this.panel4.Location = new System.Drawing.Point(631, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(85, 30);
             this.panel4.TabIndex = 1;
@@ -419,9 +423,9 @@
             // 
             this.panel5.Controls.Add(this.lblGradelvl);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(1107, 3);
+            this.panel5.Location = new System.Drawing.Point(1104, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(238, 30);
+            this.panel5.Size = new System.Drawing.Size(241, 30);
             this.panel5.TabIndex = 2;
             // 
             // lblGradelvl
@@ -433,6 +437,18 @@
             this.lblGradelvl.Size = new System.Drawing.Size(102, 18);
             this.lblGradelvl.TabIndex = 0;
             this.lblGradelvl.Text = "TeacherName";
+            // 
+            // lbl_grade
+            // 
+            this.lbl_grade.AutoSize = true;
+            this.lbl_grade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_grade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_grade.Location = new System.Drawing.Point(103, 0);
+            this.lbl_grade.Name = "lbl_grade";
+            this.lbl_grade.Size = new System.Drawing.Size(522, 36);
+            this.lbl_grade.TabIndex = 3;
+            this.lbl_grade.Text = "Grade 0";
+            this.lbl_grade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tableLayoutPanel4
             // 
@@ -531,7 +547,7 @@
             this.MajorLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.MajorLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218F));
             this.MajorLayoutPanel.Controls.Add(this.panel3, 0, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox1, 23, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_qT, 23, 3);
             this.MajorLayoutPanel.Controls.Add(this.panel24, 1, 2);
             this.MajorLayoutPanel.Controls.Add(this.panel25, 1, 0);
             this.MajorLayoutPanel.Controls.Add(this.panel26, 12, 0);
@@ -545,24 +561,24 @@
             this.MajorLayoutPanel.Controls.Add(this.panel34, 22, 2);
             this.MajorLayoutPanel.Controls.Add(this.panel35, 10, 2);
             this.MajorLayoutPanel.Controls.Add(this.panel36, 11, 2);
-            this.MajorLayoutPanel.Controls.Add(this.textBox2, 1, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox3, 2, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox4, 3, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox5, 4, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox6, 5, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox7, 6, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox8, 7, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox9, 8, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox10, 9, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox11, 12, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox12, 13, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox13, 14, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox14, 15, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox15, 16, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox16, 17, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox17, 18, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox18, 19, 3);
-            this.MajorLayoutPanel.Controls.Add(this.textBox19, 20, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w1, 1, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w2, 2, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w3, 3, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w4, 4, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w5, 5, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w6, 6, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w7, 7, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_w8, 8, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_wT, 9, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p1, 12, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p2, 13, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p3, 14, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p4, 15, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p5, 16, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p6, 17, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p7, 18, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_p8, 19, 3);
+            this.MajorLayoutPanel.Controls.Add(this.txtbx_pT, 20, 3);
             this.MajorLayoutPanel.Controls.Add(this.panel38, 9, 2);
             this.MajorLayoutPanel.Controls.Add(this.panel39, 20, 2);
             this.MajorLayoutPanel.Controls.Add(this.panel40, 23, 2);
@@ -608,14 +624,14 @@
             this.label36.TabIndex = 0;
             this.label36.Text = "Boys";
             // 
-            // textBox1
+            // txtbx_qT
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(1493, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(44, 24);
-            this.textBox1.TabIndex = 31;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_qT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_qT.Location = new System.Drawing.Point(1493, 93);
+            this.txtbx_qT.Name = "txtbx_qT";
+            this.txtbx_qT.Size = new System.Drawing.Size(59, 24);
+            this.txtbx_qT.TabIndex = 31;
+            this.txtbx_qT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel24
             // 
@@ -641,64 +657,64 @@
             // 
             this.panel25.BackColor = System.Drawing.Color.White;
             this.MajorLayoutPanel.SetColumnSpan(this.panel25, 11);
-            this.panel25.Controls.Add(this.label20);
+            this.panel25.Controls.Add(this.lbl_written_work);
             this.panel25.Location = new System.Drawing.Point(303, 3);
             this.panel25.Name = "panel25";
             this.MajorLayoutPanel.SetRowSpan(this.panel25, 2);
             this.panel25.Size = new System.Drawing.Size(589, 54);
             this.panel25.TabIndex = 1;
             // 
-            // label20
+            // lbl_written_work
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(205, 16);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(180, 20);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "WRITTEN WORK (30%)";
+            this.lbl_written_work.AutoSize = true;
+            this.lbl_written_work.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_written_work.Location = new System.Drawing.Point(205, 16);
+            this.lbl_written_work.Name = "lbl_written_work";
+            this.lbl_written_work.Size = new System.Drawing.Size(180, 20);
+            this.lbl_written_work.TabIndex = 0;
+            this.lbl_written_work.Text = "WRITTEN WORK (30%)";
             // 
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.White;
             this.MajorLayoutPanel.SetColumnSpan(this.panel26, 11);
-            this.panel26.Controls.Add(this.label21);
+            this.panel26.Controls.Add(this.lbl_performance_task);
             this.panel26.Location = new System.Drawing.Point(898, 3);
             this.panel26.Name = "panel26";
             this.MajorLayoutPanel.SetRowSpan(this.panel26, 2);
             this.panel26.Size = new System.Drawing.Size(589, 54);
             this.panel26.TabIndex = 2;
             // 
-            // label21
+            // lbl_performance_task
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(207, 16);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(224, 20);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "PERFORMANCE TASK (50%)";
+            this.lbl_performance_task.AutoSize = true;
+            this.lbl_performance_task.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_performance_task.Location = new System.Drawing.Point(207, 16);
+            this.lbl_performance_task.Name = "lbl_performance_task";
+            this.lbl_performance_task.Size = new System.Drawing.Size(224, 20);
+            this.lbl_performance_task.TabIndex = 0;
+            this.lbl_performance_task.Text = "PERFORMANCE TASK (50%)";
             // 
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.White;
             this.MajorLayoutPanel.SetColumnSpan(this.panel27, 3);
-            this.panel27.Controls.Add(this.label22);
+            this.panel27.Controls.Add(this.lbl_quarter);
             this.panel27.Location = new System.Drawing.Point(1493, 3);
             this.panel27.Name = "panel27";
             this.MajorLayoutPanel.SetRowSpan(this.panel27, 2);
             this.panel27.Size = new System.Drawing.Size(189, 54);
             this.panel27.TabIndex = 3;
             // 
-            // label22
+            // lbl_quarter
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(51, 4);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 45);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "  QUARTERLY\r\nASSESSMENT\r\n        (20%)";
+            this.lbl_quarter.AutoSize = true;
+            this.lbl_quarter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quarter.Location = new System.Drawing.Point(51, 4);
+            this.lbl_quarter.Name = "lbl_quarter";
+            this.lbl_quarter.Size = new System.Drawing.Size(89, 45);
+            this.lbl_quarter.TabIndex = 0;
+            this.lbl_quarter.Text = "  QUARTERLY\r\nASSESSMENT\r\n        (20%)";
             // 
             // panel28
             // 
@@ -880,171 +896,171 @@
             this.label31.TabIndex = 3;
             this.label31.Text = "WS";
             // 
-            // textBox2
+            // txtbx_w1
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(303, 93);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(44, 24);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w1.Location = new System.Drawing.Point(303, 93);
+            this.txtbx_w1.Name = "txtbx_w1";
+            this.txtbx_w1.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w1.TabIndex = 13;
+            this.txtbx_w1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtbx_w2
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(353, 93);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(44, 24);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w2.Location = new System.Drawing.Point(353, 93);
+            this.txtbx_w2.Name = "txtbx_w2";
+            this.txtbx_w2.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w2.TabIndex = 14;
+            this.txtbx_w2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // txtbx_w3
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(403, 93);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(44, 24);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w3.Location = new System.Drawing.Point(403, 93);
+            this.txtbx_w3.Name = "txtbx_w3";
+            this.txtbx_w3.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w3.TabIndex = 15;
+            this.txtbx_w3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox5
+            // txtbx_w4
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(453, 93);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(44, 24);
-            this.textBox5.TabIndex = 16;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w4.Location = new System.Drawing.Point(453, 93);
+            this.txtbx_w4.Name = "txtbx_w4";
+            this.txtbx_w4.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w4.TabIndex = 16;
+            this.txtbx_w4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox6
+            // txtbx_w5
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(503, 93);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(44, 24);
-            this.textBox6.TabIndex = 17;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w5.Location = new System.Drawing.Point(503, 93);
+            this.txtbx_w5.Name = "txtbx_w5";
+            this.txtbx_w5.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w5.TabIndex = 17;
+            this.txtbx_w5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox7
+            // txtbx_w6
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(553, 93);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(44, 24);
-            this.textBox7.TabIndex = 18;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w6.Location = new System.Drawing.Point(553, 93);
+            this.txtbx_w6.Name = "txtbx_w6";
+            this.txtbx_w6.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w6.TabIndex = 18;
+            this.txtbx_w6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox8
+            // txtbx_w7
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(603, 93);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(44, 24);
-            this.textBox8.TabIndex = 19;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w7.Location = new System.Drawing.Point(603, 93);
+            this.txtbx_w7.Name = "txtbx_w7";
+            this.txtbx_w7.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w7.TabIndex = 19;
+            this.txtbx_w7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox9
+            // txtbx_w8
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(653, 93);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(44, 24);
-            this.textBox9.TabIndex = 20;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_w8.Location = new System.Drawing.Point(653, 93);
+            this.txtbx_w8.Name = "txtbx_w8";
+            this.txtbx_w8.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_w8.TabIndex = 20;
+            this.txtbx_w8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox10
+            // txtbx_wT
             // 
-            this.textBox10.AcceptsReturn = true;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(703, 93);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(59, 24);
-            this.textBox10.TabIndex = 21;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_wT.AcceptsReturn = true;
+            this.txtbx_wT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_wT.Location = new System.Drawing.Point(703, 93);
+            this.txtbx_wT.Name = "txtbx_wT";
+            this.txtbx_wT.ReadOnly = true;
+            this.txtbx_wT.Size = new System.Drawing.Size(59, 24);
+            this.txtbx_wT.TabIndex = 21;
+            this.txtbx_wT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox11
+            // txtbx_p1
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(898, 93);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(44, 24);
-            this.textBox11.TabIndex = 22;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p1.Location = new System.Drawing.Point(898, 93);
+            this.txtbx_p1.Name = "txtbx_p1";
+            this.txtbx_p1.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p1.TabIndex = 22;
+            this.txtbx_p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox12
+            // txtbx_p2
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(948, 93);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(44, 24);
-            this.textBox12.TabIndex = 23;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p2.Location = new System.Drawing.Point(948, 93);
+            this.txtbx_p2.Name = "txtbx_p2";
+            this.txtbx_p2.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p2.TabIndex = 23;
+            this.txtbx_p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox13
+            // txtbx_p3
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(998, 93);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(44, 24);
-            this.textBox13.TabIndex = 24;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p3.Location = new System.Drawing.Point(998, 93);
+            this.txtbx_p3.Name = "txtbx_p3";
+            this.txtbx_p3.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p3.TabIndex = 24;
+            this.txtbx_p3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox14
+            // txtbx_p4
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(1048, 93);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(44, 24);
-            this.textBox14.TabIndex = 25;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtbx_p4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p4.Location = new System.Drawing.Point(1048, 93);
+            this.txtbx_p4.Name = "txtbx_p4";
+            this.txtbx_p4.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p4.TabIndex = 25;
+            this.txtbx_p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // txtbx_p5
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(1098, 93);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(44, 24);
-            this.textBox15.TabIndex = 26;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p5.Location = new System.Drawing.Point(1098, 93);
+            this.txtbx_p5.Name = "txtbx_p5";
+            this.txtbx_p5.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p5.TabIndex = 26;
+            this.txtbx_p5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox16
+            // txtbx_p6
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(1148, 93);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(44, 24);
-            this.textBox16.TabIndex = 27;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p6.Location = new System.Drawing.Point(1148, 93);
+            this.txtbx_p6.Name = "txtbx_p6";
+            this.txtbx_p6.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p6.TabIndex = 27;
+            this.txtbx_p6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox17
+            // txtbx_p7
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(1198, 93);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(44, 24);
-            this.textBox17.TabIndex = 28;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p7.Location = new System.Drawing.Point(1198, 93);
+            this.txtbx_p7.Name = "txtbx_p7";
+            this.txtbx_p7.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p7.TabIndex = 28;
+            this.txtbx_p7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox18
+            // txtbx_p8
             // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(1248, 93);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(44, 24);
-            this.textBox18.TabIndex = 29;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_p8.Location = new System.Drawing.Point(1248, 93);
+            this.txtbx_p8.Name = "txtbx_p8";
+            this.txtbx_p8.Size = new System.Drawing.Size(44, 24);
+            this.txtbx_p8.TabIndex = 29;
+            this.txtbx_p8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox19
+            // txtbx_pT
             // 
-            this.textBox19.AcceptsReturn = true;
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(1298, 93);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(59, 24);
-            this.textBox19.TabIndex = 30;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_pT.AcceptsReturn = true;
+            this.txtbx_pT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_pT.Location = new System.Drawing.Point(1298, 93);
+            this.txtbx_pT.Name = "txtbx_pT";
+            this.txtbx_pT.ReadOnly = true;
+            this.txtbx_pT.Size = new System.Drawing.Size(59, 24);
+            this.txtbx_pT.TabIndex = 30;
+            this.txtbx_pT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel38
             // 
@@ -1770,31 +1786,31 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218F));
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView24, 11, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView22, 9, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView21, 8, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView20, 7, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView19, 6, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView18, 5, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView17, 4, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView16, 3, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView15, 2, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGQG, 11, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGQAWS, 9, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGQAPS, 8, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGQA, 7, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGPTWS, 6, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGPTPS, 5, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGPT, 4, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGWWWS, 3, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGWWPS, 2, 2);
             this.tableLayoutPanel6.Controls.Add(this.panel41, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView14, 10, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView13, 9, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView12, 8, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView11, 7, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView5, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView1, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView4, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView2, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView3, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView6, 3, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView7, 4, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView8, 5, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView9, 6, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView10, 7, 0);
-            this.tableLayoutPanel6.Controls.Add(this.dataGridView23, 10, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBQG, 10, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBIG, 9, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBQAWS, 8, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBQAPS, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGName, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBName, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGWW, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBWW, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBWWPS, 2, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBWWWS, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBPT, 4, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBPTPS, 5, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBPTWS, 6, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvBQA, 7, 0);
+            this.tableLayoutPanel6.Controls.Add(this.dgvGIG, 10, 2);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(1, 122);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
@@ -1804,122 +1820,147 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(2000, 434);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
-            // dataGridView24
+            // dgvGQG
             // 
-            this.dataGridView24.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView24.ColumnHeadersVisible = false;
-            this.dataGridView24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView24.Location = new System.Drawing.Point(1785, 232);
-            this.dataGridView24.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView24.Name = "dataGridView24";
-            this.dataGridView24.RowHeadersVisible = false;
-            this.dataGridView24.Size = new System.Drawing.Size(218, 202);
-            this.dataGridView24.TabIndex = 46;
+            this.dgvGQG.AllowUserToAddRows = false;
+            this.dgvGQG.AllowUserToDeleteRows = false;
+            this.dgvGQG.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGQG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGQG.ColumnHeadersVisible = false;
+            this.dgvGQG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGQG.Location = new System.Drawing.Point(1785, 232);
+            this.dgvGQG.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGQG.Name = "dgvGQG";
+            this.dgvGQG.ReadOnly = true;
+            this.dgvGQG.RowHeadersVisible = false;
+            this.dgvGQG.Size = new System.Drawing.Size(218, 202);
+            this.dgvGQG.TabIndex = 46;
             // 
-            // dataGridView22
+            // dgvGQAWS
             // 
-            this.dataGridView22.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView22.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView22.ColumnHeadersVisible = false;
-            this.dataGridView22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView22.Location = new System.Drawing.Point(1620, 232);
-            this.dataGridView22.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView22.Name = "dataGridView22";
-            this.dataGridView22.RowHeadersVisible = false;
-            this.dataGridView22.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView22.TabIndex = 44;
+            this.dgvGQAWS.AllowUserToAddRows = false;
+            this.dgvGQAWS.AllowUserToDeleteRows = false;
+            this.dgvGQAWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGQAWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGQAWS.ColumnHeadersVisible = false;
+            this.dgvGQAWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGQAWS.Location = new System.Drawing.Point(1620, 232);
+            this.dgvGQAWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGQAWS.Name = "dgvGQAWS";
+            this.dgvGQAWS.ReadOnly = true;
+            this.dgvGQAWS.RowHeadersVisible = false;
+            this.dgvGQAWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQAWS.TabIndex = 44;
             // 
-            // dataGridView21
+            // dgvGQAPS
             // 
-            this.dataGridView21.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView21.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView21.ColumnHeadersVisible = false;
-            this.dataGridView21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView21.Location = new System.Drawing.Point(1555, 232);
-            this.dataGridView21.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView21.Name = "dataGridView21";
-            this.dataGridView21.RowHeadersVisible = false;
-            this.dataGridView21.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView21.TabIndex = 43;
+            this.dgvGQAPS.AllowUserToAddRows = false;
+            this.dgvGQAPS.AllowUserToDeleteRows = false;
+            this.dgvGQAPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGQAPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGQAPS.ColumnHeadersVisible = false;
+            this.dgvGQAPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGQAPS.Location = new System.Drawing.Point(1555, 232);
+            this.dgvGQAPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGQAPS.Name = "dgvGQAPS";
+            this.dgvGQAPS.ReadOnly = true;
+            this.dgvGQAPS.RowHeadersVisible = false;
+            this.dgvGQAPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQAPS.TabIndex = 43;
             // 
-            // dataGridView20
+            // dgvGQA
             // 
-            this.dataGridView20.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView20.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView20.ColumnHeadersVisible = false;
-            this.dataGridView20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView20.Location = new System.Drawing.Point(1490, 232);
-            this.dataGridView20.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView20.Name = "dataGridView20";
-            this.dataGridView20.RowHeadersVisible = false;
-            this.dataGridView20.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView20.TabIndex = 42;
+            this.dgvGQA.AllowUserToAddRows = false;
+            this.dgvGQA.AllowUserToDeleteRows = false;
+            this.dgvGQA.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGQA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGQA.ColumnHeadersVisible = false;
+            this.dgvGQA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGQA.Location = new System.Drawing.Point(1490, 232);
+            this.dgvGQA.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGQA.Name = "dgvGQA";
+            this.dgvGQA.RowHeadersVisible = false;
+            this.dgvGQA.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQA.TabIndex = 42;
             // 
-            // dataGridView19
+            // dgvGPTWS
             // 
-            this.dataGridView19.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView19.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView19.ColumnHeadersVisible = false;
-            this.dataGridView19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView19.Location = new System.Drawing.Point(1425, 232);
-            this.dataGridView19.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView19.Name = "dataGridView19";
-            this.dataGridView19.RowHeadersVisible = false;
-            this.dataGridView19.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView19.TabIndex = 41;
+            this.dgvGPTWS.AllowUserToAddRows = false;
+            this.dgvGPTWS.AllowUserToDeleteRows = false;
+            this.dgvGPTWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGPTWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGPTWS.ColumnHeadersVisible = false;
+            this.dgvGPTWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGPTWS.Location = new System.Drawing.Point(1425, 232);
+            this.dgvGPTWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGPTWS.Name = "dgvGPTWS";
+            this.dgvGPTWS.ReadOnly = true;
+            this.dgvGPTWS.RowHeadersVisible = false;
+            this.dgvGPTWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGPTWS.TabIndex = 41;
             // 
-            // dataGridView18
+            // dgvGPTPS
             // 
-            this.dataGridView18.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView18.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView18.ColumnHeadersVisible = false;
-            this.dataGridView18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView18.Location = new System.Drawing.Point(1360, 232);
-            this.dataGridView18.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView18.Name = "dataGridView18";
-            this.dataGridView18.RowHeadersVisible = false;
-            this.dataGridView18.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView18.TabIndex = 40;
+            this.dgvGPTPS.AllowUserToAddRows = false;
+            this.dgvGPTPS.AllowUserToDeleteRows = false;
+            this.dgvGPTPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGPTPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGPTPS.ColumnHeadersVisible = false;
+            this.dgvGPTPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGPTPS.Location = new System.Drawing.Point(1360, 232);
+            this.dgvGPTPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGPTPS.Name = "dgvGPTPS";
+            this.dgvGPTPS.ReadOnly = true;
+            this.dgvGPTPS.RowHeadersVisible = false;
+            this.dgvGPTPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGPTPS.TabIndex = 40;
             // 
-            // dataGridView17
+            // dgvGPT
             // 
-            this.dataGridView17.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView17.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView17.ColumnHeadersVisible = false;
-            this.dataGridView17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView17.Location = new System.Drawing.Point(895, 232);
-            this.dataGridView17.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView17.Name = "dataGridView17";
-            this.dataGridView17.RowHeadersVisible = false;
-            this.dataGridView17.Size = new System.Drawing.Size(465, 202);
-            this.dataGridView17.TabIndex = 39;
+            this.dgvGPT.AllowUserToAddRows = false;
+            this.dgvGPT.AllowUserToDeleteRows = false;
+            this.dgvGPT.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGPT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGPT.ColumnHeadersVisible = false;
+            this.dgvGPT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGPT.Location = new System.Drawing.Point(895, 232);
+            this.dgvGPT.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGPT.Name = "dgvGPT";
+            this.dgvGPT.RowHeadersVisible = false;
+            this.dgvGPT.Size = new System.Drawing.Size(465, 202);
+            this.dgvGPT.TabIndex = 39;
             // 
-            // dataGridView16
+            // dgvGWWWS
             // 
-            this.dataGridView16.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView16.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView16.ColumnHeadersVisible = false;
-            this.dataGridView16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView16.Location = new System.Drawing.Point(830, 232);
-            this.dataGridView16.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView16.Name = "dataGridView16";
-            this.dataGridView16.RowHeadersVisible = false;
-            this.dataGridView16.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView16.TabIndex = 38;
+            this.dgvGWWWS.AllowUserToAddRows = false;
+            this.dgvGWWWS.AllowUserToDeleteRows = false;
+            this.dgvGWWWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGWWWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGWWWS.ColumnHeadersVisible = false;
+            this.dgvGWWWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGWWWS.Location = new System.Drawing.Point(830, 232);
+            this.dgvGWWWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGWWWS.Name = "dgvGWWWS";
+            this.dgvGWWWS.ReadOnly = true;
+            this.dgvGWWWS.RowHeadersVisible = false;
+            this.dgvGWWWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGWWWS.TabIndex = 38;
             // 
-            // dataGridView15
+            // dgvGWWPS
             // 
-            this.dataGridView15.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView15.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView15.ColumnHeadersVisible = false;
-            this.dataGridView15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView15.Location = new System.Drawing.Point(765, 232);
-            this.dataGridView15.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView15.Name = "dataGridView15";
-            this.dataGridView15.RowHeadersVisible = false;
-            this.dataGridView15.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView15.TabIndex = 37;
+            this.dgvGWWPS.AllowUserToAddRows = false;
+            this.dgvGWWPS.AllowUserToDeleteRows = false;
+            this.dgvGWWPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGWWPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGWWPS.ColumnHeadersVisible = false;
+            this.dgvGWWPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGWWPS.Location = new System.Drawing.Point(765, 232);
+            this.dgvGWWPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGWWPS.Name = "dgvGWWPS";
+            this.dgvGWWPS.ReadOnly = true;
+            this.dgvGWWPS.RowHeadersVisible = false;
+            this.dgvGWWPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGWWPS.TabIndex = 37;
             // 
             // panel41
             // 
@@ -1945,275 +1986,300 @@
             this.label37.TabIndex = 0;
             this.label37.Text = "Girls";
             // 
-            // dataGridView14
+            // dgvBQG
             // 
-            this.dataGridView14.AllowUserToAddRows = false;
-            this.dataGridView14.AllowUserToResizeColumns = false;
-            this.dataGridView14.AllowUserToResizeRows = false;
-            this.dataGridView14.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView14.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView14.ColumnHeadersVisible = false;
-            this.dataGridView14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView14.Location = new System.Drawing.Point(1785, 0);
-            this.dataGridView14.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView14.Name = "dataGridView14";
-            this.dataGridView14.RowHeadersVisible = false;
-            this.dataGridView14.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView14.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView14.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView14.Size = new System.Drawing.Size(218, 202);
-            this.dataGridView14.TabIndex = 16;
+            this.dgvBQG.AllowUserToAddRows = false;
+            this.dgvBQG.AllowUserToDeleteRows = false;
+            this.dgvBQG.AllowUserToResizeColumns = false;
+            this.dgvBQG.AllowUserToResizeRows = false;
+            this.dgvBQG.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBQG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBQG.ColumnHeadersVisible = false;
+            this.dgvBQG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBQG.Location = new System.Drawing.Point(1785, 0);
+            this.dgvBQG.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBQG.Name = "dgvBQG";
+            this.dgvBQG.ReadOnly = true;
+            this.dgvBQG.RowHeadersVisible = false;
+            this.dgvBQG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBQG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBQG.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBQG.Size = new System.Drawing.Size(218, 202);
+            this.dgvBQG.TabIndex = 16;
             // 
-            // dataGridView13
+            // dgvBIG
             // 
-            this.dataGridView13.AllowUserToAddRows = false;
-            this.dataGridView13.AllowUserToResizeColumns = false;
-            this.dataGridView13.AllowUserToResizeRows = false;
-            this.dataGridView13.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView13.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView13.ColumnHeadersVisible = false;
-            this.dataGridView13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView13.Location = new System.Drawing.Point(1685, 0);
-            this.dataGridView13.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView13.Name = "dataGridView13";
-            this.dataGridView13.RowHeadersVisible = false;
-            this.dataGridView13.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView13.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView13.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView13.Size = new System.Drawing.Size(100, 202);
-            this.dataGridView13.TabIndex = 15;
+            this.dgvBIG.AllowUserToAddRows = false;
+            this.dgvBIG.AllowUserToDeleteRows = false;
+            this.dgvBIG.AllowUserToResizeColumns = false;
+            this.dgvBIG.AllowUserToResizeRows = false;
+            this.dgvBIG.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBIG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBIG.ColumnHeadersVisible = false;
+            this.dgvBIG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBIG.Location = new System.Drawing.Point(1685, 0);
+            this.dgvBIG.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBIG.Name = "dgvBIG";
+            this.dgvBIG.ReadOnly = true;
+            this.dgvBIG.RowHeadersVisible = false;
+            this.dgvBIG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBIG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBIG.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBIG.Size = new System.Drawing.Size(100, 202);
+            this.dgvBIG.TabIndex = 15;
             // 
-            // dataGridView12
+            // dgvBQAWS
             // 
-            this.dataGridView12.AllowUserToAddRows = false;
-            this.dataGridView12.AllowUserToResizeColumns = false;
-            this.dataGridView12.AllowUserToResizeRows = false;
-            this.dataGridView12.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView12.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView12.ColumnHeadersVisible = false;
-            this.dataGridView12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView12.Location = new System.Drawing.Point(1620, 0);
-            this.dataGridView12.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView12.Name = "dataGridView12";
-            this.dataGridView12.RowHeadersVisible = false;
-            this.dataGridView12.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView12.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView12.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView12.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView12.TabIndex = 14;
+            this.dgvBQAWS.AllowUserToAddRows = false;
+            this.dgvBQAWS.AllowUserToDeleteRows = false;
+            this.dgvBQAWS.AllowUserToResizeColumns = false;
+            this.dgvBQAWS.AllowUserToResizeRows = false;
+            this.dgvBQAWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBQAWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBQAWS.ColumnHeadersVisible = false;
+            this.dgvBQAWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBQAWS.Location = new System.Drawing.Point(1620, 0);
+            this.dgvBQAWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBQAWS.Name = "dgvBQAWS";
+            this.dgvBQAWS.ReadOnly = true;
+            this.dgvBQAWS.RowHeadersVisible = false;
+            this.dgvBQAWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBQAWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBQAWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBQAWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQAWS.TabIndex = 14;
             // 
-            // dataGridView11
+            // dgvBQAPS
             // 
-            this.dataGridView11.AllowUserToAddRows = false;
-            this.dataGridView11.AllowUserToResizeColumns = false;
-            this.dataGridView11.AllowUserToResizeRows = false;
-            this.dataGridView11.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView11.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView11.ColumnHeadersVisible = false;
-            this.dataGridView11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView11.Location = new System.Drawing.Point(1555, 0);
-            this.dataGridView11.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView11.Name = "dataGridView11";
-            this.dataGridView11.RowHeadersVisible = false;
-            this.dataGridView11.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView11.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView11.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView11.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView11.TabIndex = 13;
+            this.dgvBQAPS.AllowUserToAddRows = false;
+            this.dgvBQAPS.AllowUserToDeleteRows = false;
+            this.dgvBQAPS.AllowUserToResizeColumns = false;
+            this.dgvBQAPS.AllowUserToResizeRows = false;
+            this.dgvBQAPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBQAPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBQAPS.ColumnHeadersVisible = false;
+            this.dgvBQAPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBQAPS.Location = new System.Drawing.Point(1555, 0);
+            this.dgvBQAPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBQAPS.Name = "dgvBQAPS";
+            this.dgvBQAPS.ReadOnly = true;
+            this.dgvBQAPS.RowHeadersVisible = false;
+            this.dgvBQAPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBQAPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBQAPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBQAPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQAPS.TabIndex = 13;
             // 
-            // dataGridView5
+            // dgvGName
             // 
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.ColumnHeadersVisible = false;
-            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView5.Location = new System.Drawing.Point(0, 232);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.Size = new System.Drawing.Size(300, 202);
-            this.dataGridView5.TabIndex = 7;
+            this.dgvGName.AllowUserToAddRows = false;
+            this.dgvGName.AllowUserToDeleteRows = false;
+            this.dgvGName.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGName.ColumnHeadersVisible = false;
+            this.dgvGName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGName.Location = new System.Drawing.Point(0, 232);
+            this.dgvGName.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGName.Name = "dgvGName";
+            this.dgvGName.ReadOnly = true;
+            this.dgvGName.RowHeadersVisible = false;
+            this.dgvGName.Size = new System.Drawing.Size(300, 202);
+            this.dgvGName.TabIndex = 7;
             // 
-            // dataGridView1
+            // dgvBName
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(300, 202);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvBName.AllowUserToAddRows = false;
+            this.dgvBName.AllowUserToDeleteRows = false;
+            this.dgvBName.AllowUserToResizeColumns = false;
+            this.dgvBName.AllowUserToResizeRows = false;
+            this.dgvBName.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBName.ColumnHeadersVisible = false;
+            this.dgvBName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBName.Location = new System.Drawing.Point(0, 0);
+            this.dgvBName.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBName.Name = "dgvBName";
+            this.dgvBName.ReadOnly = true;
+            this.dgvBName.RowHeadersVisible = false;
+            this.dgvBName.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvBName.Size = new System.Drawing.Size(300, 202);
+            this.dgvBName.TabIndex = 2;
             // 
-            // dataGridView4
+            // dgvGWW
             // 
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.ColumnHeadersVisible = false;
-            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView4.Location = new System.Drawing.Point(300, 232);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersVisible = false;
-            this.dataGridView4.Size = new System.Drawing.Size(465, 202);
-            this.dataGridView4.TabIndex = 5;
+            this.dgvGWW.AllowUserToAddRows = false;
+            this.dgvGWW.AllowUserToDeleteRows = false;
+            this.dgvGWW.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGWW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGWW.ColumnHeadersVisible = false;
+            this.dgvGWW.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGWW.Location = new System.Drawing.Point(300, 232);
+            this.dgvGWW.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGWW.Name = "dgvGWW";
+            this.dgvGWW.RowHeadersVisible = false;
+            this.dgvGWW.Size = new System.Drawing.Size(465, 202);
+            this.dgvGWW.TabIndex = 5;
             // 
-            // dataGridView2
+            // dgvBWW
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ColumnHeadersVisible = false;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(300, 0);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView2.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView2.Size = new System.Drawing.Size(465, 202);
-            this.dataGridView2.TabIndex = 3;
+            this.dgvBWW.AllowUserToAddRows = false;
+            this.dgvBWW.AllowUserToDeleteRows = false;
+            this.dgvBWW.AllowUserToResizeColumns = false;
+            this.dgvBWW.AllowUserToResizeRows = false;
+            this.dgvBWW.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBWW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBWW.ColumnHeadersVisible = false;
+            this.dgvBWW.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBWW.Location = new System.Drawing.Point(300, 0);
+            this.dgvBWW.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBWW.Name = "dgvBWW";
+            this.dgvBWW.RowHeadersVisible = false;
+            this.dgvBWW.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBWW.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBWW.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBWW.Size = new System.Drawing.Size(465, 202);
+            this.dgvBWW.TabIndex = 3;
             // 
-            // dataGridView3
+            // dgvBWWPS
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToResizeColumns = false;
-            this.dataGridView3.AllowUserToResizeRows = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.ColumnHeadersVisible = false;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(765, 0);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView3.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView3.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView3.TabIndex = 6;
+            this.dgvBWWPS.AllowUserToAddRows = false;
+            this.dgvBWWPS.AllowUserToDeleteRows = false;
+            this.dgvBWWPS.AllowUserToResizeColumns = false;
+            this.dgvBWWPS.AllowUserToResizeRows = false;
+            this.dgvBWWPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBWWPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBWWPS.ColumnHeadersVisible = false;
+            this.dgvBWWPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBWWPS.Location = new System.Drawing.Point(765, 0);
+            this.dgvBWWPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBWWPS.Name = "dgvBWWPS";
+            this.dgvBWWPS.ReadOnly = true;
+            this.dgvBWWPS.RowHeadersVisible = false;
+            this.dgvBWWPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBWWPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBWWPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBWWPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBWWPS.TabIndex = 6;
             // 
-            // dataGridView6
+            // dgvBWWWS
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.AllowUserToDeleteRows = false;
-            this.dataGridView6.AllowUserToResizeColumns = false;
-            this.dataGridView6.AllowUserToResizeRows = false;
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.ColumnHeadersVisible = false;
-            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView6.Location = new System.Drawing.Point(830, 0);
-            this.dataGridView6.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.RowHeadersVisible = false;
-            this.dataGridView6.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView6.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView6.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView6.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView6.TabIndex = 8;
+            this.dgvBWWWS.AllowUserToAddRows = false;
+            this.dgvBWWWS.AllowUserToDeleteRows = false;
+            this.dgvBWWWS.AllowUserToResizeColumns = false;
+            this.dgvBWWWS.AllowUserToResizeRows = false;
+            this.dgvBWWWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBWWWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBWWWS.ColumnHeadersVisible = false;
+            this.dgvBWWWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBWWWS.Location = new System.Drawing.Point(830, 0);
+            this.dgvBWWWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBWWWS.Name = "dgvBWWWS";
+            this.dgvBWWWS.ReadOnly = true;
+            this.dgvBWWWS.RowHeadersVisible = false;
+            this.dgvBWWWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBWWWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBWWWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBWWWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBWWWS.TabIndex = 8;
             // 
-            // dataGridView7
+            // dgvBPT
             // 
-            this.dataGridView7.AllowUserToDeleteRows = false;
-            this.dataGridView7.AllowUserToResizeColumns = false;
-            this.dataGridView7.AllowUserToResizeRows = false;
-            this.dataGridView7.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.ColumnHeadersVisible = false;
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView7.Location = new System.Drawing.Point(895, 0);
-            this.dataGridView7.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView7.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView7.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView7.Size = new System.Drawing.Size(465, 202);
-            this.dataGridView7.TabIndex = 9;
+            this.dgvBPT.AllowUserToAddRows = false;
+            this.dgvBPT.AllowUserToDeleteRows = false;
+            this.dgvBPT.AllowUserToResizeColumns = false;
+            this.dgvBPT.AllowUserToResizeRows = false;
+            this.dgvBPT.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBPT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBPT.ColumnHeadersVisible = false;
+            this.dgvBPT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBPT.Location = new System.Drawing.Point(895, 0);
+            this.dgvBPT.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBPT.Name = "dgvBPT";
+            this.dgvBPT.RowHeadersVisible = false;
+            this.dgvBPT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBPT.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBPT.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBPT.Size = new System.Drawing.Size(465, 202);
+            this.dgvBPT.TabIndex = 9;
             // 
-            // dataGridView8
+            // dgvBPTPS
             // 
-            this.dataGridView8.AllowUserToAddRows = false;
-            this.dataGridView8.AllowUserToResizeColumns = false;
-            this.dataGridView8.AllowUserToResizeRows = false;
-            this.dataGridView8.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.ColumnHeadersVisible = false;
-            this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView8.Location = new System.Drawing.Point(1360, 0);
-            this.dataGridView8.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.RowHeadersVisible = false;
-            this.dataGridView8.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView8.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView8.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView8.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView8.TabIndex = 10;
+            this.dgvBPTPS.AllowUserToAddRows = false;
+            this.dgvBPTPS.AllowUserToDeleteRows = false;
+            this.dgvBPTPS.AllowUserToResizeColumns = false;
+            this.dgvBPTPS.AllowUserToResizeRows = false;
+            this.dgvBPTPS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBPTPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBPTPS.ColumnHeadersVisible = false;
+            this.dgvBPTPS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBPTPS.Location = new System.Drawing.Point(1360, 0);
+            this.dgvBPTPS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBPTPS.Name = "dgvBPTPS";
+            this.dgvBPTPS.ReadOnly = true;
+            this.dgvBPTPS.RowHeadersVisible = false;
+            this.dgvBPTPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBPTPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBPTPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBPTPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBPTPS.TabIndex = 10;
             // 
-            // dataGridView9
+            // dgvBPTWS
             // 
-            this.dataGridView9.AllowUserToAddRows = false;
-            this.dataGridView9.AllowUserToResizeColumns = false;
-            this.dataGridView9.AllowUserToResizeRows = false;
-            this.dataGridView9.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.ColumnHeadersVisible = false;
-            this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView9.Location = new System.Drawing.Point(1425, 0);
-            this.dataGridView9.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.RowHeadersVisible = false;
-            this.dataGridView9.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView9.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView9.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView9.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView9.TabIndex = 11;
+            this.dgvBPTWS.AllowUserToAddRows = false;
+            this.dgvBPTWS.AllowUserToDeleteRows = false;
+            this.dgvBPTWS.AllowUserToResizeColumns = false;
+            this.dgvBPTWS.AllowUserToResizeRows = false;
+            this.dgvBPTWS.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBPTWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBPTWS.ColumnHeadersVisible = false;
+            this.dgvBPTWS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBPTWS.Location = new System.Drawing.Point(1425, 0);
+            this.dgvBPTWS.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBPTWS.Name = "dgvBPTWS";
+            this.dgvBPTWS.ReadOnly = true;
+            this.dgvBPTWS.RowHeadersVisible = false;
+            this.dgvBPTWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBPTWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBPTWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBPTWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBPTWS.TabIndex = 11;
             // 
-            // dataGridView10
+            // dgvBQA
             // 
-            this.dataGridView10.AllowUserToAddRows = false;
-            this.dataGridView10.AllowUserToResizeColumns = false;
-            this.dataGridView10.AllowUserToResizeRows = false;
-            this.dataGridView10.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView10.ColumnHeadersVisible = false;
-            this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView10.Location = new System.Drawing.Point(1490, 0);
-            this.dataGridView10.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView10.Name = "dataGridView10";
-            this.dataGridView10.RowHeadersVisible = false;
-            this.dataGridView10.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView10.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView10.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridView10.Size = new System.Drawing.Size(65, 202);
-            this.dataGridView10.TabIndex = 12;
+            this.dgvBQA.AllowUserToAddRows = false;
+            this.dgvBQA.AllowUserToDeleteRows = false;
+            this.dgvBQA.AllowUserToResizeColumns = false;
+            this.dgvBQA.AllowUserToResizeRows = false;
+            this.dgvBQA.BackgroundColor = System.Drawing.Color.White;
+            this.dgvBQA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBQA.ColumnHeadersVisible = false;
+            this.dgvBQA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBQA.Location = new System.Drawing.Point(1490, 0);
+            this.dgvBQA.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvBQA.Name = "dgvBQA";
+            this.dgvBQA.RowHeadersVisible = false;
+            this.dgvBQA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvBQA.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvBQA.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dgvBQA.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQA.TabIndex = 12;
             // 
-            // dataGridView23
+            // dgvGIG
             // 
-            this.dataGridView23.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView23.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView23.ColumnHeadersVisible = false;
-            this.dataGridView23.Location = new System.Drawing.Point(1685, 232);
-            this.dataGridView23.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView23.Name = "dataGridView23";
-            this.dataGridView23.RowHeadersVisible = false;
-            this.dataGridView23.Size = new System.Drawing.Size(100, 202);
-            this.dataGridView23.TabIndex = 45;
+            this.dgvGIG.AllowUserToAddRows = false;
+            this.dgvGIG.AllowUserToDeleteRows = false;
+            this.dgvGIG.BackgroundColor = System.Drawing.Color.White;
+            this.dgvGIG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGIG.ColumnHeadersVisible = false;
+            this.dgvGIG.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGIG.Location = new System.Drawing.Point(1685, 232);
+            this.dgvGIG.Margin = new System.Windows.Forms.Padding(0);
+            this.dgvGIG.Name = "dgvGIG";
+            this.dgvGIG.ReadOnly = true;
+            this.dgvGIG.RowHeadersVisible = false;
+            this.dgvGIG.Size = new System.Drawing.Size(100, 202);
+            this.dgvGIG.TabIndex = 45;
             // 
             // GradingSheetForm
             // 
@@ -2230,6 +2296,7 @@
             this.panel43.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.panel44.ResumeLayout(false);
             this.panel42.ResumeLayout(false);
             this.panel42.PerformLayout();
@@ -2319,32 +2386,32 @@
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQAWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQAPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGQA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPTWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPTPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGPT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWWWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWWPS)).EndInit();
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBIG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQAWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQAPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGWW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWWPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBWWWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPTPS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBPTWS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBQA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGIG)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2363,8 +2430,8 @@
         private System.Windows.Forms.Label lblSubject;
         private System.Windows.Forms.Label lblGradelvl;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvGWW;
+        private System.Windows.Forms.DataGridView dgvBWW;
         private System.Windows.Forms.TableLayoutPanel MinorLayoutPanel;
         private System.Windows.Forms.TextBox txtQAS;
         private System.Windows.Forms.Panel panel9;
@@ -2419,18 +2486,18 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvBName;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.TableLayoutPanel MajorLayoutPanel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtbx_qT;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lbl_written_work;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lbl_performance_task;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label lbl_quarter;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel29;
@@ -2451,31 +2518,31 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtbx_w1;
+        private System.Windows.Forms.TextBox txtbx_w2;
+        private System.Windows.Forms.TextBox txtbx_w3;
+        private System.Windows.Forms.TextBox txtbx_w4;
+        private System.Windows.Forms.TextBox txtbx_w5;
+        private System.Windows.Forms.TextBox txtbx_w6;
+        private System.Windows.Forms.TextBox txtbx_w7;
+        private System.Windows.Forms.TextBox txtbx_w8;
+        private System.Windows.Forms.TextBox txtbx_wT;
+        private System.Windows.Forms.TextBox txtbx_p1;
+        private System.Windows.Forms.TextBox txtbx_p2;
+        private System.Windows.Forms.TextBox txtbx_p3;
+        private System.Windows.Forms.TextBox txtbx_p4;
+        private System.Windows.Forms.TextBox txtbx_p5;
+        private System.Windows.Forms.TextBox txtbx_p6;
+        private System.Windows.Forms.TextBox txtbx_p7;
+        private System.Windows.Forms.TextBox txtbx_p8;
+        private System.Windows.Forms.TextBox txtbx_pT;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel39;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label36;
@@ -2483,32 +2550,33 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.DataGridView dataGridView14;
-        private System.Windows.Forms.DataGridView dataGridView13;
-        private System.Windows.Forms.DataGridView dataGridView12;
-        private System.Windows.Forms.DataGridView dataGridView11;
-        private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.DataGridView dataGridView8;
-        private System.Windows.Forms.DataGridView dataGridView9;
-        private System.Windows.Forms.DataGridView dataGridView10;
-        private System.Windows.Forms.DataGridView dataGridView24;
-        private System.Windows.Forms.DataGridView dataGridView22;
-        private System.Windows.Forms.DataGridView dataGridView21;
-        private System.Windows.Forms.DataGridView dataGridView20;
-        private System.Windows.Forms.DataGridView dataGridView19;
-        private System.Windows.Forms.DataGridView dataGridView18;
-        private System.Windows.Forms.DataGridView dataGridView17;
-        private System.Windows.Forms.DataGridView dataGridView16;
-        private System.Windows.Forms.DataGridView dataGridView15;
-        private System.Windows.Forms.DataGridView dataGridView23;
+        private System.Windows.Forms.DataGridView dgvBQG;
+        private System.Windows.Forms.DataGridView dgvBIG;
+        private System.Windows.Forms.DataGridView dgvBQAWS;
+        private System.Windows.Forms.DataGridView dgvBQAPS;
+        private System.Windows.Forms.DataGridView dgvGName;
+        private System.Windows.Forms.DataGridView dgvBWWPS;
+        private System.Windows.Forms.DataGridView dgvBWWWS;
+        private System.Windows.Forms.DataGridView dgvBPT;
+        private System.Windows.Forms.DataGridView dgvBPTPS;
+        private System.Windows.Forms.DataGridView dgvBPTWS;
+        private System.Windows.Forms.DataGridView dgvBQA;
+        private System.Windows.Forms.DataGridView dgvGQG;
+        private System.Windows.Forms.DataGridView dgvGQAWS;
+        private System.Windows.Forms.DataGridView dgvGQAPS;
+        private System.Windows.Forms.DataGridView dgvGQA;
+        private System.Windows.Forms.DataGridView dgvGPTWS;
+        private System.Windows.Forms.DataGridView dgvGPTPS;
+        private System.Windows.Forms.DataGridView dgvGPT;
+        private System.Windows.Forms.DataGridView dgvGWWWS;
+        private System.Windows.Forms.DataGridView dgvGWWPS;
+        private System.Windows.Forms.DataGridView dgvGIG;
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox subjectCmBx;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Label lbl_grade;
     }
 }

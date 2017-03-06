@@ -57,7 +57,13 @@ namespace GradingSystem
             {
 
                 MySqlDataAdapter adpt = new MySqlDataAdapter(cmd);
-                adpt.Fill(dt);
+                try
+                {
+                    adpt.Fill(dt);
+                }
+                catch (Exception e){
+                    MessageBox.Show(e.Message);
+                }
             }
 
 
