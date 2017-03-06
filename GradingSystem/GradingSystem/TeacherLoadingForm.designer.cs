@@ -80,11 +80,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -689,11 +689,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(220, 65);
+            this.label5.Location = new System.Drawing.Point(193, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 16);
+            this.label5.Size = new System.Drawing.Size(99, 16);
             this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.label5.Text = "S.Y. 20XX-20XX";
             // 
             // label4
             // 
@@ -775,6 +775,16 @@
             this.panel10.Size = new System.Drawing.Size(537, 35);
             this.panel10.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(391, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Refresh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnSearch
             // 
             this.btnSearch.Location = new System.Drawing.Point(278, 7);
@@ -812,16 +822,6 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(391, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Refresh";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TeacherLoadingForm
             // 
