@@ -33,7 +33,6 @@
             this.tamadGradeLevel = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -121,6 +120,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel48 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -170,11 +170,11 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.tamadAdviser);
             this.panel1.Controls.Add(this.tamadGradeLevel);
             this.panel1.Controls.Add(this.label37);
             this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label30);
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Controls.Add(this.panel2);
@@ -223,16 +223,6 @@
             this.label33.Size = new System.Drawing.Size(111, 16);
             this.label33.TabIndex = 9;
             this.label33.Text = "Name of Adviser:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(204, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "label2";
             // 
             // label30
             // 
@@ -1119,6 +1109,16 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(177, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "S.Y. 20XX-20XX";
+            // 
             // ClassSchedForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1301,7 +1301,6 @@
         private System.Windows.Forms.Label t12;
         private System.Windows.Forms.Label t1;
         private System.Windows.Forms.Label t2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label37;
@@ -1310,5 +1309,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel48;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

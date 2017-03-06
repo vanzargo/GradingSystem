@@ -37,23 +37,13 @@
             this.tabControlAdmin = new System.Windows.Forms.TabControl();
             this.tabTrans = new System.Windows.Forms.TabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.a_btnStudent = new System.Windows.Forms.ToolStripButton();
-            this.btnTeacher = new System.Windows.Forms.ToolStripButton();
             this.tabMaintenance = new System.Windows.Forms.TabPage();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.btnSchoolyear = new System.Windows.Forms.ToolStripButton();
-            this.btnTimeSchedule = new System.Windows.Forms.ToolStripButton();
-            this.btnFacultyLoad = new System.Windows.Forms.ToolStripButton();
             this.tabView = new System.Windows.Forms.TabPage();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
-            this.enrollees = new System.Windows.Forms.ToolStripButton();
-            this.faculty = new System.Windows.Forms.ToolStripButton();
             this.tabReport = new System.Windows.Forms.TabPage();
             this.toolStrip4 = new System.Windows.Forms.ToolStrip();
-            this.studentlist = new System.Windows.Forms.ToolStripButton();
-            this.audittrail = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelAdmin = new System.Windows.Forms.Panel();
@@ -63,7 +53,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolStrip6 = new System.Windows.Forms.ToolStrip();
-            this.t_btnStudent = new System.Windows.Forms.ToolStripButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelSClass = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -76,6 +65,17 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView_SClass = new System.Windows.Forms.DataGridView();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.t_btnStudent = new System.Windows.Forms.ToolStripButton();
+            this.a_btnStudent = new System.Windows.Forms.ToolStripButton();
+            this.btnTeacher = new System.Windows.Forms.ToolStripButton();
+            this.btnSchoolyear = new System.Windows.Forms.ToolStripButton();
+            this.btnTimeSchedule = new System.Windows.Forms.ToolStripButton();
+            this.btnFacultyLoad = new System.Windows.Forms.ToolStripButton();
+            this.enrollees = new System.Windows.Forms.ToolStripButton();
+            this.faculty = new System.Windows.Forms.ToolStripButton();
+            this.studentlist = new System.Windows.Forms.ToolStripButton();
+            this.audittrail = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.tabControlAdmin.SuspendLayout();
             this.tabTrans.SuspendLayout();
@@ -87,7 +87,6 @@
             this.tabReport.SuspendLayout();
             this.toolStrip4.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelAdmin.SuspendLayout();
             this.panelTeacher.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -100,6 +99,7 @@
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -182,33 +182,9 @@
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(900, 95);
+            this.toolStrip1.Size = new System.Drawing.Size(900, 99);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // a_btnStudent
-            // 
-            this.a_btnStudent.BackColor = System.Drawing.Color.White;
-            this.a_btnStudent.Image = global::GradingSystem.Properties.Resources.student_icon;
-            this.a_btnStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.a_btnStudent.Margin = new System.Windows.Forms.Padding(2);
-            this.a_btnStudent.Name = "a_btnStudent";
-            this.a_btnStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.a_btnStudent.Size = new System.Drawing.Size(74, 91);
-            this.a_btnStudent.Text = "Student";
-            this.a_btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.a_btnStudent.Click += new System.EventHandler(this.addStudent_Click);
-            // 
-            // btnTeacher
-            // 
-            this.btnTeacher.Image = global::GradingSystem.Properties.Resources.teacher_icon1;
-            this.btnTeacher.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTeacher.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTeacher.Name = "btnTeacher";
-            this.btnTeacher.Size = new System.Drawing.Size(74, 91);
-            this.btnTeacher.Text = "Teacher";
-            this.btnTeacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnTeacher.Click += new System.EventHandler(this.addTeacher_Click);
             // 
             // tabMaintenance
             // 
@@ -237,40 +213,6 @@
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "Grade Level";
             // 
-            // btnSchoolyear
-            // 
-            this.btnSchoolyear.Image = global::GradingSystem.Properties.Resources.calendar_icon;
-            this.btnSchoolyear.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSchoolyear.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSchoolyear.Name = "btnSchoolyear";
-            this.btnSchoolyear.Size = new System.Drawing.Size(104, 91);
-            this.btnSchoolyear.Text = "   School Year   ";
-            this.btnSchoolyear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnSchoolyear.ToolTipText = "School Year";
-            this.btnSchoolyear.Click += new System.EventHandler(this.addSchoolyear_Click);
-            // 
-            // btnTimeSchedule
-            // 
-            this.btnTimeSchedule.Image = global::GradingSystem.Properties.Resources.schedule_icon;
-            this.btnTimeSchedule.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnTimeSchedule.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTimeSchedule.Name = "btnTimeSchedule";
-            this.btnTimeSchedule.Size = new System.Drawing.Size(104, 91);
-            this.btnTimeSchedule.Text = " Time Schedule ";
-            this.btnTimeSchedule.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnTimeSchedule.Click += new System.EventHandler(this.addTimeSchedule_Click);
-            // 
-            // btnFacultyLoad
-            // 
-            this.btnFacultyLoad.Image = global::GradingSystem.Properties.Resources.enroll_icon;
-            this.btnFacultyLoad.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnFacultyLoad.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFacultyLoad.Name = "btnFacultyLoad";
-            this.btnFacultyLoad.Size = new System.Drawing.Size(102, 91);
-            this.btnFacultyLoad.Text = "Faculty Loading";
-            this.btnFacultyLoad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnFacultyLoad.Click += new System.EventHandler(this.btnFacultyLoad_Click);
-            // 
             // tabView
             // 
             this.tabView.Controls.Add(this.toolStrip3);
@@ -292,27 +234,9 @@
             this.toolStrip3.Location = new System.Drawing.Point(3, 3);
             this.toolStrip3.Name = "toolStrip3";
             this.toolStrip3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStrip3.Size = new System.Drawing.Size(900, 92);
+            this.toolStrip3.Size = new System.Drawing.Size(900, 97);
             this.toolStrip3.TabIndex = 0;
             this.toolStrip3.Text = "toolStrip3";
-            // 
-            // enrollees
-            // 
-            this.enrollees.Image = global::GradingSystem.Properties.Resources.enrollees_icon;
-            this.enrollees.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.enrollees.Name = "enrollees";
-            this.enrollees.Size = new System.Drawing.Size(74, 89);
-            this.enrollees.Text = "Enrollees";
-            this.enrollees.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // faculty
-            // 
-            this.faculty.Image = global::GradingSystem.Properties.Resources.faculty;
-            this.faculty.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.faculty.Name = "faculty";
-            this.faculty.Size = new System.Drawing.Size(74, 89);
-            this.faculty.Text = "Faculty";
-            this.faculty.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // tabReport
             // 
@@ -334,27 +258,9 @@
             this.audittrail});
             this.toolStrip4.Location = new System.Drawing.Point(0, 0);
             this.toolStrip4.Name = "toolStrip4";
-            this.toolStrip4.Size = new System.Drawing.Size(906, 92);
+            this.toolStrip4.Size = new System.Drawing.Size(906, 97);
             this.toolStrip4.TabIndex = 0;
             this.toolStrip4.Text = "toolStrip4";
-            // 
-            // studentlist
-            // 
-            this.studentlist.Image = ((System.Drawing.Image)(resources.GetObject("studentlist.Image")));
-            this.studentlist.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.studentlist.Name = "studentlist";
-            this.studentlist.Size = new System.Drawing.Size(78, 89);
-            this.studentlist.Text = "Students List";
-            this.studentlist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // audittrail
-            // 
-            this.audittrail.Image = ((System.Drawing.Image)(resources.GetObject("audittrail.Image")));
-            this.audittrail.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.audittrail.Name = "audittrail";
-            this.audittrail.Size = new System.Drawing.Size(74, 89);
-            this.audittrail.Text = "Audit Trail";
-            this.audittrail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // panel1
             // 
@@ -369,16 +275,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(920, 116);
             this.panel1.TabIndex = 3;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::GradingSystem.Properties.Resources.NIAlogo;
-            this.pictureBox2.Location = new System.Drawing.Point(119, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(118, 107);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
@@ -413,7 +309,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(1, 0);
+            this.panel3.Location = new System.Drawing.Point(0, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(913, 24);
             this.panel3.TabIndex = 2;
@@ -473,20 +369,10 @@
             this.toolStrip6.TabIndex = 0;
             this.toolStrip6.Text = "Grade Level";
             // 
-            // t_btnStudent
-            // 
-            this.t_btnStudent.Image = global::GradingSystem.Properties.Resources.student_icon1;
-            this.t_btnStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.t_btnStudent.Name = "t_btnStudent";
-            this.t_btnStudent.Size = new System.Drawing.Size(74, 91);
-            this.t_btnStudent.Text = "Student";
-            this.t_btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.t_btnStudent.Click += new System.EventHandler(this.t_btnStudent_Click);
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Location = new System.Drawing.Point(0, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(913, 24);
             this.panel5.TabIndex = 2;
@@ -603,6 +489,124 @@
             this.dataGridView_SClass.Size = new System.Drawing.Size(886, 161);
             this.dataGridView_SClass.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::GradingSystem.Properties.Resources.NIAlogo;
+            this.pictureBox2.Location = new System.Drawing.Point(119, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(118, 107);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // t_btnStudent
+            // 
+            this.t_btnStudent.Image = global::GradingSystem.Properties.Resources.student_icon1;
+            this.t_btnStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.t_btnStudent.Name = "t_btnStudent";
+            this.t_btnStudent.Size = new System.Drawing.Size(74, 91);
+            this.t_btnStudent.Text = "Student";
+            this.t_btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.t_btnStudent.Click += new System.EventHandler(this.t_btnStudent_Click);
+            // 
+            // a_btnStudent
+            // 
+            this.a_btnStudent.BackColor = System.Drawing.Color.White;
+            this.a_btnStudent.Image = global::GradingSystem.Properties.Resources.student_icon;
+            this.a_btnStudent.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.a_btnStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.a_btnStudent.Name = "a_btnStudent";
+            this.a_btnStudent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.a_btnStudent.Size = new System.Drawing.Size(74, 91);
+            this.a_btnStudent.Text = "Student";
+            this.a_btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.a_btnStudent.Click += new System.EventHandler(this.addStudent_Click);
+            // 
+            // btnTeacher
+            // 
+            this.btnTeacher.Image = global::GradingSystem.Properties.Resources.teacher_icon1;
+            this.btnTeacher.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTeacher.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTeacher.Name = "btnTeacher";
+            this.btnTeacher.Size = new System.Drawing.Size(74, 91);
+            this.btnTeacher.Text = "Teacher";
+            this.btnTeacher.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnTeacher.Click += new System.EventHandler(this.addTeacher_Click);
+            // 
+            // btnSchoolyear
+            // 
+            this.btnSchoolyear.Image = global::GradingSystem.Properties.Resources.calendar_icon;
+            this.btnSchoolyear.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSchoolyear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSchoolyear.Name = "btnSchoolyear";
+            this.btnSchoolyear.Size = new System.Drawing.Size(104, 91);
+            this.btnSchoolyear.Text = "   School Year   ";
+            this.btnSchoolyear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnSchoolyear.ToolTipText = "School Year";
+            this.btnSchoolyear.Click += new System.EventHandler(this.addSchoolyear_Click);
+            // 
+            // btnTimeSchedule
+            // 
+            this.btnTimeSchedule.Image = global::GradingSystem.Properties.Resources.schedule_icon;
+            this.btnTimeSchedule.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnTimeSchedule.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTimeSchedule.Name = "btnTimeSchedule";
+            this.btnTimeSchedule.Size = new System.Drawing.Size(104, 91);
+            this.btnTimeSchedule.Text = " Time Schedule ";
+            this.btnTimeSchedule.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnTimeSchedule.Click += new System.EventHandler(this.addTimeSchedule_Click);
+            // 
+            // btnFacultyLoad
+            // 
+            this.btnFacultyLoad.Image = global::GradingSystem.Properties.Resources.enroll_icon;
+            this.btnFacultyLoad.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFacultyLoad.Margin = new System.Windows.Forms.Padding(2);
+            this.btnFacultyLoad.Name = "btnFacultyLoad";
+            this.btnFacultyLoad.Size = new System.Drawing.Size(102, 91);
+            this.btnFacultyLoad.Text = "Faculty Loading";
+            this.btnFacultyLoad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnFacultyLoad.Click += new System.EventHandler(this.btnFacultyLoad_Click);
+            // 
+            // enrollees
+            // 
+            this.enrollees.Image = global::GradingSystem.Properties.Resources.enrollees_icon;
+            this.enrollees.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.enrollees.Margin = new System.Windows.Forms.Padding(4);
+            this.enrollees.Name = "enrollees";
+            this.enrollees.Size = new System.Drawing.Size(74, 89);
+            this.enrollees.Text = "Enrollees";
+            this.enrollees.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // faculty
+            // 
+            this.faculty.Image = global::GradingSystem.Properties.Resources.faculty;
+            this.faculty.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.faculty.Margin = new System.Windows.Forms.Padding(4);
+            this.faculty.Name = "faculty";
+            this.faculty.Size = new System.Drawing.Size(74, 89);
+            this.faculty.Text = "Faculty";
+            this.faculty.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // studentlist
+            // 
+            this.studentlist.Image = ((System.Drawing.Image)(resources.GetObject("studentlist.Image")));
+            this.studentlist.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.studentlist.Margin = new System.Windows.Forms.Padding(4);
+            this.studentlist.Name = "studentlist";
+            this.studentlist.Size = new System.Drawing.Size(78, 89);
+            this.studentlist.Text = "Students List";
+            this.studentlist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // audittrail
+            // 
+            this.audittrail.Image = global::GradingSystem.Properties.Resources.audit_icon;
+            this.audittrail.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.audittrail.Margin = new System.Windows.Forms.Padding(4);
+            this.audittrail.Name = "audittrail";
+            this.audittrail.Size = new System.Drawing.Size(74, 89);
+            this.audittrail.Text = "Audit Trail";
+            this.audittrail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -643,7 +647,6 @@
             this.toolStrip4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelAdmin.ResumeLayout(false);
             this.panelTeacher.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -660,6 +663,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_SClass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
