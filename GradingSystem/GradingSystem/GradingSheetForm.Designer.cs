@@ -35,7 +35,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.subjectCmBx = new System.Windows.Forms.ComboBox();
+            this.quarterCmBx = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
@@ -331,7 +331,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 247F));
             this.tableLayoutPanel3.Controls.Add(this.panel44, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel42, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 2, 0);
@@ -347,28 +347,29 @@
             // 
             // panel44
             // 
-            this.panel44.Controls.Add(this.subjectCmBx);
+            this.panel44.Controls.Add(this.quarterCmBx);
             this.panel44.Controls.Add(this.button2);
-            this.panel44.Location = new System.Drawing.Point(722, 3);
+            this.panel44.Location = new System.Drawing.Point(721, 3);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(376, 30);
             this.panel44.TabIndex = 2;
             // 
-            // subjectCmBx
+            // quarterCmBx
             // 
-            this.subjectCmBx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.subjectCmBx.Enabled = false;
-            this.subjectCmBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subjectCmBx.FormattingEnabled = true;
-            this.subjectCmBx.Items.AddRange(new object[] {
+            this.quarterCmBx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.quarterCmBx.Enabled = false;
+            this.quarterCmBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quarterCmBx.FormattingEnabled = true;
+            this.quarterCmBx.Items.AddRange(new object[] {
             "1st Grading",
             "2nd Grading",
             "3rd Grading",
             "4th Grading"});
-            this.subjectCmBx.Location = new System.Drawing.Point(30, 3);
-            this.subjectCmBx.Name = "subjectCmBx";
-            this.subjectCmBx.Size = new System.Drawing.Size(121, 24);
-            this.subjectCmBx.TabIndex = 2;
+            this.quarterCmBx.Location = new System.Drawing.Point(30, 3);
+            this.quarterCmBx.Name = "quarterCmBx";
+            this.quarterCmBx.Size = new System.Drawing.Size(121, 24);
+            this.quarterCmBx.TabIndex = 2;
+            this.quarterCmBx.SelectedIndexChanged += new System.EventHandler(this.quarterCmBx_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -404,7 +405,7 @@
             // 
             this.panel4.Controls.Add(this.lblSubject);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(631, 3);
+            this.panel4.Location = new System.Drawing.Point(630, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(85, 30);
             this.panel4.TabIndex = 1;
@@ -423,9 +424,9 @@
             // 
             this.panel5.Controls.Add(this.lblGradelvl);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(1104, 3);
+            this.panel5.Location = new System.Drawing.Point(1103, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(241, 30);
+            this.panel5.Size = new System.Drawing.Size(242, 30);
             this.panel5.TabIndex = 2;
             // 
             // lblGradelvl
@@ -445,7 +446,7 @@
             this.lbl_grade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_grade.Location = new System.Drawing.Point(103, 0);
             this.lbl_grade.Name = "lbl_grade";
-            this.lbl_grade.Size = new System.Drawing.Size(522, 36);
+            this.lbl_grade.Size = new System.Drawing.Size(521, 36);
             this.lbl_grade.TabIndex = 3;
             this.lbl_grade.Text = "Grade 0";
             this.lbl_grade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -2573,7 +2574,7 @@
         private System.Windows.Forms.DataGridView dgvGIG;
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox subjectCmBx;
+        private System.Windows.Forms.ComboBox quarterCmBx;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Panel panel44;

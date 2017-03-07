@@ -14,10 +14,10 @@ namespace GradingSystem
     public partial class GradingSheetForm : Form
     {
         String Grade = "%";//or 1 to 10
-        String quarter = "1";//1, 2, 3, 4
         String Subject = "Math";//`subject`_total for total
         String teacher = "";
         String section = "%";
+        String quarter = "1";//1, 2, 3, 4
         /*Math
           English
           Science
@@ -37,6 +37,7 @@ namespace GradingSystem
             lblGradelvl.Text = "Grade " + Grade;
             lbl_grade.Text = section;
             lblSubject.Text = Subject;
+            quarterCmBx.SelectedIndex = Int32.Parse(quarter) - 1;
             lblGradelvl.Text = "TeacherName: " + teacher;
         }
         
@@ -128,6 +129,11 @@ namespace GradingSystem
             frf.Show();
         }
 
+        private void quarterCmBx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GradingSheet_Load(sender,e);
+        }
+
         static public float transmutate(float grade)
         {
             if (grade >= 0.00 && grade <= 3.99) return 60;
@@ -173,81 +179,12 @@ namespace GradingSystem
             if (grade >= 100.00 && grade <= 100.00) return 100;
             return 0;
         }
-        /*
-         */
+
+        private void manageBoys() {
+
+        }
     }
 }
 /*
-lbl_written_work	:
-WRITTEN WORK (30%)
 
-lbl_performance_task	:
-PERFORMANCE TASK (50%)
-
-lbl_quarter	:
-QUARTERLY
-ASSESSMENT
-        (20%)
-
-subjectCmBx	:
-
-lblGradelvl	:
-TeacherName
-
-lbl_grade	:
-Grade 0
-
-txtbx_w1	:
-txtbx_w2	:
-txtbx_w3	:
-txtbx_w4	:
-txtbx_w5	:
-txtbx_w6	:
-txtbx_w7	:
-txtbx_w8	:
-txtbx_wT	:
-
-txtbx_p1	:
-txtbx_p2	:
-txtbx_p3	:
-txtbx_p4	:
-txtbx_p5	:
-txtbx_p6	:
-txtbx_p7	:
-txtbx_p8	:
-txtbx_pT	:
-
-txtbx_qT	:
-
-dgvBName	:
-dgvBWW		:
-dgvBWWPS	:
-dgvBWWWS	:
-
-dgvBPT		:
-dgvBPTPS	:
-dgvBPTWS	:
-
-dgvBQA		:
-dgvBQAPS	:
-dgvBQAWS	:
-
-dgvBIG		:
-dgvBQG		:
-
-dgvGName	:
-dgvGWW		:
-dgvGWWPS	:
-dgvGWWWS	:
-
-dgvGPT		:
-dgvGPTPS	:
-dgvGPTWS	:
-
-dgvGQA		:
-dgvGQAPS	:
-dgvGQAWS	:
-
-dgvGIG		:
-dgvGQG		:
 */
