@@ -33,8 +33,7 @@ namespace GradingSystem
             this.teacher = teacher;
             InitializeComponent();
             lbl_grade.Text = "Grade " + Grade;
-            subjectCmBx.DataSource = new String[] { Subject };
-            subjectCmBx.Text = Subject;
+            lblSubject.Text = Subject;
             lblGradelvl.Text = "TeacherName: " + teacher;
         }
         

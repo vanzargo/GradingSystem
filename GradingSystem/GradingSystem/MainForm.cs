@@ -147,19 +147,19 @@ namespace GradingSystem
                       "SELECT `2_subject`,`2_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `2_GradeLevel` ";
             } else
             {
-                sql = "SELECT `7_subject` as `Subject` ,`7_GradeLevel` as `Advisory Class`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`) as `Teacher Name`  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `7_GradeLevel` AND `User_ID` = " + Program.user_id + " " +
+                sql = "SELECT `7_subject` as `Subject` ,`7_GradeLevel` as `Advisory Class`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`) as `Teacher Name`  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `7_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION " +
-                      "SELECT `8_subject`,`8_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `8_GradeLevel` AND `User_ID` = " + Program.user_id + " " +
+                      "SELECT `8_subject`,`8_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `8_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION " +
-                      "SELECT `9_subject`,`9_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `9_GradeLevel` AND `User_ID` = " + Program.user_id + " " +
+                      "SELECT `9_subject`,`9_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `9_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION " +
-                      "SELECT `10_subject`,`10_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `10_GradeLevel` AND `User_ID` = " + Program.user_id + " " +
+                      "SELECT `10_subject`,`10_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `10_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION " +
-                      "SELECT `12_subject`,`12_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `12_GradeLevel` AND `User_ID` = " + Program.user_id + " " +
+                      "SELECT `12_subject`,`12_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `12_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION " +
-                      "SELECT `1_subject`,`1_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `1_GradeLevel` AND `User_ID` = " + Program.user_id +" "+
+                      "SELECT `1_subject`,`1_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `1_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id +" "+
                       "UNION " +
-                      "SELECT `2_subject`,`2_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `2_GradeLevel` AND `User_ID` = " + Program.user_id;
+                      "SELECT `2_subject`,`2_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `advisory_class` = `2_GradeLevel` AND `teacher`.`User_ID` = " + Program.user_id;
             }
             using (MySqlCommand cmd = new MySqlCommand(sql, con))
             {
@@ -197,19 +197,19 @@ namespace GradingSystem
             }
             else
             {
-                sql = "SELECT `7_subject` as `subject` ,`7_GradeLevel` as `Grade Level`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`) as `Teacher Name`  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " "+
+                sql = "SELECT `7_subject` as `subject` ,`7_GradeLevel` as `Grade Level`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`) as `Teacher Name`  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " "+
                       "UNION ALL "+
-                      "SELECT `8_subject`,`8_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " " +
+                      "SELECT `8_subject`,`8_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION ALL " +
-                      "SELECT `9_subject`,`9_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " " +
+                      "SELECT `9_subject`,`9_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION ALL " +
-                      "SELECT `10_subject`,`10_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " " +
+                      "SELECT `10_subject`,`10_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION ALL " +
-                      "SELECT `12_subject`,`12_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " " +
+                      "SELECT `12_subject`,`12_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION ALL " +
-                      "SELECT `1_subject`,`1_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " " +
+                      "SELECT `1_subject`,`1_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " " +
                       "UNION ALL " +
-                      "SELECT `2_subject`,`2_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `User_ID` = " + Program.user_id + " ";
+                      "SELECT `2_subject`,`2_GradeLevel`, CONCAT(`Teacher_FirstName`,' ', `Teacher_LastName`)  FROM `teacher_schedule` LEFT JOIN `teacher` ON `teacher`.`User_ID` = `teacher_schedule`.`User_ID` WHERE `teacher`.`User_ID` = " + Program.user_id + " ";
             }
             using (MySqlCommand cmd = new MySqlCommand(sql, con))
             {

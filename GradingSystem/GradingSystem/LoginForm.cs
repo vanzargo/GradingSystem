@@ -35,7 +35,7 @@ namespace GradingSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MySqlConnection cn;
+            /*MySqlConnection cn;
             cn = new MySqlConnection(connectionString);
             try
             {
@@ -45,7 +45,7 @@ namespace GradingSystem
             catch (Exception)
             {
                 MessageBox.Show("Can not open connection ! ");
-            }
+            }*/
             string query="";
             try
             {
@@ -53,34 +53,26 @@ namespace GradingSystem
                 password = txtPass.Text;
                 //LoginForm login = new LoginForm();
                 //MainForm main = new MainForm();
-
-                cm.Connection = cn;
                 
-                query = "SELECT `user`.`User_ID`,`User_Username`, `User_Password`, `Teacher_FirstName`, `Teacher_Position` from `user`, `teacher` where `user`.`User_ID` = `teacher`.`User_ID` and `User_Username` like '" + txtUser.Text + "' and `User_Password` like '" + txtPass.Text + "'";
-                cm = new MySqlCommand(query, cn);
-                MySqlDataReader reader = cm.ExecuteReader();
+                query = "SELECT user.User_ID,`User_Username`, `User_Password`, `Teacher_FirstName`, `Teacher_Position` "+
+                    "FROM `user` LEFT JOIN `teacher` ON `user`.`User_ID` = `teacher`.`User_ID` "+
+                    "WHERE `User_Username` like '" + txtUser.Text + "' AND `User_Password` like '" + txtPass.Text + "'";
+                MySqlDataReader reader = Program.GetReaderFromQuery(query);
                 if (reader.Read())
                 {
                     txtFirstName.Text = reader.GetString(reader.GetOrdinal("Teacher_FirstName"));
                     txtPosition.Text = reader.GetString(reader.GetOrdinal("Teacher_Position"));
-
-                }
-
-                if (reader.HasRows)
-                {
+                    
                     Program.user_id = reader.GetString(reader.GetOrdinal("User_ID"));
                     Program.position = txtPosition.Text;
                     MainForm admin = new MainForm();
                     admin.Show();
-                        this.Hide();
+                    this.Hide();
                     if (txtPosition.Text == "Admin")
                     {
                     }
                     else if(txtPosition.Text == "Teacher")
                     {
-                        /*TeacherMainForm teacher = new TeacherMainForm();
-                        teacher.Show();
-                        this.Hide();*/
                     }
                     else
                     {
@@ -89,8 +81,6 @@ namespace GradingSystem
                     }
                     
                 }
-                
-                   
                 else
                 {
                     MessageBox.Show("Invalid Username or Password", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
