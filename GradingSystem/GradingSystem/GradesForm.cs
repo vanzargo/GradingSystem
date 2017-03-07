@@ -13,12 +13,14 @@ namespace GradingSystem
     public partial class GradesForm : Form
     {
         String Grade = "%";//or 1 to 10
+        String Section = "%";//or 1 to 2
 
-        public GradesForm(String Grade)
+        public GradesForm(String Grade, String section)
         {
             this.Grade = Grade;
+            this.Section = section;
             InitializeComponent();
-            label16.Text = "Grade " + Grade;
+            label16.Text = "Grade " + Grade+" "+section;
             load();
         }
 
@@ -40,16 +42,16 @@ namespace GradingSystem
             dgvBSN.DataSource = Program.GetDataFromQuery("SELECT `student_FirstName`,`student_MI`,`student_LastName` " +
 "FROM `student_profile` " +
 "LEFT JOIN `student_all_subject_grade` ON `student_profile`.`student_ID` = `student_all_subject_grade`.`student_ID` " +
-"WHERE `student_Level` = 'Grade " + Grade + "' "+
+"WHERE `student_Level` = 'Grade " + Grade + "' AND `student_Section` = '"+Section+"' "+
 "AND `student_Sex` = 'Male'");
             dgvBSG.DataSource = Program.GetDataFromQuery("SELECT `FILIPINO`, `ENGLISH`, `MATH`, `SCIENCE`, `AP`, `VALUES`, `MAPEH`, `TLE`, ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/8), FIND_IN_SET( ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/8), ( " +
 "SELECT GROUP_CONCAT(((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` ) / 8) " +
 "ORDER BY ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/ 8) DESC )  " +
 "FROM `student_profile` " +
-"LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` WHERE `student_profile`.`student_Level` = 'Grade 8')) AS rank " +
+"LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_Section` = '" + Section + "' )) AS rank " +
 "FROM `student_profile` " +
 "LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` " +
-"WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_sex` = 'male'");
+"WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_sex` = 'male' AND `student_Section` = '" + Section + "' ");
         }
 
         private void loadGirls()
@@ -57,16 +59,16 @@ namespace GradingSystem
             dgvGSN.DataSource = Program.GetDataFromQuery("SELECT `student_FirstName`,`student_MI`,`student_LastName` " +
 "FROM `student_profile` " +
 "LEFT JOIN `student_all_subject_grade` ON `student_profile`.`student_ID` = `student_all_subject_grade`.`student_ID` " +
-"WHERE `student_Level` = 'Grade " + Grade + "' " +
+"WHERE `student_Level` = 'Grade " + Grade + "' AND `student_Section` = '" + Section + "' " +
 "AND `student_Sex` = 'Female'");
             dgvGSG.DataSource = Program.GetDataFromQuery("SELECT `FILIPINO`, `ENGLISH`, `MATH`, `SCIENCE`, `AP`, `VALUES`, `MAPEH`, `TLE`, ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/8), FIND_IN_SET( ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/8), ( " +
 "SELECT GROUP_CONCAT(((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` ) / 8) " +
 "ORDER BY ((`FILIPINO`+`ENGLISH`+`MATH`+`SCIENCE`+`AP`+`VALUES`+`MAPEH`+`TLE` )/ 8) DESC )  " +
 "FROM `student_profile` " +
-"LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` WHERE `student_profile`.`student_Level` = 'Grade 8')) AS rank " +
+"LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_Section` = '" + Section + "' )) AS rank " +
 "FROM `student_profile` " +
 "LEFT JOIN `student_all_subject_grade` ON `student_all_subject_grade`.`student_ID` = `student_profile`.`student_ID` " +
-"WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_sex` = 'Female'");
+"WHERE `student_profile`.`student_Level` = 'Grade 8' AND `student_sex` = 'Female' AND `student_Section` = '" + Section + "' ");
         }
 
         private void resizeDGV(DataGridView v, int defSize = 50, int lastSize = 100)

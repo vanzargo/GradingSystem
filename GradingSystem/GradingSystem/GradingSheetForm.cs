@@ -17,22 +17,25 @@ namespace GradingSystem
         String quarter = "1";//1, 2, 3, 4
         String Subject = "Math";//`subject`_total for total
         String teacher = "";
-      /*Math
-        English
-        Science
-        Filipino
-        S.S.
-        M.A.P.E.H
-        T.L.E*/
+        String section = "%";
+        /*Math
+          English
+          Science
+          Filipino
+          S.S.
+          M.A.P.E.H
+          T.L.E*/
 
-        public GradingSheetForm(String Grade, String quarter, String Subject, String teacher)
+        public GradingSheetForm(String Grade, String quarter, String Subject, String teacher, String section)
         {
             this.Grade = Grade;
             this.quarter = quarter;
             this.Subject = Subject;
             this.teacher = teacher;
+            this.section = section;
             InitializeComponent();
-            lbl_grade.Text = "Grade " + Grade;
+            lblGradelvl.Text = "Grade " + Grade;
+            lbl_grade.Text = section;
             lblSubject.Text = Subject;
             lblGradelvl.Text = "TeacherName: " + teacher;
         }

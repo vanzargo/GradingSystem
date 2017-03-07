@@ -82,9 +82,9 @@ namespace GradingSystem
                 txtLName.Text = reader.GetString(reader.GetOrdinal("Student_LastName"));
                 cmbSex.Text = reader.GetString(reader.GetOrdinal("Student_Sex"));
                 cmbGradelvl.Text = reader.GetString(reader.GetOrdinal("Student_Level"));
+                comboBox1.Text = reader.GetString(reader.GetOrdinal("student_Section"));
 
-
-       }
+            }
             else
             {
                 MessageBox.Show("No records found.");
@@ -167,6 +167,7 @@ namespace GradingSystem
                 txtLName.Text = reader.GetString(reader.GetOrdinal("Student_LastName"));
                 cmbSex.Text = reader.GetString(reader.GetOrdinal("Student_Sex"));
                 cmbGradelvl.Text = reader.GetString(reader.GetOrdinal("Student_Level"));
+                comboBox1.Text = reader.GetString(reader.GetOrdinal("Student_Section"));
             }
             reader.Close();
 
@@ -220,7 +221,7 @@ namespace GradingSystem
                     try
                     {
                        
-                        string query1 = "INSERT INTO student_profile(Student_ID,Student_FirstName,Student_MI,Student_LastName,Student_Sex,Student_Level) VALUES('" + txtIDno.Text + "','" + txtFName.Text + "','" + txtMI.Text + "','" + txtLName.Text + "','" + cmbSex.Text + "','" + cmbGradelvl.Text + "');";
+                        string query1 = "INSERT INTO student_profile(Student_ID,Student_FirstName,Student_MI,Student_LastName,Student_Sex,Student_Level,Student_Section) VALUES('" + txtIDno.Text + "','" + txtFName.Text + "','" + txtMI.Text + "','" + txtLName.Text + "','" + cmbSex.Text + "','" + cmbGradelvl.Text + "','" + comboBox1.Text + "');";
                         cmd = new MySqlCommand(query1, connect);
                         string query2 = "INSERT INTO student_ww(Written_ID, Student_ID) VALUES('" + wwID + "','" + txtIDno.Text + "');";
                         cmd1 = new MySqlCommand(query2, connect);
@@ -278,7 +279,7 @@ namespace GradingSystem
 
             if (dr == DialogResult.Yes)
             {
-                string query1 = "UPDATE student_profile SET Student_FirstName='" + txtFName.Text + "', Student_MI='" + txtMI.Text + "', Student_LastName='" + txtLName.Text + "', Student_Sex='" + cmbSex.Text + "', Student_Level='" + cmbGradelvl.Text + "' WHERE Student_ID ='" + id + "'";
+                string query1 = "UPDATE student_profile SET Student_FirstName='" + txtFName.Text + "', Student_MI='" + txtMI.Text + "', Student_LastName='" + txtLName.Text + "', Student_Sex='" + cmbSex.Text + "', Student_Level='" + cmbGradelvl.Text + "', Student_Section='" + comboBox1.Text + "' WHERE Student_ID ='" + id + "'";
                 cmd = new MySqlCommand(query1, connect);
 
                 if (cmd.ExecuteNonQuery() == 1)
@@ -327,6 +328,7 @@ namespace GradingSystem
                 txtLName.Text = reader.GetString(reader.GetOrdinal("Student_LastName"));
                 cmbSex.Text = reader.GetString(reader.GetOrdinal("Student_Sex"));
                 cmbGradelvl.Text = reader.GetString(reader.GetOrdinal("Student_Level"));
+                comboBox1.Text = reader.GetString(reader.GetOrdinal("Student_Section"));
 
 
             }
