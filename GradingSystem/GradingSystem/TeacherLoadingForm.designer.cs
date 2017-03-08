@@ -85,6 +85,16 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.sc2to3 = new System.Windows.Forms.ComboBox();
+            this.sc1to2 = new System.Windows.Forms.ComboBox();
+            this.sc12to1 = new System.Windows.Forms.ComboBox();
+            this.sc10to11 = new System.Windows.Forms.ComboBox();
+            this.sc9to10 = new System.Windows.Forms.ComboBox();
+            this.sc8to9 = new System.Windows.Forms.ComboBox();
+            this.sc7to8 = new System.Windows.Forms.ComboBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -97,6 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,12 +127,12 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 613);
+            this.panel1.Size = new System.Drawing.Size(577, 613);
             this.panel1.TabIndex = 0;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(371, 572);
+            this.btnSave.Location = new System.Drawing.Point(476, 572);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 30);
             this.btnSave.TabIndex = 8;
@@ -159,10 +171,13 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.panel12, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel11, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 1);
@@ -173,9 +188,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(27, 181);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.762533F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.762534F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.23746F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(422, 379);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(543, 379);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // panel3
@@ -185,7 +200,7 @@
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(136, 31);
+            this.panel3.Size = new System.Drawing.Size(131, 31);
             this.panel3.TabIndex = 0;
             // 
             // label8
@@ -201,10 +216,10 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(142, 3);
+            this.panel4.Location = new System.Drawing.Point(137, 3);
             this.panel4.Margin = new System.Windows.Forms.Padding(2, 3, 1, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(137, 31);
+            this.panel4.Size = new System.Drawing.Size(132, 31);
             this.panel4.TabIndex = 1;
             // 
             // label7
@@ -230,10 +245,10 @@
             this.panel5.Controls.Add(this.label22);
             this.panel5.Controls.Add(this.label21);
             this.panel5.Controls.Add(this.label20);
-            this.panel5.Location = new System.Drawing.Point(142, 40);
+            this.panel5.Location = new System.Drawing.Point(137, 40);
             this.panel5.Margin = new System.Windows.Forms.Padding(2, 3, 1, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(137, 336);
+            this.panel5.Size = new System.Drawing.Size(132, 336);
             this.panel5.TabIndex = 2;
             // 
             // s2to3
@@ -252,6 +267,7 @@
             this.s2to3.Name = "s2to3";
             this.s2to3.Size = new System.Drawing.Size(100, 24);
             this.s2to3.TabIndex = 10;
+            this.s2to3.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s1to2
             // 
@@ -269,6 +285,7 @@
             this.s1to2.Name = "s1to2";
             this.s1to2.Size = new System.Drawing.Size(100, 24);
             this.s1to2.TabIndex = 9;
+            this.s1to2.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s12to1
             // 
@@ -286,6 +303,7 @@
             this.s12to1.Name = "s12to1";
             this.s12to1.Size = new System.Drawing.Size(100, 24);
             this.s12to1.TabIndex = 8;
+            this.s12to1.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s10to11
             // 
@@ -303,6 +321,7 @@
             this.s10to11.Name = "s10to11";
             this.s10to11.Size = new System.Drawing.Size(100, 24);
             this.s10to11.TabIndex = 7;
+            this.s10to11.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s9to10
             // 
@@ -320,6 +339,7 @@
             this.s9to10.Name = "s9to10";
             this.s9to10.Size = new System.Drawing.Size(100, 24);
             this.s9to10.TabIndex = 6;
+            this.s9to10.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s8to9
             // 
@@ -337,6 +357,7 @@
             this.s8to9.Name = "s8to9";
             this.s8to9.Size = new System.Drawing.Size(100, 24);
             this.s8to9.TabIndex = 5;
+            this.s8to9.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // s7to8
             // 
@@ -354,6 +375,7 @@
             this.s7to8.Name = "s7to8";
             this.s7to8.Size = new System.Drawing.Size(100, 24);
             this.s7to8.TabIndex = 4;
+            this.s7to8.SelectedIndexChanged += new System.EventHandler(this.s7to8_SelectedIndexChanged);
             // 
             // label23
             // 
@@ -401,10 +423,10 @@
             this.panel6.Controls.Add(this.gl9to10);
             this.panel6.Controls.Add(this.gl8to9);
             this.panel6.Controls.Add(this.gl7to8);
-            this.panel6.Location = new System.Drawing.Point(282, 40);
+            this.panel6.Location = new System.Drawing.Point(272, 40);
             this.panel6.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(137, 336);
+            this.panel6.Size = new System.Drawing.Size(130, 336);
             this.panel6.TabIndex = 3;
             // 
             // gl2to3
@@ -426,6 +448,7 @@
             this.gl2to3.Name = "gl2to3";
             this.gl2to3.Size = new System.Drawing.Size(100, 24);
             this.gl2to3.TabIndex = 6;
+            this.gl2to3.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl1to2
             // 
@@ -446,6 +469,7 @@
             this.gl1to2.Name = "gl1to2";
             this.gl1to2.Size = new System.Drawing.Size(100, 24);
             this.gl1to2.TabIndex = 5;
+            this.gl1to2.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl12to1
             // 
@@ -466,6 +490,7 @@
             this.gl12to1.Name = "gl12to1";
             this.gl12to1.Size = new System.Drawing.Size(100, 24);
             this.gl12to1.TabIndex = 4;
+            this.gl12to1.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl10to11
             // 
@@ -486,6 +511,7 @@
             this.gl10to11.Name = "gl10to11";
             this.gl10to11.Size = new System.Drawing.Size(100, 24);
             this.gl10to11.TabIndex = 3;
+            this.gl10to11.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl9to10
             // 
@@ -506,6 +532,7 @@
             this.gl9to10.Name = "gl9to10";
             this.gl9to10.Size = new System.Drawing.Size(100, 24);
             this.gl9to10.TabIndex = 2;
+            this.gl9to10.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl8to9
             // 
@@ -526,6 +553,7 @@
             this.gl8to9.Name = "gl8to9";
             this.gl8to9.Size = new System.Drawing.Size(100, 24);
             this.gl8to9.TabIndex = 1;
+            this.gl8to9.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // gl7to8
             // 
@@ -546,6 +574,7 @@
             this.gl7to8.Name = "gl7to8";
             this.gl7to8.Size = new System.Drawing.Size(100, 24);
             this.gl7to8.TabIndex = 0;
+            this.gl7to8.SelectedIndexChanged += new System.EventHandler(this.gl7to8_SelectedIndexChanged);
             // 
             // panel7
             // 
@@ -564,7 +593,7 @@
             this.panel7.Location = new System.Drawing.Point(3, 40);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 3, 1, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(136, 336);
+            this.panel7.Size = new System.Drawing.Size(131, 336);
             this.panel7.TabIndex = 4;
             // 
             // label19
@@ -670,10 +699,10 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Location = new System.Drawing.Point(282, 3);
+            this.panel8.Location = new System.Drawing.Point(272, 3);
             this.panel8.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(137, 31);
+            this.panel8.Size = new System.Drawing.Size(130, 31);
             this.panel8.TabIndex = 5;
             // 
             // label6
@@ -732,7 +761,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(482, 31);
+            this.panel2.Size = new System.Drawing.Size(575, 31);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -752,16 +781,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(537, 524);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(492, 524);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.dataGridView1);
-            this.panel9.Location = new System.Drawing.Point(519, 12);
+            this.panel9.Location = new System.Drawing.Point(604, 12);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(537, 559);
+            this.panel9.Size = new System.Drawing.Size(492, 559);
             this.panel9.TabIndex = 2;
             // 
             // panel10
@@ -772,7 +803,7 @@
             this.panel10.Controls.Add(this.textBox1);
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(537, 35);
+            this.panel10.Size = new System.Drawing.Size(494, 35);
             this.panel10.TabIndex = 2;
             // 
             // button1
@@ -823,12 +854,131 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Controls.Add(this.sc2to3);
+            this.panel11.Controls.Add(this.sc1to2);
+            this.panel11.Controls.Add(this.sc12to1);
+            this.panel11.Controls.Add(this.sc10to11);
+            this.panel11.Controls.Add(this.sc9to10);
+            this.panel11.Controls.Add(this.sc8to9);
+            this.panel11.Controls.Add(this.sc7to8);
+            this.panel11.Location = new System.Drawing.Point(407, 40);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(130, 336);
+            this.panel11.TabIndex = 6;
+            // 
+            // sc2to3
+            // 
+            this.sc2to3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc2to3.FormattingEnabled = true;
+            this.sc2to3.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc2to3.Location = new System.Drawing.Point(18, 267);
+            this.sc2to3.Name = "sc2to3";
+            this.sc2to3.Size = new System.Drawing.Size(100, 24);
+            this.sc2to3.TabIndex = 6;
+            // 
+            // sc1to2
+            // 
+            this.sc1to2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc1to2.FormattingEnabled = true;
+            this.sc1to2.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc1to2.Location = new System.Drawing.Point(18, 239);
+            this.sc1to2.Name = "sc1to2";
+            this.sc1to2.Size = new System.Drawing.Size(100, 24);
+            this.sc1to2.TabIndex = 5;
+            // 
+            // sc12to1
+            // 
+            this.sc12to1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc12to1.FormattingEnabled = true;
+            this.sc12to1.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc12to1.Location = new System.Drawing.Point(18, 211);
+            this.sc12to1.Name = "sc12to1";
+            this.sc12to1.Size = new System.Drawing.Size(100, 24);
+            this.sc12to1.TabIndex = 4;
+            // 
+            // sc10to11
+            // 
+            this.sc10to11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc10to11.FormattingEnabled = true;
+            this.sc10to11.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc10to11.Location = new System.Drawing.Point(18, 157);
+            this.sc10to11.Name = "sc10to11";
+            this.sc10to11.Size = new System.Drawing.Size(100, 24);
+            this.sc10to11.TabIndex = 3;
+            // 
+            // sc9to10
+            // 
+            this.sc9to10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc9to10.FormattingEnabled = true;
+            this.sc9to10.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc9to10.Location = new System.Drawing.Point(18, 129);
+            this.sc9to10.Name = "sc9to10";
+            this.sc9to10.Size = new System.Drawing.Size(100, 24);
+            this.sc9to10.TabIndex = 2;
+            // 
+            // sc8to9
+            // 
+            this.sc8to9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc8to9.FormattingEnabled = true;
+            this.sc8to9.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc8to9.Location = new System.Drawing.Point(18, 73);
+            this.sc8to9.Name = "sc8to9";
+            this.sc8to9.Size = new System.Drawing.Size(100, 24);
+            this.sc8to9.TabIndex = 1;
+            // 
+            // sc7to8
+            // 
+            this.sc7to8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sc7to8.FormattingEnabled = true;
+            this.sc7to8.Items.AddRange(new object[] {
+            "Section 1",
+            "Section 2"});
+            this.sc7to8.Location = new System.Drawing.Point(17, 44);
+            this.sc7to8.Name = "sc7to8";
+            this.sc7to8.Size = new System.Drawing.Size(100, 24);
+            this.sc7to8.TabIndex = 0;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.White;
+            this.panel12.Controls.Add(this.label24);
+            this.panel12.Location = new System.Drawing.Point(407, 3);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2, 3, 3, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(130, 31);
+            this.panel12.TabIndex = 7;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(29, 7);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(53, 16);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Section";
+            // 
             // TeacherLoadingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(1068, 636);
+            this.ClientSize = new System.Drawing.Size(1109, 636);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.panel9);
@@ -857,6 +1007,9 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -920,5 +1073,15 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.ComboBox sc2to3;
+        private System.Windows.Forms.ComboBox sc1to2;
+        private System.Windows.Forms.ComboBox sc12to1;
+        private System.Windows.Forms.ComboBox sc10to11;
+        private System.Windows.Forms.ComboBox sc9to10;
+        private System.Windows.Forms.ComboBox sc8to9;
+        private System.Windows.Forms.ComboBox sc7to8;
     }
 }

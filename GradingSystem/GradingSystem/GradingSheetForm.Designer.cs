@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel43 = new System.Windows.Forms.Panel();
             this.btn_print = new System.Windows.Forms.Button();
@@ -188,6 +189,7 @@
             this.dgvBPTWS = new System.Windows.Forms.DataGridView();
             this.dgvBQA = new System.Windows.Forms.DataGridView();
             this.dgvGIG = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -2282,6 +2284,12 @@
             this.dgvGIG.Size = new System.Drawing.Size(100, 202);
             this.dgvGIG.TabIndex = 45;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // GradingSheetForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2579,5 +2587,6 @@
         private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.Label lbl_grade;
+        private System.Windows.Forms.Timer timer1;
     }
 }
