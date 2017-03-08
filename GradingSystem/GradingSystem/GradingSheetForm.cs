@@ -75,6 +75,7 @@ namespace GradingSystem
         {
             loadMale();
             loadFemale();
+            manageCompute(sender,e);
         }
 
         private void resizeDGV(DataGridView v, int defSize = 50, int lastSize = 100)
@@ -132,12 +133,15 @@ namespace GradingSystem
             resizeRow(dgvBName, 0);
 
             dgvBWW.DataSource = GetWScoreMale();
+            checkData(dgvBName, dgvBWW);
             resizeDGV(dgvBWW);
 
             dgvBPT.DataSource = GetPScoreMale();
+            checkData(dgvBName, dgvBPT);
             resizeDGV(dgvBPT);
 
             dgvBQA.DataSource = GetQScoreMale();
+            checkData(dgvBName, dgvBQA,1);
             resizeDGV(dgvBQA);
         }
 
@@ -148,14 +152,38 @@ namespace GradingSystem
             resizeRow(dgvGName, 2);
 
             dgvGWW.DataSource = GetWScoreFemale();
+            checkData(dgvGName, dgvGWW);
             resizeDGV(dgvGWW);
 
             dgvGPT.DataSource = GetPScoreFemale();
+            checkData(dgvGName, dgvGPT);
             resizeDGV(dgvGPT);
 
             dgvGQA.DataSource = GetQScoreFemale();
+            checkData(dgvGName, dgvGQA, 1);
             resizeDGV(dgvGQA);
         }
+
+        private void checkData(DataGridView refDGV, DataGridView checkDGV,int len=9)
+        {
+            float[,] refe = Program.getFloat2dArray(refDGV);
+            float[,] data = Program.getFloat2dArray(checkDGV);
+            if (data.GetLength(0) == 0 && refe.GetLength(0) > 0)
+            {
+                data = new float[refe.GetLength(0), len];
+                setDataToGridView(ref checkDGV, data);
+            }else
+            if (data.GetLength(0) != refe.GetLength(0))
+            {
+                float[,] tempData = data.Clone() as float[,];
+                data = new float[refe.GetLength(0), len];
+                for (int i = 0; i < tempData.GetLength(0); i++)
+                    for (int x = 0; x < tempData.GetLength(1); x++)
+                        data[i, x] = tempData[i,x];
+                setDataToGridView(ref checkDGV, data);
+            }
+        }
+
 
         DataTable GetSNameMale()
         {
@@ -167,13 +195,14 @@ namespace GradingSystem
 
         DataTable GetWScoreMale()
         {
-            return Program.GetDataFromQuery("SELECT `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, (`WWS1` + `WWS2` + `WWS3` + `WWS4` + `WWS5` + `WWS6` + `WWS7` + `WWS8`) as `TOTAL`" +
+            return Program.GetDataFromQuery("SELECT `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, (`WWS1` + `WWS2` + `WWS3` + `WWS4` + `WWS5` + `WWS6` + `WWS7` + `WWS8`) as `TOTAL` " +
             "FROM `student_profile` " +
-            "LEFT JOIN `student_ww` ON `student_ww`.`student_ID` = `student_profile`.`student_ID`" +
+            "LEFT JOIN `student_ww` ON `student_ww`.`student_ID` = `student_profile`.`student_ID` " +
             "WHERE `Student_Sex` like 'Male' " +
-            "AND `student_Level` like 'Grade " + Grade + "' " +
-            "AND `subject` like '" + Subject + "'" +
-            "AND `quarter_ID` = '" + quarter + "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Level` like 'Grade " + Grade + "' "+
+            "AND `student_Section` = '" + section + "' "+
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) " );
         }
         DataTable GetPScoreMale()
         {
@@ -181,9 +210,10 @@ namespace GradingSystem
             "FROM `student_profile` " +
             "LEFT JOIN `student_perf` ON `student_perf`.`student_ID` = `student_profile`.`student_ID`" +
             "WHERE `Student_Sex` like 'Male' " +
-            "AND `student_Level` like 'Grade " + Grade + "' " +
-            "AND `subject` like '" + Subject + "'" +
-            "AND `quarter_ID` = '" + quarter + "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Level` like 'Grade " + Grade + "' "+
+            "AND `student_Section` = '" + section + "' "+
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) " );
         }
         DataTable GetQScoreMale()
         {
@@ -192,8 +222,9 @@ namespace GradingSystem
             "LEFT JOIN `student_qa` ON `student_qa`.`student_ID` = `student_profile`.`student_ID`" +
             "WHERE `Student_Sex` like 'Male' " +
             "AND `student_Level` like 'Grade " + Grade + "' " +
-            "AND `subject` like '" + Subject + "'" +
-            "AND `quarter_ID` = '" + quarter + "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Section` = '" + section + "' " +
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) ");
         }
 
         DataTable GetSNameFemale()
@@ -210,9 +241,10 @@ namespace GradingSystem
             "FROM `student_profile` " +
             "LEFT JOIN `student_ww` ON `student_ww`.`student_ID` = `student_profile`.`student_ID`" +
             "WHERE `Student_Sex` like 'Female' " +
-            "AND `student_Level` like 'Grade " + Grade + "' "+
-            "AND `subject` like '" + Subject + "'"+
-            "AND `quarter_ID` = '"+quarter+ "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Level` like 'Grade " + Grade + "' " +
+            "AND `student_Section` = '" + section + "' " +
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) ");
         }
         DataTable GetPScoreFemale()
         {
@@ -221,8 +253,9 @@ namespace GradingSystem
             "LEFT JOIN `student_perf` ON `student_perf`.`student_ID` = `student_profile`.`student_ID`" +
             "WHERE `Student_Sex` like 'Female' " +
             "AND `student_Level` like 'Grade " + Grade + "' " +
-            "AND `subject` like '" + Subject + "'" +
-            "AND `quarter_ID` = '" + quarter + "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Section` = '" + section + "' " +
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) ");
         }
         DataTable GetQScoreFemale()
         {
@@ -231,8 +264,9 @@ namespace GradingSystem
             "LEFT JOIN `student_qa` ON `student_qa`.`student_ID` = `student_profile`.`student_ID`" +
             "WHERE `Student_Sex` like 'Female' " +
             "AND `student_Level` like 'Grade " + Grade + "' " +
-            "AND `subject` like '" + Subject + "'" +
-            "AND `quarter_ID` = '" + quarter + "' AND `student_Section` = '" + section + "' ");
+            "AND `student_Section` = '" + section + "' " +
+            "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
+            "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) " );
         }
 
         private void button2_Click(object sender, EventArgs e)
