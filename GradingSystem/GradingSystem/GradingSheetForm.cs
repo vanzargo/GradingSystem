@@ -254,8 +254,7 @@ namespace GradingSystem
                 setDataToGridView(ref checkDGV, data);
             }
         }
-
-
+        
         DataTable GetSNameMale()
         {
             return Program.GetDataFromQuery("SELECT `Student_LastName`,`Student_FirstName`, `Student_MI` " +
@@ -263,7 +262,6 @@ namespace GradingSystem
                 "WHERE `Student_Sex` like 'Male' " +
                 "AND `student_Level` like 'Grade " + Grade + "' AND `student_Section` = '" + section + "' ");
         }
-
         DataTable GetWScoreMale()
         {
             return Program.GetDataFromQuery("SELECT `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, (`WWS1` + `WWS2` + `WWS3` + `WWS4` + `WWS5` + `WWS6` + `WWS7` + `WWS8`) as `TOTAL` " +
@@ -297,7 +295,6 @@ namespace GradingSystem
             "AND (`subject` like '" + Subject + "' OR `subject` = NULL ) " +
             "AND (`quarter_ID` = '" + quarter + "' OR `quarter_ID` = NULL ) ");
         }
-
         DataTable GetSNameFemale()
         {
             return Program.GetDataFromQuery("SELECT `Student_LastName`,`Student_FirstName`, `Student_MI` "+
@@ -305,7 +302,6 @@ namespace GradingSystem
                 "WHERE `Student_Sex` like 'Female' " +
                 "AND `student_Level` like 'Grade "+Grade+"' AND `student_Section` = '"+ section + "' ");
         }
-
         DataTable GetWScoreFemale()
         {
             return Program.GetDataFromQuery("SELECT `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, (`WWS1` + `WWS2` + `WWS3` + `WWS4` + `WWS5` + `WWS6` + `WWS7` + `WWS8`) as `TOTAL`" +
@@ -372,7 +368,7 @@ namespace GradingSystem
             nums[6] = Program.safeParse(txtbx_p7.Text);
             nums[7] = Program.safeParse(txtbx_p8.Text);
             txtbx_pT.Text = Program.sum(nums).ToString();
-
+            //boys computation
             float[,] arrBWW = Program.getFloat2dArray(dgvBWW);
             float[,] arrBWWPS = new float[arrBWW.GetLength(0), 1];//Program.getFloat2dArray(dgvBWWPS);
             float[,] arrBWWWS = new float[arrBWW.GetLength(0), 1];//Program.getFloat2dArray(dgvBWWWS);
@@ -402,7 +398,36 @@ namespace GradingSystem
             computeFinalGrade(arrBWWWS, arrBPTWS, arrBQAWS, ref arrBIG, ref arrBQG);
             setDataToGridView(ref dgvBIG, arrBIG);
             setDataToGridView(ref dgvBQG, arrBQG,500,500);
+            //girls computation
+            float[,] arrGWW = Program.getFloat2dArray(dgvGWW);
+            float[,] arrGWWPS = new float[arrGWW.GetLength(0), 1];//Program.getFloat2dArray(dgvGWWPS);
+            float[,] arrGWWWS = new float[arrGWW.GetLength(0), 1];//Program.getFloat2dArray(dgvGWWWS);
+            computeThis(ref arrGWW, ref arrGWWPS, ref arrGWWWS, txtbx_wT.Text, WrittenWorkPercent);
+            setDataToGridView(ref dgvGWW, arrGWW);
+            setDataToGridView(ref dgvGWWPS, arrGWWPS);
+            setDataToGridView(ref dgvGWWWS, arrGWWWS);
 
+            float[,] arrGPT = Program.getFloat2dArray(dgvGPT);
+            float[,] arrGPTPS = new float[arrGPT.GetLength(0), 1];//Program.getFloat2dArray(dgvGPTPS);
+            float[,] arrGPTWS = new float[arrGPT.GetLength(0), 1];//Program.getFloat2dArray(dgvGPTWS);
+            computeThis(ref arrGPT, ref arrGPTPS, ref arrGPTWS, txtbx_pT.Text, PerformancePercent);
+            setDataToGridView(ref dgvGPT, arrGPT);
+            setDataToGridView(ref dgvGPTPS, arrGPTPS);
+            setDataToGridView(ref dgvGPTWS, arrGPTWS);
+
+            float[,] arrGQA = Program.getFloat2dArray(dgvGQA);
+            float[,] arrGQAPS = new float[arrGQA.GetLength(0), 1];//Program.getFloat2dArray(dgvGQAPS);
+            float[,] arrGQAWS = new float[arrGQA.GetLength(0), 1];//Program.getFloat2dArray(dgvGQAWS);
+            computeThis(ref arrGQA, ref arrGQAPS, ref arrGQAWS, txtbx_qT.Text, QuarterlyPercent);
+            setDataToGridView(ref dgvGQA, arrGQA);
+            setDataToGridView(ref dgvGQAPS, arrGQAPS);
+            setDataToGridView(ref dgvGQAWS, arrGQAWS);
+
+            float[,] arrGIG = new float[arrGQA.GetLength(0), 1];//Program.getFloat2dArray(dgvGIG);
+            float[,] arrGQG = new float[arrGQA.GetLength(0), 1];//Program.getFloat2dArray(dgvGQG);
+            computeFinalGrade(arrGWWWS, arrGPTWS, arrGQAWS, ref arrGIG, ref arrGQG);
+            setDataToGridView(ref dgvGIG, arrGIG);
+            setDataToGridView(ref dgvGQG, arrGQG, 500, 500);
         }
 
         private void computeFinalGrade(float[,]ws1, float[,] ws2, float[,] ws3, ref float[,] ini, ref float[,] qg)
@@ -474,6 +499,11 @@ namespace GradingSystem
         private void manageCompute(object sender, DataGridViewCellEventArgs e)
         {
             manageCompute(sender, e);
+        }
+
+        private void btn_save_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

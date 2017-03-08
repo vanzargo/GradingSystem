@@ -312,6 +312,7 @@
             this.btn_save.TabIndex = 0;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // panel1
             // 
