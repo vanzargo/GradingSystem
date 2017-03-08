@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel43 = new System.Windows.Forms.Panel();
             this.btn_print = new System.Windows.Forms.Button();
@@ -189,7 +188,6 @@
             this.dgvBPTWS = new System.Windows.Forms.DataGridView();
             this.dgvBQA = new System.Windows.Forms.DataGridView();
             this.dgvGIG = new System.Windows.Forms.DataGridView();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel43.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -333,7 +331,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 247F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel3.Controls.Add(this.panel44, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel42, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 2, 0);
@@ -351,9 +349,9 @@
             // 
             this.panel44.Controls.Add(this.quarterCmBx);
             this.panel44.Controls.Add(this.button2);
-            this.panel44.Location = new System.Drawing.Point(721, 3);
+            this.panel44.Location = new System.Drawing.Point(720, 3);
             this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(376, 30);
+            this.panel44.Size = new System.Drawing.Size(374, 30);
             this.panel44.TabIndex = 2;
             // 
             // quarterCmBx
@@ -407,7 +405,7 @@
             // 
             this.panel4.Controls.Add(this.lblSubject);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(630, 3);
+            this.panel4.Location = new System.Drawing.Point(629, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(85, 30);
             this.panel4.TabIndex = 1;
@@ -426,9 +424,9 @@
             // 
             this.panel5.Controls.Add(this.lblGradelvl);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(1103, 3);
+            this.panel5.Location = new System.Drawing.Point(1100, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 30);
+            this.panel5.Size = new System.Drawing.Size(245, 30);
             this.panel5.TabIndex = 2;
             // 
             // lblGradelvl
@@ -448,7 +446,7 @@
             this.lbl_grade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_grade.Location = new System.Drawing.Point(103, 0);
             this.lbl_grade.Name = "lbl_grade";
-            this.lbl_grade.Size = new System.Drawing.Size(521, 36);
+            this.lbl_grade.Size = new System.Drawing.Size(520, 36);
             this.lbl_grade.TabIndex = 3;
             this.lbl_grade.Text = "Grade 0";
             this.lbl_grade.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -635,6 +633,7 @@
             this.txtbx_qT.Size = new System.Drawing.Size(59, 24);
             this.txtbx_qT.TabIndex = 31;
             this.txtbx_qT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_qT.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // panel24
             // 
@@ -907,6 +906,7 @@
             this.txtbx_w1.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w1.TabIndex = 13;
             this.txtbx_w1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w1.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w2
             // 
@@ -916,6 +916,7 @@
             this.txtbx_w2.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w2.TabIndex = 14;
             this.txtbx_w2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w2.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w3
             // 
@@ -925,6 +926,7 @@
             this.txtbx_w3.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w3.TabIndex = 15;
             this.txtbx_w3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w3.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w4
             // 
@@ -934,6 +936,7 @@
             this.txtbx_w4.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w4.TabIndex = 16;
             this.txtbx_w4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w4.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w5
             // 
@@ -943,6 +946,7 @@
             this.txtbx_w5.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w5.TabIndex = 17;
             this.txtbx_w5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w5.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w6
             // 
@@ -952,6 +956,7 @@
             this.txtbx_w6.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w6.TabIndex = 18;
             this.txtbx_w6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w6.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w7
             // 
@@ -961,6 +966,7 @@
             this.txtbx_w7.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w7.TabIndex = 19;
             this.txtbx_w7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w7.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_w8
             // 
@@ -970,6 +976,7 @@
             this.txtbx_w8.Size = new System.Drawing.Size(44, 24);
             this.txtbx_w8.TabIndex = 20;
             this.txtbx_w8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_w8.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_wT
             // 
@@ -990,6 +997,7 @@
             this.txtbx_p1.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p1.TabIndex = 22;
             this.txtbx_p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p1.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p2
             // 
@@ -999,6 +1007,7 @@
             this.txtbx_p2.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p2.TabIndex = 23;
             this.txtbx_p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p2.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p3
             // 
@@ -1008,6 +1017,7 @@
             this.txtbx_p3.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p3.TabIndex = 24;
             this.txtbx_p3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p3.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p4
             // 
@@ -1017,6 +1027,7 @@
             this.txtbx_p4.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p4.TabIndex = 25;
             this.txtbx_p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtbx_p4.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p5
             // 
@@ -1026,6 +1037,7 @@
             this.txtbx_p5.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p5.TabIndex = 26;
             this.txtbx_p5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p5.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p6
             // 
@@ -1035,6 +1047,7 @@
             this.txtbx_p6.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p6.TabIndex = 27;
             this.txtbx_p6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p6.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p7
             // 
@@ -1044,6 +1057,7 @@
             this.txtbx_p7.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p7.TabIndex = 28;
             this.txtbx_p7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p7.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_p8
             // 
@@ -1053,6 +1067,7 @@
             this.txtbx_p8.Size = new System.Drawing.Size(44, 24);
             this.txtbx_p8.TabIndex = 29;
             this.txtbx_p8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtbx_p8.TextChanged += new System.EventHandler(this.manageCompute);
             // 
             // txtbx_pT
             // 
@@ -1885,6 +1900,7 @@
             this.dgvGQA.RowHeadersVisible = false;
             this.dgvGQA.Size = new System.Drawing.Size(65, 202);
             this.dgvGQA.TabIndex = 42;
+            this.dgvGQA.BackgroundColorChanged += new System.EventHandler(this.manageCompute);
             // 
             // dgvGPTWS
             // 
@@ -1932,6 +1948,7 @@
             this.dgvGPT.RowHeadersVisible = false;
             this.dgvGPT.Size = new System.Drawing.Size(465, 202);
             this.dgvGPT.TabIndex = 39;
+            this.dgvGPT.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
             // dgvGWWWS
             // 
@@ -2123,6 +2140,7 @@
             this.dgvGWW.RowHeadersVisible = false;
             this.dgvGWW.Size = new System.Drawing.Size(465, 202);
             this.dgvGWW.TabIndex = 5;
+            this.dgvGWW.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
             // dgvBWW
             // 
@@ -2143,6 +2161,7 @@
             this.dgvBWW.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgvBWW.Size = new System.Drawing.Size(465, 202);
             this.dgvBWW.TabIndex = 3;
+            this.dgvBWW.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
             // dgvBWWPS
             // 
@@ -2205,6 +2224,7 @@
             this.dgvBPT.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgvBPT.Size = new System.Drawing.Size(465, 202);
             this.dgvBPT.TabIndex = 9;
+            this.dgvBPT.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
             // dgvBPTPS
             // 
@@ -2267,6 +2287,7 @@
             this.dgvBQA.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgvBQA.Size = new System.Drawing.Size(65, 202);
             this.dgvBQA.TabIndex = 12;
+            this.dgvBQA.BackgroundColorChanged += new System.EventHandler(this.manageCompute);
             // 
             // dgvGIG
             // 
@@ -2283,12 +2304,6 @@
             this.dgvGIG.RowHeadersVisible = false;
             this.dgvGIG.Size = new System.Drawing.Size(100, 202);
             this.dgvGIG.TabIndex = 45;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // GradingSheetForm
             // 
@@ -2587,6 +2602,5 @@
         private System.Windows.Forms.Button btn_print;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.Label lbl_grade;
-        private System.Windows.Forms.Timer timer1;
     }
 }

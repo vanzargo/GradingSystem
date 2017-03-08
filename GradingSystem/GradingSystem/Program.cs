@@ -149,5 +149,35 @@ namespace GradingSystem
             if (grade >= 100.00 && grade <= 100.00) return 100;
             return 0;
         }
+
+        static public float[,] getFloat2dArray(DataGridView v)
+        {
+            float[,] arr2d = new float[v.Rows.Count, v.Columns.Count];
+
+            for (int x = 0; x < arr2d.GetLength(0); x++)
+                for (int i = 0; i < arr2d.GetLength(1); i++)
+                    arr2d[x, i] = safeParse(v.Rows[x].Cells[i].Value.ToString()); 
+            return arr2d;
+        }
+
+        static public void setDataToGridView(DataGridView v, float[,] data)
+        {
+            var rowCount = data.GetLength(0);
+            var rowLength = data.GetLength(1);
+            v.ColumnCount = rowLength;
+            for (int rowIndex = 0; rowIndex < rowCount; ++rowIndex)
+            {
+                var row = new DataGridViewRow();
+
+                for (int columnIndex = 0; columnIndex < rowLength; ++columnIndex)
+                {
+                    row.Cells.Add(new DataGridViewTextBoxCell()
+                    {
+                        Value = data[rowIndex, columnIndex]
+                    });
+                }
+                v.Rows.Add(row);
+            }
+        }
     }
 }
