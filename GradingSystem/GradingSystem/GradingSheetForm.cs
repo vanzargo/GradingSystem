@@ -75,7 +75,7 @@ namespace GradingSystem
         {
             loadMale();
             loadFemale();
-            manageCompute(sender,e);
+            //manageCompute(sender,e);
         }
 
         private void resizeDGV(DataGridView v, int defSize = 50, int lastSize = 100)
@@ -91,7 +91,7 @@ namespace GradingSystem
             }
         }
 
-        private void resizeRow(DataGridView v, int num)
+        /*private void resizeRow(DataGridView v, int num)
         {
             if (v.Rows.Count > 0)
             {
@@ -124,13 +124,84 @@ namespace GradingSystem
                     x++;
                 }
             }
+        }*/
+
+        private void resizeRow(DataGridView v, int num, DataGridView v1, int num1)
+        {
+            Height = 24;
+            if (v.Rows.Count > 0)
+            {
+                DataGridViewRow row = v.Rows[0];
+                //dgvBName.Height = row.Height * dgvBName.Rows.Count;
+
+                TableLayoutRowStyleCollection styles = tableLayoutPanel6.RowStyles;
+                int x = 0;
+                foreach (RowStyle style in styles)
+                {
+                    if (x == num)
+                    {
+                        style.SizeType = SizeType.Absolute;
+                        style.Height = row.Height * (v.Rows.Count + 1);
+                        Height+= row.Height * (v.Rows.Count + 1);
+                    }
+                    x++;
+                }
+            }
+            else
+            {
+                TableLayoutRowStyleCollection styles = tableLayoutPanel6.RowStyles;
+                int x = 0;
+                foreach (RowStyle style in styles)
+                {
+                    if (x == num)
+                    {
+                        style.SizeType = SizeType.Absolute;
+                        style.Height = 40 * (v.Rows.Count + 1);
+                        Height += 40 * (v.Rows.Count + 1);
+                    }
+                    x++;
+                }
+            }
+            if (v1.Rows.Count > 0)
+            {
+                DataGridViewRow row = v1.Rows[0];
+                //dgvBName.Height = row.Height * dgvBName.Rows.Count;
+
+                TableLayoutRowStyleCollection styles = tableLayoutPanel6.RowStyles;
+                int x = 0;
+                foreach (RowStyle style in styles)
+                {
+                    if (x == num1)
+                    {
+                        style.SizeType = SizeType.Absolute;
+                        style.Height = row.Height * (v1.Rows.Count + 1);
+                        Height += row.Height * (v1.Rows.Count + 1);
+                    }
+                    x++;
+                }
+            }
+            else
+            {
+                TableLayoutRowStyleCollection styles = tableLayoutPanel6.RowStyles;
+                int x = 0;
+                foreach (RowStyle style in styles)
+                {
+                    if (x == num1)
+                    {
+                        style.SizeType = SizeType.Absolute;
+                        style.Height = 40 * (v1.Rows.Count + 1);
+                        Height += 40 * (v1.Rows.Count + 1);
+                    }
+                    x++;
+                }
+            }
+            tableLayoutPanel6.Height = Height;
         }
 
         private void loadMale()
         {
             dgvBName.DataSource = GetSNameMale();
             resizeDGV(dgvBName,100);
-            resizeRow(dgvBName, 0);
 
             dgvBWW.DataSource = GetWScoreMale();
             checkData(dgvBName, dgvBWW);
@@ -149,7 +220,7 @@ namespace GradingSystem
         {
             dgvGName.DataSource = GetSNameFemale();
             resizeDGV(dgvGName, 100);
-            resizeRow(dgvGName, 2);
+            resizeRow(dgvBName, 0, dgvGName, 2);
 
             dgvGWW.DataSource = GetWScoreFemale();
             checkData(dgvGName, dgvGWW);
@@ -301,65 +372,78 @@ namespace GradingSystem
             nums[6] = Program.safeParse(txtbx_p7.Text);
             nums[7] = Program.safeParse(txtbx_p8.Text);
             txtbx_pT.Text = Program.sum(nums).ToString();
-            int i,x;
-            float sum = 0;
+
             float[,] arrBWW = Program.getFloat2dArray(dgvBWW);
             float[,] arrBWWPS = new float[arrBWW.GetLength(0), 1];//Program.getFloat2dArray(dgvBWWPS);
             float[,] arrBWWWS = new float[arrBWW.GetLength(0), 1];//Program.getFloat2dArray(dgvBWWWS);
-            for (x = 0; x < arrBWW.GetLength(0); x++)
+            computeThis(ref arrBWW, ref arrBWWPS, ref arrBWWWS, txtbx_wT.Text, WrittenWorkPercent);
+            setDataToGridView(ref dgvBWW, arrBWW);
+            setDataToGridView(ref dgvBWWPS, arrBWWPS);
+            setDataToGridView(ref dgvBWWWS, arrBWWWS);
+            
+            float[,] arrBPT = Program.getFloat2dArray(dgvBPT);
+            float[,] arrBPTPS = new float[arrBPT.GetLength(0), 1];//Program.getFloat2dArray(dgvBPTPS);
+            float[,] arrBPTWS = new float[arrBPT.GetLength(0), 1];//Program.getFloat2dArray(dgvBPTWS);
+            computeThis(ref arrBPT, ref arrBPTPS, ref arrBPTWS, txtbx_pT.Text, PerformancePercent);
+            setDataToGridView(ref dgvBPT, arrBPT);
+            setDataToGridView(ref dgvBPTPS, arrBPTPS);
+            setDataToGridView(ref dgvBPTWS, arrBPTWS);
+
+            float[,] arrBQA = Program.getFloat2dArray(dgvBQA);
+            float[,] arrBQAPS = new float[arrBQA.GetLength(0), 1];//Program.getFloat2dArray(dgvBQAPS);
+            float[,] arrBQAWS = new float[arrBQA.GetLength(0), 1];//Program.getFloat2dArray(dgvBQAWS);
+            computeThis(ref arrBQA, ref arrBQAPS, ref arrBQAWS, txtbx_qT.Text, QuarterlyPercent);
+            setDataToGridView(ref dgvBQA, arrBQA);
+            setDataToGridView(ref dgvBQAPS, arrBQAPS);
+            setDataToGridView(ref dgvBQAWS, arrBQAWS);
+
+            float[,] arrBIG = new float[arrBQA.GetLength(0), 1];//Program.getFloat2dArray(dgvBIG);
+            float[,] arrBQG = new float[arrBQA.GetLength(0), 1];//Program.getFloat2dArray(dgvBQG);
+            computeFinalGrade(arrBWWWS, arrBPTWS, arrBQAWS, ref arrBIG, ref arrBQG);
+            setDataToGridView(ref dgvBIG, arrBIG);
+            setDataToGridView(ref dgvBQG, arrBQG,500,500);
+
+        }
+
+        private void computeFinalGrade(float[,]ws1, float[,] ws2, float[,] ws3, ref float[,] ini, ref float[,] qg)
+        {
+            int i=0, x;
+            for (x = 0; x < ws1.GetLength(0); x++)
             {
-                if (x == 0)
-                {
-                    Console.Write("[");
-                }
-                for (i = 0; i < arrBWW.GetLength(1); i++)
+                ini[x, i] = ws1[x, i] + ws2[x, i] + ws3[x, i];
+                qg[x,i] = Program.transmutate(ini[x, i]);
+            }
+        }
+
+        public void computeThis(ref float[,]arr,ref float[,] arr1,ref float[,] arr2,String fromTxtbx,float percent)
+        {
+
+            int i, x;
+            float sum = 0;
+            for (x = 0; x < arr.GetLength(0); x++)
+            {
+                for (i = 0; i < arr.GetLength(1); i++)
                 {
                     if (i == 0)
                     {
                         sum = 0;
-                        Console.Write("[");
                     }
-                    if (i+1>= arrBWW.GetLength(1)) {
-                        arrBWW[x, i] = sum;
-                        arrBWWPS[x, 0] = arrBWW[x, i] / Program.safeParse(txtbx_wT.Text) *100;
-                        arrBWWWS[x, 0] = arrBWWPS[x, 0] * WrittenWorkPercent / 100;
-                        Console.Write(arrBWW[x, i].ToString());
-                    } else {
-                        sum += arrBWW[x, i];
-                        Console.Write(arrBWW[x, i].ToString() + ',');
-                    }
-                    if (i + 1 >= arrBWW.GetLength(1))
+                    if (i + 1 >= arr.GetLength(1))
                     {
-                        Console.Write("]");
+                        arr[x, i] = sum;
+                        arr1[x, 0] = arr[x, i] / Program.safeParse(fromTxtbx) * 100;
+                        arr2[x, 0] = arr1[x, 0] * percent / 100;
                     }
-                }
-                if (x+1 >= arrBWW.GetLength(0))
-                {
-                    Console.Write("]");
-                }else
-                {
-                    Console.Write(",");
+                    else
+                    {
+                        sum += arr[x, i];
+                    }
                 }
             }
-            Console.Write(txtbx_wT.Text);
-            setDataToGridView(ref dgvBWW, arrBWW);
-            setDataToGridView(ref dgvBWWPS, arrBWWPS);
-            setDataToGridView(ref dgvBWWWS, arrBWWWS);
-
-            float[,] arrBPT = Program.getFloat2dArray(dgvBPT);
-            float[,] arrBPTPS = Program.getFloat2dArray(dgvBPTPS);
-            float[,] arrBPTWS = Program.getFloat2dArray(dgvBPTWS);
-
-            float[,] arrBQA = Program.getFloat2dArray(dgvBQA);
-            float[,] arrBQAPS = Program.getFloat2dArray(dgvBQAPS);
-            float[,] arrBQAWS = Program.getFloat2dArray(dgvBQAWS);
-            
-            float[,] arrBIG = Program.getFloat2dArray(dgvBIG);
-            float[,] arrBQG = Program.getFloat2dArray(dgvBQG);
 
         }
 
-        public void setDataToGridView(ref DataGridView v, float[,] data)
+        public void setDataToGridView(ref DataGridView v, float[,] data,int defaultSize = 50,int lastSize = 100)
         {
             v.DataSource = new float[data.GetLength(0), data.GetLength(1)];
             v.DataSource = null;
@@ -379,10 +463,15 @@ namespace GradingSystem
                 }
                 v.Rows.Add(row);
             }
-            resizeDGV(v);
+            resizeDGV(v,defaultSize,lastSize);
         }
 
         private void dgvGPT_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            manageCompute(sender, e);
+        }
+
+        private void manageCompute(object sender, DataGridViewCellEventArgs e)
         {
             manageCompute(sender, e);
         }

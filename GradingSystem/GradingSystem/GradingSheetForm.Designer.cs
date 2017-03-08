@@ -509,7 +509,6 @@
             this.panel17.Controls.Add(this.MajorLayoutPanel);
             this.panel17.Controls.Add(this.MinorLayoutPanel);
             this.panel17.Controls.Add(this.tableLayoutPanel6);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(3, 3);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1342, 540);
@@ -1829,13 +1828,13 @@
             this.tableLayoutPanel6.Controls.Add(this.dgvBPTWS, 6, 0);
             this.tableLayoutPanel6.Controls.Add(this.dgvBQA, 7, 0);
             this.tableLayoutPanel6.Controls.Add(this.dgvGIG, 10, 2);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(1, 122);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 123);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(2000, 434);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1998, 169);
             this.tableLayoutPanel6.TabIndex = 6;
             // 
             // dgvGQG
@@ -1846,12 +1845,12 @@
             this.dgvGQG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGQG.ColumnHeadersVisible = false;
             this.dgvGQG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGQG.Location = new System.Drawing.Point(1785, 232);
+            this.dgvGQG.Location = new System.Drawing.Point(1785, 74);
             this.dgvGQG.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGQG.Name = "dgvGQG";
             this.dgvGQG.ReadOnly = true;
             this.dgvGQG.RowHeadersVisible = false;
-            this.dgvGQG.Size = new System.Drawing.Size(218, 202);
+            this.dgvGQG.Size = new System.Drawing.Size(218, 95);
             this.dgvGQG.TabIndex = 46;
             // 
             // dgvGQAWS
@@ -1862,12 +1861,12 @@
             this.dgvGQAWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGQAWS.ColumnHeadersVisible = false;
             this.dgvGQAWS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGQAWS.Location = new System.Drawing.Point(1620, 232);
+            this.dgvGQAWS.Location = new System.Drawing.Point(1620, 74);
             this.dgvGQAWS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGQAWS.Name = "dgvGQAWS";
             this.dgvGQAWS.ReadOnly = true;
             this.dgvGQAWS.RowHeadersVisible = false;
-            this.dgvGQAWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQAWS.Size = new System.Drawing.Size(65, 95);
             this.dgvGQAWS.TabIndex = 44;
             // 
             // dgvGQAPS
@@ -1878,12 +1877,12 @@
             this.dgvGQAPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGQAPS.ColumnHeadersVisible = false;
             this.dgvGQAPS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGQAPS.Location = new System.Drawing.Point(1555, 232);
+            this.dgvGQAPS.Location = new System.Drawing.Point(1555, 74);
             this.dgvGQAPS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGQAPS.Name = "dgvGQAPS";
             this.dgvGQAPS.ReadOnly = true;
             this.dgvGQAPS.RowHeadersVisible = false;
-            this.dgvGQAPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQAPS.Size = new System.Drawing.Size(65, 95);
             this.dgvGQAPS.TabIndex = 43;
             // 
             // dgvGQA
@@ -1894,13 +1893,14 @@
             this.dgvGQA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGQA.ColumnHeadersVisible = false;
             this.dgvGQA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGQA.Location = new System.Drawing.Point(1490, 232);
+            this.dgvGQA.Location = new System.Drawing.Point(1490, 74);
             this.dgvGQA.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGQA.Name = "dgvGQA";
             this.dgvGQA.RowHeadersVisible = false;
-            this.dgvGQA.Size = new System.Drawing.Size(65, 202);
+            this.dgvGQA.Size = new System.Drawing.Size(65, 95);
             this.dgvGQA.TabIndex = 42;
             this.dgvGQA.BackgroundColorChanged += new System.EventHandler(this.manageCompute);
+            this.dgvGQA.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.manageCompute);
             // 
             // dgvGPTWS
             // 
@@ -1910,12 +1910,12 @@
             this.dgvGPTWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGPTWS.ColumnHeadersVisible = false;
             this.dgvGPTWS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGPTWS.Location = new System.Drawing.Point(1425, 232);
+            this.dgvGPTWS.Location = new System.Drawing.Point(1425, 74);
             this.dgvGPTWS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGPTWS.Name = "dgvGPTWS";
             this.dgvGPTWS.ReadOnly = true;
             this.dgvGPTWS.RowHeadersVisible = false;
-            this.dgvGPTWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGPTWS.Size = new System.Drawing.Size(65, 95);
             this.dgvGPTWS.TabIndex = 41;
             // 
             // dgvGPTPS
@@ -1926,12 +1926,12 @@
             this.dgvGPTPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGPTPS.ColumnHeadersVisible = false;
             this.dgvGPTPS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGPTPS.Location = new System.Drawing.Point(1360, 232);
+            this.dgvGPTPS.Location = new System.Drawing.Point(1360, 74);
             this.dgvGPTPS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGPTPS.Name = "dgvGPTPS";
             this.dgvGPTPS.ReadOnly = true;
             this.dgvGPTPS.RowHeadersVisible = false;
-            this.dgvGPTPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGPTPS.Size = new System.Drawing.Size(65, 95);
             this.dgvGPTPS.TabIndex = 40;
             // 
             // dgvGPT
@@ -1942,11 +1942,11 @@
             this.dgvGPT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGPT.ColumnHeadersVisible = false;
             this.dgvGPT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGPT.Location = new System.Drawing.Point(895, 232);
+            this.dgvGPT.Location = new System.Drawing.Point(895, 74);
             this.dgvGPT.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGPT.Name = "dgvGPT";
             this.dgvGPT.RowHeadersVisible = false;
-            this.dgvGPT.Size = new System.Drawing.Size(465, 202);
+            this.dgvGPT.Size = new System.Drawing.Size(465, 95);
             this.dgvGPT.TabIndex = 39;
             this.dgvGPT.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
@@ -1958,12 +1958,12 @@
             this.dgvGWWWS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGWWWS.ColumnHeadersVisible = false;
             this.dgvGWWWS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGWWWS.Location = new System.Drawing.Point(830, 232);
+            this.dgvGWWWS.Location = new System.Drawing.Point(830, 74);
             this.dgvGWWWS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGWWWS.Name = "dgvGWWWS";
             this.dgvGWWWS.ReadOnly = true;
             this.dgvGWWWS.RowHeadersVisible = false;
-            this.dgvGWWWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGWWWS.Size = new System.Drawing.Size(65, 95);
             this.dgvGWWWS.TabIndex = 38;
             // 
             // dgvGWWPS
@@ -1974,12 +1974,12 @@
             this.dgvGWWPS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGWWPS.ColumnHeadersVisible = false;
             this.dgvGWWPS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGWWPS.Location = new System.Drawing.Point(765, 232);
+            this.dgvGWWPS.Location = new System.Drawing.Point(765, 74);
             this.dgvGWWPS.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGWWPS.Name = "dgvGWWPS";
             this.dgvGWWPS.ReadOnly = true;
             this.dgvGWWPS.RowHeadersVisible = false;
-            this.dgvGWWPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvGWWPS.Size = new System.Drawing.Size(65, 95);
             this.dgvGWWPS.TabIndex = 37;
             // 
             // panel41
@@ -1989,10 +1989,10 @@
             this.panel41.Controls.Add(this.label37);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.ForeColor = System.Drawing.Color.Black;
-            this.panel41.Location = new System.Drawing.Point(3, 205);
+            this.panel41.Location = new System.Drawing.Point(3, 53);
             this.panel41.Margin = new System.Windows.Forms.Padding(3, 3, 2, 3);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(295, 24);
+            this.panel41.Size = new System.Drawing.Size(295, 18);
             this.panel41.TabIndex = 36;
             // 
             // label37
@@ -2000,7 +2000,7 @@
             this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(74, 1);
+            this.label37.Location = new System.Drawing.Point(74, -2);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(41, 20);
             this.label37.TabIndex = 0;
@@ -2024,7 +2024,7 @@
             this.dgvBQG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBQG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBQG.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBQG.Size = new System.Drawing.Size(218, 202);
+            this.dgvBQG.Size = new System.Drawing.Size(218, 50);
             this.dgvBQG.TabIndex = 16;
             // 
             // dgvBIG
@@ -2045,7 +2045,7 @@
             this.dgvBIG.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBIG.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBIG.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBIG.Size = new System.Drawing.Size(100, 202);
+            this.dgvBIG.Size = new System.Drawing.Size(100, 50);
             this.dgvBIG.TabIndex = 15;
             // 
             // dgvBQAWS
@@ -2066,7 +2066,7 @@
             this.dgvBQAWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBQAWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBQAWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBQAWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQAWS.Size = new System.Drawing.Size(65, 50);
             this.dgvBQAWS.TabIndex = 14;
             // 
             // dgvBQAPS
@@ -2087,7 +2087,7 @@
             this.dgvBQAPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBQAPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBQAPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBQAPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQAPS.Size = new System.Drawing.Size(65, 50);
             this.dgvBQAPS.TabIndex = 13;
             // 
             // dgvGName
@@ -2098,12 +2098,12 @@
             this.dgvGName.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGName.ColumnHeadersVisible = false;
             this.dgvGName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGName.Location = new System.Drawing.Point(0, 232);
+            this.dgvGName.Location = new System.Drawing.Point(0, 74);
             this.dgvGName.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGName.Name = "dgvGName";
             this.dgvGName.ReadOnly = true;
             this.dgvGName.RowHeadersVisible = false;
-            this.dgvGName.Size = new System.Drawing.Size(300, 202);
+            this.dgvGName.Size = new System.Drawing.Size(300, 95);
             this.dgvGName.TabIndex = 7;
             // 
             // dgvBName
@@ -2123,7 +2123,7 @@
             this.dgvBName.RowHeadersVisible = false;
             this.dgvBName.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBName.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgvBName.Size = new System.Drawing.Size(300, 202);
+            this.dgvBName.Size = new System.Drawing.Size(300, 50);
             this.dgvBName.TabIndex = 2;
             // 
             // dgvGWW
@@ -2134,11 +2134,11 @@
             this.dgvGWW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGWW.ColumnHeadersVisible = false;
             this.dgvGWW.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGWW.Location = new System.Drawing.Point(300, 232);
+            this.dgvGWW.Location = new System.Drawing.Point(300, 74);
             this.dgvGWW.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGWW.Name = "dgvGWW";
             this.dgvGWW.RowHeadersVisible = false;
-            this.dgvGWW.Size = new System.Drawing.Size(465, 202);
+            this.dgvGWW.Size = new System.Drawing.Size(465, 95);
             this.dgvGWW.TabIndex = 5;
             this.dgvGWW.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
@@ -2159,7 +2159,7 @@
             this.dgvBWW.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBWW.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBWW.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBWW.Size = new System.Drawing.Size(465, 202);
+            this.dgvBWW.Size = new System.Drawing.Size(465, 50);
             this.dgvBWW.TabIndex = 3;
             this.dgvBWW.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
@@ -2181,7 +2181,7 @@
             this.dgvBWWPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBWWPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBWWPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBWWPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBWWPS.Size = new System.Drawing.Size(65, 50);
             this.dgvBWWPS.TabIndex = 6;
             // 
             // dgvBWWWS
@@ -2202,7 +2202,7 @@
             this.dgvBWWWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBWWWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBWWWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBWWWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBWWWS.Size = new System.Drawing.Size(65, 50);
             this.dgvBWWWS.TabIndex = 8;
             // 
             // dgvBPT
@@ -2222,7 +2222,7 @@
             this.dgvBPT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBPT.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBPT.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBPT.Size = new System.Drawing.Size(465, 202);
+            this.dgvBPT.Size = new System.Drawing.Size(465, 50);
             this.dgvBPT.TabIndex = 9;
             this.dgvBPT.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGPT_CellValueChanged);
             // 
@@ -2244,7 +2244,7 @@
             this.dgvBPTPS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBPTPS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBPTPS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBPTPS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBPTPS.Size = new System.Drawing.Size(65, 50);
             this.dgvBPTPS.TabIndex = 10;
             // 
             // dgvBPTWS
@@ -2265,7 +2265,7 @@
             this.dgvBPTWS.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBPTWS.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBPTWS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBPTWS.Size = new System.Drawing.Size(65, 202);
+            this.dgvBPTWS.Size = new System.Drawing.Size(65, 50);
             this.dgvBPTWS.TabIndex = 11;
             // 
             // dgvBQA
@@ -2285,9 +2285,10 @@
             this.dgvBQA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvBQA.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvBQA.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dgvBQA.Size = new System.Drawing.Size(65, 202);
+            this.dgvBQA.Size = new System.Drawing.Size(65, 50);
             this.dgvBQA.TabIndex = 12;
             this.dgvBQA.BackgroundColorChanged += new System.EventHandler(this.manageCompute);
+            this.dgvBQA.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.manageCompute);
             // 
             // dgvGIG
             // 
@@ -2297,12 +2298,12 @@
             this.dgvGIG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGIG.ColumnHeadersVisible = false;
             this.dgvGIG.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvGIG.Location = new System.Drawing.Point(1685, 232);
+            this.dgvGIG.Location = new System.Drawing.Point(1685, 74);
             this.dgvGIG.Margin = new System.Windows.Forms.Padding(0);
             this.dgvGIG.Name = "dgvGIG";
             this.dgvGIG.ReadOnly = true;
             this.dgvGIG.RowHeadersVisible = false;
-            this.dgvGIG.Size = new System.Drawing.Size(100, 202);
+            this.dgvGIG.Size = new System.Drawing.Size(100, 95);
             this.dgvGIG.TabIndex = 45;
             // 
             // GradingSheetForm
