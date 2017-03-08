@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 08, 2017 at 11:01 AM
+-- Generation Time: Mar 06, 2017 at 09:43 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -136,19 +136,17 @@ CREATE TABLE IF NOT EXISTS `student_profile` (
   `student_LastName` varchar(20) NOT NULL,
   `student_Sex` varchar(45) NOT NULL,
   `student_Level` varchar(45) NOT NULL,
-  `student_Section` varchar(20) NOT NULL,
   PRIMARY KEY (`student_ID`),
   UNIQUE KEY `Student_ID_UNIQUE` (`student_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `student_profile`
 --
 
-INSERT INTO `student_profile` (`student_ID`, `student_FirstName`, `student_MI`, `student_LastName`, `student_Sex`, `student_Level`, `student_Section`) VALUES
-(1, 'Zy', 'S.', 'Gozar', 'Male', 'Grade 8', 'Section 1'),
-(2, 'student', 'm', 'none', 'Female', 'Grade 8', 'Section 1'),
-(3, 'SI', 'M', 'Fe', 'Female', 'Grade 8', 'Section 1');
+INSERT INTO `student_profile` (`student_ID`, `student_FirstName`, `student_MI`, `student_LastName`, `student_Sex`, `student_Level`) VALUES
+(1, 'Zy', 'S.', 'Gozar', 'Male', 'Grade 8'),
+(2, 'student', 'm', 'none', 'Female', 'Grade 8');
 
 -- --------------------------------------------------------
 
@@ -218,7 +216,7 @@ CREATE TABLE IF NOT EXISTS `student_ww` (
   `subject` varchar(255) NOT NULL,
   `quarter_ID` int(11) NOT NULL,
   PRIMARY KEY (`written_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `student_ww`
@@ -226,9 +224,7 @@ CREATE TABLE IF NOT EXISTS `student_ww` (
 
 INSERT INTO `student_ww` (`written_ID`, `student_ID`, `WWS1`, `WWS2`, `WWS3`, `WWS4`, `WWS5`, `WWS6`, `WWS7`, `WWS8`, `subject`, `quarter_ID`) VALUES
 (1, 1, 20, 15, 15, 10, 15, 20, 15, 25, 'Math', 1),
-(2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0),
-(3, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0),
-(4, 4, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0);
+(2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 0);
 
 -- --------------------------------------------------------
 
@@ -243,15 +239,14 @@ CREATE TABLE IF NOT EXISTS `teacher` (
   `Teacher_Sex` varchar(45) NOT NULL,
   `Teacher_Position` varchar(45) NOT NULL,
   PRIMARY KEY (`User_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `teacher`
 --
 
 INSERT INTO `teacher` (`User_ID`, `Teacher_FirstName`, `Teacher_LastName`, `Teacher_Sex`, `Teacher_Position`) VALUES
-(1, 'Zyrus', 'Gozar', 'Male', 'Admin'),
-(3, 'Dean', 'Lean', 'Male', 'Teacher');
+(1, 'Zyrus', 'Gozar', 'Male', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -264,25 +259,18 @@ CREATE TABLE IF NOT EXISTS `teacher_schedule` (
   `User_ID` int(11) NOT NULL,
   `7_subject` varchar(10) NOT NULL,
   `7_GradeLevel` varchar(10) NOT NULL,
-  `7_Section` varchar(10) NOT NULL,
   `8_subject` varchar(10) NOT NULL,
   `8_GradeLevel` varchar(10) NOT NULL,
-  `8_Section` varchar(10) NOT NULL,
   `9_subject` varchar(10) NOT NULL,
   `9_GradeLevel` varchar(10) NOT NULL,
-  `9_Section` varchar(10) NOT NULL,
   `10_subject` varchar(10) NOT NULL,
   `10_GradeLevel` varchar(10) NOT NULL,
-  `10_Section` varchar(10) NOT NULL,
   `12_subject` varchar(10) NOT NULL,
   `12_GradeLevel` varchar(10) NOT NULL,
-  `12_Section` varchar(10) NOT NULL,
   `1_subject` varchar(10) NOT NULL,
   `1_GradeLevel` varchar(10) NOT NULL,
-  `1_Section` varchar(10) NOT NULL,
   `2_subject` varchar(10) NOT NULL,
   `2_GradeLevel` varchar(10) NOT NULL,
-  `2_Section` varchar(10) NOT NULL,
   `advisory_class` varchar(10) NOT NULL,
   PRIMARY KEY (`teacher_schedule_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
@@ -291,8 +279,8 @@ CREATE TABLE IF NOT EXISTS `teacher_schedule` (
 -- Dumping data for table `teacher_schedule`
 --
 
-INSERT INTO `teacher_schedule` (`teacher_schedule_id`, `User_ID`, `7_subject`, `7_GradeLevel`, `7_Section`, `8_subject`, `8_GradeLevel`, `8_Section`, `9_subject`, `9_GradeLevel`, `9_Section`, `10_subject`, `10_GradeLevel`, `10_Section`, `12_subject`, `12_GradeLevel`, `12_Section`, `1_subject`, `1_GradeLevel`, `1_Section`, `2_subject`, `2_GradeLevel`, `2_Section`, `advisory_class`) VALUES
-(3, 1, 'M.A.P.E.H', 'Grade 1', 'Section 1', 'T.L.E', 'Grade 2', 'Section 1', 'S.S.', 'Grade 6', 'Section 1', 'Filipino', 'Grade 5', 'Section 1', 'Science', 'Grade 4', 'Section 1', 'English', 'Grade 3', 'Section 1', 'Math', 'Grade 8', 'Section 1', 'Grade 8');
+INSERT INTO `teacher_schedule` (`teacher_schedule_id`, `User_ID`, `7_subject`, `7_GradeLevel`, `8_subject`, `8_GradeLevel`, `9_subject`, `9_GradeLevel`, `10_subject`, `10_GradeLevel`, `12_subject`, `12_GradeLevel`, `1_subject`, `1_GradeLevel`, `2_subject`, `2_GradeLevel`, `advisory_class`) VALUES
+(3, 1, 'M.A.P.E.H', 'Grade 1', 'T.L.E', 'Grade 2', 'S.S.', 'Grade 6', 'Filipino', 'Grade 5', 'Science', 'Grade 4', 'English', 'Grade 3', 'Math', 'Grade 8', 'Grade 8');
 
 -- --------------------------------------------------------
 
@@ -306,7 +294,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `User_Password` varchar(45) NOT NULL,
   `User_Status` varchar(45) NOT NULL,
   PRIMARY KEY (`User_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `user`
@@ -314,8 +302,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`User_ID`, `User_Username`, `User_Password`, `User_Status`) VALUES
 (1, 'zyrus', '12345', 'Active'),
-(2, 'admin', '12345', 'Inactive'),
-(3, 'dean', '12345', 'Active');
+(2, 'admin', '12345', 'Inactive');
 
 -- --------------------------------------------------------
 
@@ -329,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `written_work` (
   `written_total_items` int(11) DEFAULT NULL,
   `subject_ID` int(11) DEFAULT NULL,
   PRIMARY KEY (`work_ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `written_work`
@@ -339,9 +326,7 @@ INSERT INTO `written_work` (`work_ID`, `written_ID`, `written_total_items`, `sub
 (1, 1, 135, 1),
 (2, 3, NULL, NULL),
 (3, 4, NULL, NULL),
-(4, 2, NULL, NULL),
-(5, 3, NULL, NULL),
-(6, 4, NULL, NULL);
+(4, 2, NULL, NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
